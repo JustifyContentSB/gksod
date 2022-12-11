@@ -1,0 +1,148 @@
+.info
+   margin-bottom: var(--mainMargin)
+   --infoMargin: 12px
+   &__title
+      margin-bottom: 10px
+   &__list
+      margin-bottom: var(--mainMargin)
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 24px 0
+   &__item
+      width: 232px
+      display: block
+   &__object
+      &--hidden
+         display: none
+   &__img
+      width: 100%
+      height: 180px
+      border-radius: 4px
+      overflow: hidden
+      position: relative
+   &__desc
+      padding-top: var(--infoMargin)
+   &__data
+      margin-bottom: var(--infoMargin)
+   &__name
+      font-weight: 600
+      font-size: 16px
+      line-height: 130%
+      color: #000
+   &__video
+      height: 188px
+      display: block
+      position: relative
+      border-radius: 4px
+      cursor: pointer
+      overflow: hidden
+      &::after
+         content: ''
+         position: absolute
+         left: 0
+         right: 0
+         top: 0
+         bottom: 0
+         background: rgba(0, 0, 0, 0.5)
+         border-radius: 4px
+      &-play
+         width: 57px
+         height: 57px
+         border-radius: 50%
+         background: #fff
+         display: flex
+         justify-content: center
+         align-items: center
+         position: absolute
+         z-index: 1
+         left: 50%
+         top: 50%
+         transform: translate(-50%, -50%)
+   &__slider
+      position: relative
+   .swiper
+      &-button
+         &-prev,
+         &-next
+            top: 46%
+
+@media screen and (max-width: 767px)
+   .info
+      &__object
+         .info
+            &__item
+               width: 100%
+            &__name
+               font-size: 14px
+               line-height: 130%
+            &__video
+               height: 180px
+
+@media screen and (min-width: $width_tab)
+   .info
+      &__title
+         margin-bottom: 30px
+      &--reviews
+         .info
+            &__title
+               margin-bottom: 20px
+      .tabs
+         margin-bottom: 10px
+      &__video
+         height: 180px
+      &__list
+         grid-template-columns: repeat(3, 1fr)
+         grid-gap: 30px 16px
+         .info
+            &__item
+               width: auto
+
+@media screen and (min-width: $width_desk)
+   .info
+      &__slider
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+      &__img
+         height: 210px
+      &__list
+         grid-template-columns: repeat(4, 1fr)
+         grid-gap: 40px 20px
+      &__object
+         &--hidden
+            display: block
+      &--list
+         .tabs
+            margin-bottom: 30px
+
+@media screen and (min-width: $width_lg)
+   .info
+      --infoMargin: 20px
+      &__img
+         height: 240px
+      &__video
+         height: 240px
+      &__name
+         font-size: 18px
+         line-height: 150%
+      .tabs
+         margin-bottom: 20px
+
+@media screen and (min-width: $width_huge)
+   .info
+      &--list
+         margin-bottom: 60px
+         .tabs
+            margin-bottom: 50px
+      &__list
+         margin-bottom: 60px
+         grid-gap: 60px 20px
+
+@media screen and (min-width: $width_1920)
+   .info
+      .swiper
+         &-button
+            &-prev
+               left: -10px
+            &-next
+               right: -10px

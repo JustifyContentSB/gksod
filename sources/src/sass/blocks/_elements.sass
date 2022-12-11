@@ -1,0 +1,126 @@
+.wrapper
+   width: 100%
+   max-width: 100%
+   margin: 0 auto
+
+.container
+   width: 100%
+   max-width: var(--containerWidth)
+   margin: 0 auto
+   padding: 0 var(--mainPadding)
+
+.main-title
+   margin-bottom: var(--mainMargin)
+   font-weight: 800
+   font-size: 24px
+   line-height: 100%
+
+.title
+   font-weight: 700
+   font-size: 22px
+   line-height: 120%
+
+.btn
+   padding: 9px 19px
+   font-weight: 600
+   font-size: 14px
+   line-height: 100%
+   text-align: center
+   color: #fff
+   background: var(--accent)
+   border-radius: 3px
+   border: 1px solid transparent
+   display: inline-flex
+   justify-content: center
+   align-items: center
+   &--sec
+      background: #EAEAEA
+      color: #1F1F1F
+   &--other
+      background: #fff
+      color: #1F1F1F
+      border: 1px solid #93928D
+   &--wide
+      min-height: 48px
+      font-size: 16px
+   &--icon
+      width: 36px
+      min-width: 36px
+      height: 36px
+      min-height: 36px
+      padding: 5px
+   &--style
+      background: #F8F8F8
+   svg
+      width: 23px
+      height: 23px
+
+.list
+   font-size: 12px
+   line-height: 130%
+   li
+      padding-left: 31px
+      margin-bottom: 15px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         left: 0
+         top: -2px
+         width: 17px
+         height: 17px
+         border-radius: 50%
+         border: 3px solid #D82916
+
+.text
+   p
+      margin-bottom: 17px
+
+@media screen and (min-width: $width_tab)
+   .title
+      font-size: 24px
+   .main-title
+      font-size: 40px
+   .btn
+      min-height: 48px
+      padding: 15px 31px
+      font-size: 16px
+      &--icon
+         width: 36px
+         min-width: 36px
+         height: 36px
+         min-height: 36px
+         padding: 6px
+   .list
+      font-size: 14px
+      li
+         padding-left: 37px
+   .text
+      p
+         margin-bottom: 21px
+
+@media screen and (min-width: $width_desk)
+   .main-title
+      font-size: 46px
+
+@media screen and (min-width: $width_lg)
+   .title
+      font-size: 28px
+
+@media screen and (min-width: $width_huge)
+   .main-title
+      margin-bottom: 60px
+      font-size: 54px
+   .title
+      font-size: 32px
+   .list
+      font-size: 16px
+      li
+         margin-bottom: 16px
+   .btn
+      &--big
+         padding: 15px 31px
+         font-size: 20px
+   .text
+      p
+         margin-bottom: 27px

@@ -1,0 +1,185 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-svg-call {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(66, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-call {
+	background-position: 0 0;
+}
+@mixin svg-svg-call-hover {
+	.svg-svg-call {
+		@include svg-pos-svg-call-hover
+	}
+}
+
+.svg-svg-call:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(23, 22)*100%;
+}
+
+.svg-svg-call-dims {
+	width: 22px;
+	height: 23px;
+}
+
+.svg-svg-menu {
+	@extend %svg-common;
+	background-position: 50% 0;
+	background-size: math.div(66, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-menu {
+	background-position: 50% 0;
+}
+@mixin svg-svg-menu-hover {
+	.svg-svg-menu {
+		@include svg-pos-svg-menu-hover
+	}
+}
+
+.svg-svg-menu:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(23, 22)*100%;
+}
+
+.svg-svg-menu-dims {
+	width: 22px;
+	height: 23px;
+}
+
+.svg-svg-search-loop {
+	@extend %svg-common;
+	background-position: 100% 0;
+	background-size: math.div(66, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-search-loop {
+	background-position: 100% 0;
+}
+@mixin svg-svg-search-loop-hover {
+	.svg-svg-search-loop {
+		@include svg-pos-svg-search-loop-hover
+	}
+}
+
+.svg-svg-search-loop:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(23, 22)*100%;
+}
+
+.svg-svg-search-loop-dims {
+	width: 22px;
+	height: 23px;
+}
+
+.svg-svg-telegram {
+	@extend %svg-common;
+	background-position: 89.1304347826087% 82.14285714285714%;
+	background-size: math.div(66, 20)*100% auto;
+	width: 20px;
+
+}
+@mixin svg-pos-svg-telegram {
+	background-position: 89.1304347826087% 82.14285714285714%;
+}
+@mixin svg-svg-telegram-hover {
+	.svg-svg-telegram {
+		@include svg-pos-svg-telegram-hover
+	}
+}
+
+.svg-svg-telegram:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(17, 20)*100%;
+}
+
+.svg-svg-telegram-dims {
+	width: 20px;
+	height: 17px;
+}
+
+.svg-svg-viber {
+	@extend %svg-common;
+	background-position: 0 100%;
+	background-size: math.div(66, 21)*100% auto;
+	width: 21px;
+
+}
+@mixin svg-pos-svg-viber {
+	background-position: 0 100%;
+}
+@mixin svg-svg-viber-hover {
+	.svg-svg-viber {
+		@include svg-pos-svg-viber-hover
+	}
+}
+
+.svg-svg-viber:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 21)*100%;
+}
+
+.svg-svg-viber-dims {
+	width: 21px;
+	height: 22px;
+}
+
+.svg-svg-whatsapp {
+	@extend %svg-common;
+	background-position: 45.65217391304348% 95.83333333333333%;
+	background-size: math.div(66, 20)*100% auto;
+	width: 20px;
+
+}
+@mixin svg-pos-svg-whatsapp {
+	background-position: 45.65217391304348% 95.83333333333333%;
+}
+@mixin svg-svg-whatsapp-hover {
+	.svg-svg-whatsapp {
+		@include svg-pos-svg-whatsapp-hover
+	}
+}
+
+.svg-svg-whatsapp:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(21, 20)*100%;
+}
+
+.svg-svg-whatsapp-dims {
+	width: 20px;
+	height: 21px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }

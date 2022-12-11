@@ -1,0 +1,195 @@
+.header
+   margin-bottom: var(--mainMargin)
+   background: #fff
+   border-bottom: 1px solid #EAEAEA
+   &--sec
+      margin-bottom: 0
+   &__top
+      display: none
+   &__medium
+      &-inner
+         padding: 13px var(--mainPadding)
+         display: flex
+         align-items: center
+   &__logo
+      margin-right: 10px
+      width: 160px
+      img
+         width: 100%
+   &__right
+      margin-left: auto
+      display: flex
+      align-items: center
+   &__manage
+      display: flex
+      &-item
+         &__offer
+            display: none
+   &__btn
+      margin-left: 10px
+      &-text
+         display: none
+   &__bottom
+      display: none
+      &-list
+         font-weight: 700
+         font-size: 13px
+         line-height: 100%
+         color: #1F1F1F
+         text-transform: uppercase
+   &__contacts
+      display: none
+   .soc
+      display: none
+
+@media screen and (min-width: $width_tab)
+   .header
+      &__top
+         display: block
+         background: #F8F8F8
+         border-bottom: 1px solid #EAEAEA
+         &-list
+            padding: 12px 0
+            display: flex
+            align-items: center
+            font-weight: 400
+            font-size: 13px
+            line-height: 100%
+            li
+               margin-right: 30px
+               &:last-child
+                  margin-left: auto
+                  margin-right: 0
+      &__logo
+         margin-right: 40px
+      &__contacts
+         display: block
+      &__tel
+         display: inline-block
+         margin-bottom: 6px
+         font-weight: 600
+         font-size: 16px
+         line-height: 100%
+      &__time
+         font-weight: 400
+         font-size: 12px
+         line-height: 100%
+         color: #93928D
+      &__email
+         font-weight: 400
+         font-size: 13px
+         line-height: 100%
+         text-decoration: underline
+         display: none
+
+@media screen and (min-width: $width_desk)
+   .header
+      &__logo
+         margin-top: auto
+      &__email
+         display: inline
+      &__contacts
+         margin-right: 60px
+      &__tel
+         margin-bottom: 8px
+      &__medium
+         &-inner
+            padding: 20px var(--mainPadding) 5px
+         &-search
+            display: none
+      &__btn
+         width: auto
+         height: auto
+         min-height: 48px
+         margin-left: 20px
+         svg
+            display: none
+         &-text
+            display: inline
+      .btn
+         &--style
+            color: #1F1F1F
+            background: #EAEAEA
+            padding: 15px 31px
+      &__bottom
+         display: block
+         &-inner
+            padding: 11px var(--mainPadding) 6px
+            display: flex
+            justify-content: space-between
+            align-items: center
+         &-list
+            display: flex
+            align-items: center
+            li
+               margin-right: 40px
+         &-search
+            .btn
+               padding: 0
+               background: transparent
+               svg
+                  width: 28px
+                  height: 28px
+      &__manage
+         &-item
+            &__burger
+               display: none
+            &__offer
+               display: inline-flex
+      .soc
+         display: flex
+
+@media screen and (min-width: $width_lg)
+   .header
+      &__logo
+         width: 180px
+         min-width: 180px
+      &__tel
+         font-size: 18px
+      &__time
+         font-size: 13px
+
+@media screen and (min-width: $width_big)
+   .header
+      &__medium
+         &-inner
+            padding: 17px var(--mainPadding) 5px
+      &__bottom
+         &-inner
+            padding: 9px var(--mainPadding) 6px
+      &__logo
+         width: 200px
+         min-width: 200px
+         margin-right: 60px
+         margin-top: 0
+
+@media screen and (min-width: $width_huge)
+   .header
+      margin-bottom: 60px
+      &__top
+         &-list
+            li
+               margin-right: 40px
+      &__medium
+         &-inner
+            padding: 40px var(--mainPadding) 35px
+      &__logo
+         width: 227px
+         min-width: 227px
+         margin-right: 140px
+         position: relative
+         bottom: 5px
+      &__contacts
+         margin-right: 70px
+      &__tel
+         margin-bottom: 6px
+         font-size: 20px
+      &__time
+         font-size: 15px
+      &__bottom
+         &-inner
+            padding: 4px var(--mainPadding) 6px
+         &-list
+            font-size: 14px
+            li
+               margin-right: 50px

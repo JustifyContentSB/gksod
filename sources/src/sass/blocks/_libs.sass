@@ -1,0 +1,23 @@
+.swiper
+   &-button
+      &-prev, &-next
+         width: 48px
+         height: 48px
+         padding: 6px
+         background: #F8F8F8
+         border-radius: 3px
+         pointer-events: auto
+         display: none
+         &::after
+            color: #1F1F1F
+            font-size: 20px
+      &-prev
+         left: 10px
+      &-next
+         right: 10px
+
+@media screen and (min-width: $width_desk)
+   .swiper
+      &-button
+         &-prev, &-next
+            display: block

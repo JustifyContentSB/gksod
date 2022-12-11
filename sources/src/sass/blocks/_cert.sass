@@ -1,0 +1,50 @@
+.cert
+   margin-bottom: var(--mainMargin)
+   &__title
+      margin-bottom: 6px
+   &__slide
+      width: 130px
+   &__img
+      width: 100%
+      height: 200px
+      border-radius: 3px
+      position: relative
+   &__slider
+         position: relative
+
+@media screen and (min-width: $width_tab)
+   .cert
+      &__title
+         margin-bottom: 10px
+      &__slide
+         width: 180px
+      &__img
+         height: 290px
+
+@media screen and (min-width: $width_lg)
+   .cert
+      &__slider
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+      &__title
+         margin-bottom: 25px
+      &__img
+         height: 370px
+
+@media screen and (min-width: $width_huge)
+   .cert
+      &__img
+         height: 400px
+
+@media screen and (min-width: $width_1920)
+   .cert
+      .swiper
+         &-button
+            &-prev,
+            &-next
+               top: 53%
+            &-prev
+               left: -10px
+            &-next
+               right: -10px

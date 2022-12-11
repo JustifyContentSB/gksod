@@ -1,0 +1,792 @@
+extends base/_layout
+block head
+   title Главная
+block header
+   header.header.header--sec
+      .header__inner
+         .header__top
+            .header__top-inner.container
+               nav.header__top-nav
+                  ul.header__top-list
+                     li
+                        a(href="#") О компании
+                     li
+                        a(href="#") Вакансии
+                     li
+                        a(href="#") Статьи
+                     li
+                        a(href="#") Калькулятор
+                     li
+                        a(href="#") Контакты
+                     li
+                        a(href="#") Официальная информация
+         .header__medium
+            .header__medium-inner.container
+               a.header__logo(href="#")
+                  img(src="images/icons/logo.svg", alt="логотип" width="160" height="44")
+               .header__contacts
+                  a.header__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.header__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  a.header__email(href="mailto:support@gksod.ru") support@gksod.ru
+               ul.soc.header__soc
+                  li
+                     a.soc__link.soc__link--whatsapp(href="#")
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-whatsapp")
+                  li
+                     a.soc__link.soc__link--tg(href="#")
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-telegram")
+                  li
+                     a.soc__link.soc__link--viber(href="#")
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-viber")
+               .header__right
+                  form.header__search.header__medium-search(action="#")
+                     button.header__btn.btn.btn--icon.btn--style
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-search-loop")
+                  ul.header__manage
+                     li.header__manage-item
+                        a.header__btn.btn.btn--icon.btn--style(href="tel:+7 (495) 324-11-34")
+                           span.header__btn-text Заказать звонок
+                           svg
+                              use(href="images/sprites/main.stack.svg#svg-call")
+                     li.header__manage-item.header__manage-item__burger
+                        a.header__btn.btn.btn--icon(href="#")
+                           svg
+                              use(href="images/sprites/main.stack.svg#svg-menu")
+                     li.header__manage-item.header__manage-item__offer
+                        a.header__btn.btn(href="#") Заказать услугу
+         .header__bottom
+            .header__bottom-inner.container
+               nav.header__bottom-nav
+                  ul.header__bottom-list
+                     li
+                        a(href="#") Ипотека
+                     li
+                        a(href="#") Кредит под залог
+                     li
+                        a(href="#") Кредит наличными
+                     li
+                        a(href="#") Рефинансирование
+                     li
+                        a(href="#") Кредит для бизнеса
+                     li
+                        a(href="#") Единая заявка на кредит
+               form.header__bottom-search(action="#")
+                  button.btn.btn--icon.btn--style
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-search-loop")
+
+block page
+
+   section.finance
+      .finance__inner
+         .finance__slider
+            .finance__swiper
+               .swiper-wrapper
+                  .finance__slide
+                     .finance__slide-inner
+                        .finance__info
+                           h2.main-title.finance__title Рефинансируйте #[br] кредиты
+                           p.finance__text.
+                              Рефинансирование кредита на лучших условиях, с возможностью получения дополнительных средств.
+                           a.btn.btn--big(href="#") Заказать услугу
+                        ul.services.finance__services
+                           li.services__item
+                              h3.services__title Кредит под залог
+                              p.services__text.
+                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
+                           li.services__item
+                              h3.services__title Кредит под залог
+                              p.services__text.
+                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
+                           li.services__item
+                              h3.services__title Кредит под залог
+                              p.services__text.
+                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
+                           li.services__item
+                              h3.services__title Кредит под залог
+                              p.services__text.
+                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
+                        .finance__img
+                           picture
+                              source(srcset="images/finance/finance-pic.webp" type="image/webp")
+                              img(src="images/finance/finance-pic.png" alt="картинка" width="280" height="247")
+               button.swiper-button-prev.finance__prev
+               button.swiper-button-next.finance__next
+
+   .features-wrapper
+      .features-wrapper__inner
+         section.features
+            .features__inner
+               ul.features__list
+                  li.features__item
+                     img.features__icon(src="images/features/features-1.svg" alt="иконка" width="40" height="40")
+                     h2.features__title Лучшие условия для быстрого получения кредита
+                     p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+                  li.features__item
+                     img.features__icon(src="images/features/features-2.svg" alt="иконка" width="40" height="40")
+                     h2.features__title Лучшие условия для быстрого получения кредита
+                     p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+                  li.features__item
+                     img.features__icon(src="images/features/features-3.svg" alt="иконка" width="40" height="40")
+                     h2.features__title Лучшие условия для быстрого получения кредита
+                     p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+                  li.features__item
+                     img.features__icon(src="images/features/features-4.svg" alt="иконка" width="40" height="40")
+                     h2.features__title Лучшие условия для быстрого получения кредита
+                     p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+
+         section.work
+            .work__inner.container
+               .work__box
+                  .work__top
+                     h2.title.work__title Мы работаем на результат!
+                     p.
+                        Нашими услугами с 2008 по 2021 год воспользовались более 31000 клиентов. Отменное знание всех кредитных программ, специфики работы того или иного банка, а также специальной профессиональной информации позволяет сотрудниками компании “Содействие” подобрать тот кредит который нужен именно Вам.
+                  .work__info
+                     ul.list.work__list
+                        li Оперативность в решении Вашего вопроса. Мы всегда выполняем свою работу в максимально короткие сроки и требуем этого же от наших Банков-партнеров.
+                        li Отсутствие предоплаты, работа на результат.
+                        li Работа с ГК «Содействие» гарантирует нашим клиентам лучшие условия кредитования на рынке.
+                        li Мы обеспечиваем конфиденциальность любой информации, полученной от клиента.
+                     .work__bottom
+                        a.btn.btn--big.work__btn(href="#") Заказать услугу
+                        .work__person
+                           p.work__name Гладкова Юлия
+                           p.work__pro Главный специалист отдела кредитования
+                     .work__img
+                        img(src="images/work/work-pro.png" alt="Гладкова Юлия" width="207" height="305")
+
+   section.offer
+      .offer__inner
+         .offer__top
+            h2.title.offer__title.container Наши выгодные предложения
+            ul.tabs
+               li.tabs__item
+                  a.tabs__btn(href="#") Рефинансирование
+               li.tabs__item
+                  a.tabs__btn.tabs__btn--active(href="#") Рефинансирование
+               li.tabs__item
+                  a.tabs__btn(href="#") Рефинансирование
+         .offer__slider
+            .offer__swiper.swiper-container
+               .swiper-wrapper
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+
+   section.presentation
+      .presentation__inner.container
+         a.presentation__video(href="#")
+            .presentation__video-play
+               img(src="images/icons/play-circle.svg" alt="play" width="44" height="44")
+         .presentation__info
+            h2.title.presentation__title Видеопрезентация
+            .text.presentation__text
+               p.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac risus eu tellus condimentum sodales. Etiam non sem in neque lacinia feugiat eget ac eros. Quisque sollicitudin urna sed fermentum ornare. 
+               p.
+                  Aliquam justo lorem, mattis vel sagittis eget, varius ut enim. Nulla ipsum sapien, volutpat in gravida et, porttitor et enim. Sed eu odio eget enim mattis pharetra. In posuere felis vel nisi condimentum euismod. Duis dignissim malesuada magna, ut mollis augue consequat vel. 
+               p.
+                  Maecenas porttitor, purus et ornare finibus, orci mi tristique ex, dictum pulvinar tellus eros non felis.
+            a.btn.btn--other.presentation__btn(href="#") Подробнее о компании
+
+   address.address
+      .address__inner
+         .address__content.container
+            .address__info
+               .address__top
+                  h2.title.address__title Наш офис
+                  p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
+               p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+               .address__contacts
+                  a.address__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.address__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+               ul.address__manage
+                  li
+                     a.btn.btn--sec(href="#") Заказать звонок
+                  li
+                     a.btn(href="#") Заказать услугу
+            .address__map
+               .background-image
+                  picture
+                     img(src="images/address/map.jpg" alt="карта" width="332" height="330")
+         .address__slider
+            .slider.address__swiper.swiper-container
+               .swiper-wrapper
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-1.webp" type="image/webp")
+                              img(src="images/address/address-1.jpg" alt="картинка" width="394" height="333")
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-2.webp" type="image/webp")
+                              img(src="images/address/address-2.jpg" alt="картинка" width="394" height="333")
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-3.webp" type="image/webp")
+                              img(src="images/address/address-3.jpg" alt="картинка" width="394" height="333")
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-4.webp" type="image/webp")
+                              img(src="images/address/address-4.jpg" alt="картинка" width="394" height="333")
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-1.webp" type="image/webp")
+                              img(src="images/address/address-1.jpg" alt="картинка" width="394" height="333")
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-2.webp" type="image/webp")
+                              img(src="images/address/address-2.jpg" alt="картинка" width="394" height="333")
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-3.webp" type="image/webp")
+                              img(src="images/address/address-3.jpg" alt="картинка" width="394" height="333")
+                  .address__slide.swiper-slide
+                     .address__img
+                        .background-image
+                           picture
+                              source(srcset="images/address/address-4.webp" type="image/webp")
+                              img(src="images/address/address-4.jpg" alt="картинка" width="394" height="333")
+            button.swiper-button-prev.address__prev
+            button.swiper-button-next.address__next
+
+   section.cert
+      .cert__inner
+         h2.title.cert__title.container Сертификаты
+         .cert__slider
+            .slider.cert__swiper.swiper-container
+               .swiper-wrapper
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                  .cert__slide.swiper-slide
+                     .cert__img
+                        .background-image
+                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+            button.swiper-button-prev.cert__prev
+            button.swiper-button-next.cert__next
+
+   section.info
+      .info__inner
+         h2.title.info__title.container Интересная информация
+         .info__slider
+            .slider.info__swiper-articles
+               .swiper-wrapper
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-1.webp" type="image/webp")
+                              img(src="images/info/info-1.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-2.webp" type="image/webp")
+                              img(src="images/info/info-2.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-3.webp" type="image/webp")
+                              img(src="images/info/info-3.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-4.webp" type="image/webp")
+                              img(src="images/info/info-4.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-1.webp" type="image/webp")
+                              img(src="images/info/info-1.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-2.webp" type="image/webp")
+                              img(src="images/info/info-2.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-3.webp" type="image/webp")
+                              img(src="images/info/info-3.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-4.webp" type="image/webp")
+                              img(src="images/info/info-4.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+            button.swiper-button-prev.articles__prev
+            button.swiper-button-next.articles__next
+
+   section.explane
+      .explane__inner.container
+         .explane__content
+            .explane__box.explane__box--active
+               article.explane__article
+                  h2.title.explane__title Кредитный брокер
+                  p Кредитный брокер — финансовый помощник, который является посредником между кредитной организацией и потенциальным заемщиком, желающим взять кредит в банке. Помощь кредитного брокера заключается в проверке кредитной истории заявителя, выборе наиболее надежного банка, комфортного условия кредитования, сборе и подаче необходимых документов, выборе способа и графика погашения займа, тщательной проверке документов и поиске подводных камней, если таковые имеются.
+               article.explane__article
+                  h2.title.explane__title Кто обращается к брокерам?
+                  p.
+                     Или другая ситуация. Потенциальный заявитель изучал информацию о кредитах в интернете и наткнулся на Хатон.ру. Отзывы прекрасные и знакомые советуют. Клиент будущего банка по кредитам решил, что это отличная возможность собрать информацию о комфортных условиях кредитования, процентных ставках и сроках платежей. Ведь человек не является специалистом и не знать, где, как и что искать. #[br]
+                     Молодой человек предоставил все необходимые документы и спокойно работал дальше, пока брокер делал все за него. А в какой-то момент ему просто предоставили целый пакет документов с процентными ставками, предложениями и видами кредитов. Так клиент кредитования выбрал наиболее удобный вариант для себя и не потратил огромное количество времени на бессмысленные поиски лучшего варианта. Все сделали за него. Причем среди всех предложений, он выбрал с самой низкой ставкой — 4.9% годовых. Сам бы он вряд ли нашел такое хорошее решение.
+            .explane__box
+               article.explane__article
+                  h2.title.explane__title Преимущества брокера Хатон.ру
+                  p Экономия огромного пласта времени, так как с вас потребуется только документация и ничего более.
+
+                  p Вы можете прийти в отделение, а можете подать заявку онлайн.
+                  p Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ. 
+                  p Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться.
+                  p Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат. 
+                  p В заключении можно сказать, что если и стоит обращаться к кредитному брокеру, только к таким проверенным, как Хатон.ру.
+
+         a.explane__more(href="#") Развернуть СЕО-тест
+
+   section.info.info--reviews
+      .info__inner
+         h2.title.info__title.container Отзывы
+         ul.tabs
+            li.tabs__item
+               a.tabs__btn(href="#") Рефинансирование
+            li.tabs__item
+               a.tabs__btn.tabs__btn--active(href="#") Рефинансирование
+            li.tabs__item
+               a.tabs__btn(href="#") Рефинансирование
+         .info__slider
+            .slider.info__swiper-reviews
+               .swiper-wrapper
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-1.webp" type="image/webp")
+                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-2.webp" type="image/webp")
+                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-3.webp" type="image/webp")
+                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-4.webp" type="image/webp")
+                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-1.webp" type="image/webp")
+                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-2.webp" type="image/webp")
+                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-3.webp" type="image/webp")
+                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-4.webp" type="image/webp")
+                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+            button.swiper-button-prev.reviews__prev
+            button.swiper-button-next.reviews__next

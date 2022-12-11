@@ -1,0 +1,114 @@
+.features
+   &__list
+      padding: 14px var(--mainPadding)
+      padding-right: 0
+      display: flex
+      overflow-x: auto
+      -ms-overflow-style: none
+      overflow: -moz-scrollbars-none
+      &::-webkit-scrollbar
+         width: 0
+         height: 0
+   &__item
+      width: 252px
+      min-width: 252px
+      padding: 16px
+      margin-right: 12px
+      background: #F2F1FF
+      border-radius: 3px
+      font-weight: 400
+      font-size: 13px
+      line-height: 140%
+      color: #787878
+      &:nth-child(2n)
+         background: #EFF7FB
+      &:nth-child(3n)
+         background: #FFF1F1
+      &:nth-child(4n)
+         background: #F1FFF1
+   &__icon
+      display: block
+      width: 40px
+      margin-bottom: 24px
+   &__title
+      margin-bottom: 10px
+      font-weight: 400
+      font-size: 13px
+      line-height: 120%
+      color: #000
+
+@media screen and (min-width: $width_tab)
+   .features
+      &-wrapper
+         &__inner
+            padding-bottom: 20px
+      &__list
+         padding: 20px var(--mainPadding) 0
+         overflow-x: visible
+         flex-wrap: wrap
+      &__item
+         width: calc(50% - 8px)
+         margin-right: 16px
+         margin-bottom: 16px
+         padding: 30px
+         &:nth-child(2n)
+            margin-right: 0
+      &__icon
+         width: 50px
+         margin-bottom: 30px
+      &__title
+         font-size: 16px
+
+@media screen and (min-width: $width_desk)
+   .features
+      &__list
+         padding-top: 0
+      &__item
+         width: calc(25% - 15px)
+         margin-right: 20px
+         &:nth-child(2n)
+            margin-right: 20px
+         &:nth-child(4n)
+            margin-right: 0
+
+@media screen and (min-width: $width_big)
+   .features
+      &-wrapper
+         &__inner
+            width: 100%
+            max-width: var(--containerWidth)
+            margin: 0 auto
+            margin-bottom: calc(var(--mainMargin) - 20px)
+            padding: 0 var(--mainPadding)
+            display: flex
+      &__inner
+         height: 100%
+      &__list
+         min-width: 630px
+         width: 630px
+         padding: 0
+         margin-right: 20px
+         height: 100%
+      &__item
+         width: calc(50% - 10px)
+         margin-right: 20px
+         margin-bottom: 20px
+         &:nth-child(2n)
+            margin-right: 0
+      
+@media screen and (min-width: $width_huge)
+   .features
+      &__list
+         width: 808px
+         min-width: 808px
+      &__item
+         padding: 50px
+         font-size: 14px
+      &__icon
+         width: 60px
+         margin-bottom: 30px
+      &__title
+         font-size: 18px
+         max-width: 260px
+      p
+         max-width: 260px

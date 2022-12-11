@@ -1,0 +1,191 @@
+.offer
+   --offerSlideMargin: 20px
+   &__swiper
+      padding: 5px var(--mainPadding) var(--mainMargin)
+      overflow: hidden
+   &__title
+      margin-bottom: 7px
+   &__slide
+      width: 280px
+      height: auto
+      background: #fff
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15)
+      border-radius: 3px
+      overflow: hidden
+   &__img
+      height: 180px
+      position: relative
+   &__info
+      padding: var(--offerSlideMargin)
+      background: #fff
+   &__name
+      margin-bottom: var(--offerSlideMargin)
+      font-weight: 700
+      font-size: 18px
+      line-height: 100%
+   &__list
+      margin-bottom: 16px
+      font-size: 12px
+      line-height: 100%
+      li
+         padding-left: 16px
+         margin-bottom: 8px
+         position: relative
+         &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 5px
+            width: 6px
+            height: 6px
+            background: var(--accent)
+            border-radius: 50%
+   &__table
+      margin-bottom: var(--offerSlideMargin)
+      &-item
+         margin-bottom: 5px
+         display: flex
+         justify-content: space-between
+         font-size: 12px
+      &-type
+         flex-grow: 1
+         position: relative
+         overflow: hidden
+         &::after
+            content: ''
+            position: absolute
+            margin: 0 5px
+            bottom: 5px
+            width: 1000px
+            border-bottom: 1px dashed #93928D
+      &-nums
+         padding-left: 5px
+         font-weight: 600
+   &__contacts
+      font-weight: 400
+      font-size: 12px
+      line-height: 100%
+      color: #93928D
+      display: none
+      flex-direction: column
+      align-items: flex-start
+   &__desc
+      margin-bottom: 10px
+   &__tel
+      margin-bottom: 10px
+      font-weight: 600
+      font-size: 16px
+      line-height: 100%
+      color: #1F1F1F
+
+@media screen and (min-width: 340px)
+   .offer
+      &__slide
+         width: 307px
+
+@media screen and (min-width: $width_tab)
+   .offer
+      --offerSlideMargin: 30px
+      &__slide
+         width: 693px
+         display: flex
+      &__info
+         padding-right: 50px
+         flex-grow: 1
+      &__img
+         width: 242px
+         min-width: 242px
+         height: auto
+         margin-left: auto
+         order: 1
+      &__list
+         margin-bottom: var(--offerSlideMargin)
+         font-size: 14px
+         li
+            margin-bottom: 13px
+            &::before
+               top: 3px
+      &__table
+         &-item
+            margin-bottom: 7px
+            font-size: 16px
+
+@media screen and (min-width: $width_desk)
+   .offer
+      &__swiper
+         position: relative
+         &::after
+            content: ''
+            position: absolute
+            z-index: 10
+            right: -60px
+            top: 0
+            bottom: 0
+            width: 219px
+            background: linear-gradient(270deg, #FFFFFF 43.75%, rgba(255, 255, 255, 0) 100%)
+      &__slide
+         width: 1050px
+      &__img
+         width: 533px
+         min-width: 533px
+
+@media screen and (min-width: $width_lg)
+   .offer
+      &__slide
+         width: 1125px
+      &__top
+         margin-bottom: 16px
+      &__title
+         margin-bottom: 15px
+      &__name
+         font-size: 24px
+
+@media screen and (min-width: $width_big)
+   .offer__slide
+      width: 1198px
+
+@media screen and (min-width: 1796px)
+   .offer
+      &__swiper
+         padding-left: calc((100% - var(--containerWidth))/2 + var(--mainPadding))
+
+@media screen and (min-width: $width_huge)
+   .offer
+      --offerSlideMargin: 32px
+      &__slide
+         width: 1280px
+      &__info
+         padding: 40px
+         padding-right: 60px
+      &__list
+         font-size: 15px
+         li
+            &::before
+               top: 5px
+      &__img
+         width: 618px
+         min-width: 618px
+      &__contacts
+         display: flex
+         font-size: 14px
+      &__desc
+         margin-bottom: 16px
+      &__tel
+         margin-bottom: 8px
+         font-size: 20px
+      &__time
+         font-size: 15px
+      &__table
+         margin-bottom: 26px
+         &-item
+            margin-bottom: 11px
+            font-size: 18px
+      &__btn
+         margin-bottom: 30px
+      &__swiper
+         &::after
+            right: 0
+            top: 0
+            bottom: 0
+            width: 386px
+            background: linear-gradient(270deg, #FFFFFF 43.75%, rgba(255, 255, 255, 0) 100%)

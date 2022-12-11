@@ -1,0 +1,85 @@
+.explane
+   margin-bottom: var(--mainMargin)
+   &__content
+      margin-bottom: 14px
+   &__box
+      display: none
+      &--active
+         display: block
+   &__title
+      margin-bottom: 8px
+      font-size: 18px
+   &__article
+      margin-bottom: 14px
+      display: none
+      &:first-child
+         display: block
+      p
+         margin-bottom: 12px
+   &__more
+      font-weight: 300
+      font-size: 13px
+      line-height: 140%
+      text-decoration-line: underline
+      color: var(--accent)
+      &:hover,
+      &:focus
+         text-decoration: none
+
+@media screen and (min-width: $width_tab)
+   .explane
+      &__title
+         font-size: 20px
+      &__article
+         line-height: 125%
+      &__box
+         &--active
+            .explane
+               &__article
+                  margin-bottom: 40px
+                  display: block
+                  &:last-child
+                     margin-bottom: 0
+      &__more
+         display: none
+
+@media screen and (min-width: $width_desk)
+   .explane
+      &__box
+         margin-bottom: 40px
+         display: block
+
+@media screen and (min-width: $width_lg)
+   .explane
+      margin-bottom: 20px
+      &__content
+         margin: 0
+         display: flex
+         flex-wrap: wrap
+      &__box
+         margin-bottom: 18px
+         &:nth-child(odd)
+            width: calc(55% - 65px)
+            margin-right: 65px
+         &:nth-child(even)
+            width: 45%
+      &__title
+         margin-bottom: 20px
+      &__article
+         p
+            margin-bottom: 16px
+
+@media screen and (min-width: $width_huge)
+   .explane
+      &__title
+         font-size: 24px
+      &__article
+         line-height: 144%
+         p
+            margin-bottom: 22px
+      &__box
+         &:nth-child(odd)
+            width: calc(51% - 85px)
+            margin-right: 77px
+         &:nth-child(even)
+            width: 49%

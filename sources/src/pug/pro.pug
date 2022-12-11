@@ -1,0 +1,179 @@
+extends base/_layout
+block head
+   title Страница специалиста
+block page
+
+   .breadcrumbs
+      ul.breadcrumbs__list
+         li.breadcrumbs__item
+            a.breadcrumbs__link(href="#") Главная
+         li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Федоров Константин Леонидович
+
+   section.pro
+      .pro__inner.container
+         h1.main-title Федоров Константин Леонидович
+         .pro__box
+            .pro__content
+               .pro__photo
+                  img(src="images/team/pro.jpg", alt="фотография специалиста" width="208" height="253")
+               .pro__info
+                  .pro__sec
+                     h2.pro__type Должность
+                     .text
+                        p Генеральный директор
+                  .pro__sec
+                     h2.pro__type Функциональные обязанности:
+                     ul.pro__list
+                        li Честного и порядочного человека;
+                        li Активного и готового добиваться результатов сотрудника;
+                        li Того, кто искренне верит в продукт, который он продает 
+                        li Готового учиться, развиваться и знает, что можно много
+                        li Приветствуем опыт в продажах и/или банковской сфере.
+                  .pro__sec
+                     h2.pro__type Образование:
+                     .text
+                        p сентябрь 1995 г. – май 2000 г., Волгоградский государственный университет, факультет «Международные отношения», специальность «Управление внешнеэкономической деятельностью», диплом бакалавра (дневное отделение). 
+                        
+                        p сентябрь 1999 г. – май 2000 г., Волгоградский институт бизнеса, факультет «Бизнес управление», специальность «Управление и менеджмент», диплом магистра (дневное отделение).
+                  .pro__sec.pro__contacts
+                     h2.pro__type Контакты:
+                     a.pro__tel(href="tel:+79564454545") +7 956 445 45 45 (доб. 456)
+                     a.pro__email(href="mailto:mailmail@gksod.ru") mailmail@gksod.ru
+
+   section.info
+      .info__inner
+         h2.title.info__title.container Написанные статьи
+         .info__slider
+            .slider.info__swiper-articles
+               .swiper-wrapper
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-1.webp" type="image/webp")
+                              img(src="images/info/info-1.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-2.webp" type="image/webp")
+                              img(src="images/info/info-2.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-3.webp" type="image/webp")
+                              img(src="images/info/info-3.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-4.webp" type="image/webp")
+                              img(src="images/info/info-4.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-1.webp" type="image/webp")
+                              img(src="images/info/info-1.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-2.webp" type="image/webp")
+                              img(src="images/info/info-2.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-3.webp" type="image/webp")
+                              img(src="images/info/info-3.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-4.webp" type="image/webp")
+                              img(src="images/info/info-4.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+            button.swiper-button-prev.articles__prev
+            button.swiper-button-next.articles__next

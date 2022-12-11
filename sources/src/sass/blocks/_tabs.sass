@@ -1,0 +1,41 @@
+.tabs
+   padding-bottom: 20px
+   padding-left: var(--mainPadding)
+   display: flex
+   white-space: nowrap
+   overflow-x: auto
+   -ms-overflow-style: none
+   overflow: -moz-scrollbars-none
+   &::-webkit-scrollbar
+      width: 0
+      height: 0
+   &__item
+      margin-right: 10px
+   &__btn
+      display: inline-block
+      padding: 9px 20px
+      border: 1px solid #93928D
+      border-radius: 3px
+      text-align: center
+      font-weight: 300
+      font-size: 14px
+      line-height: 100%
+      &--active
+         background: #1F1F1F
+         color: #fff
+
+@media screen and (min-width: $width_desk)
+   .tabs
+      width: 100%
+      max-width: var(--containerWidth)
+      margin: 0 auto
+      margin-bottom: 10px
+      padding: 0 var(--mainPadding)
+      overflow-x: visible
+      flex-wrap: wrap
+      &__item
+         margin-bottom: 10px
+
+@media screen and (min-width: $width_huge)
+   .tabs
+      margin-bottom: 25px

@@ -1,0 +1,47 @@
+.breadcrumbs
+   &__list
+      padding-bottom: 12px
+      padding-left: var(--mainPadding)
+      font-weight: 400
+      font-size: 12px
+      line-height: 100%
+      display: flex
+      white-space: nowrap
+      overflow-x: auto
+      -ms-overflow-style: none
+      overflow: -moz-scrollbars-none
+      &::-webkit-scrollbar
+         width: 0
+         height: 0
+   &__item
+      padding-right: 19px
+      margin-right: 15px
+      position: relative
+      &::after
+         content: '/'
+         position: absolute
+         right: 0
+      &:last-child
+         padding-right: 0
+         &::after
+            display: none
+         .breadcrumbs
+            &__link
+               color: #323232
+   &__link
+      color: #93928D
+      &--active
+         color: #323232
+
+@media screen and (min-width: $width_tab)
+   .breadcrumbs
+      margin-bottom: 8px
+
+@media screen and (min-width: $width_desk)
+   .breadcrumbs
+      &__list
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+         margin-bottom: 20px
+         padding: 0 var(--mainPadding)

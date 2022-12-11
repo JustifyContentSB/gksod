@@ -1,0 +1,94 @@
+.team
+   margin-bottom: var(--mainMargin)
+   &__list
+      margin-bottom: var(--mainMargin)
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 30px 12px
+   &__item
+      &--hidden
+         display: none
+   &__photo
+      height: 191px
+      margin-bottom: 12px
+      border-radius: 4px
+      position: relative
+      img
+         border-radius: 4px
+         object-position: top
+   &__name
+      margin-bottom: 6px
+      font-weight: 600
+      font-size: 12px
+      line-height: 150%
+      color: #000
+   &__pro
+      font-weight: 400
+      font-size: 12px
+      line-height: 120%
+      color: #93928D
+
+@media screen and (max-width: 767px)
+   .team
+      &--sec
+         .team
+            &__list
+               grid-template-columns: 1fr
+            &__photo
+               height: 411px
+            &__name
+               font-size: 18px
+            &__pro
+               font-size: 14px
+
+@media screen and (min-width: 460px)
+   .team
+      &__photo
+         height: 240px
+
+@media screen and (min-width: $width_tab)
+   .team
+      &__list
+         grid-template-columns: repeat(3, 1fr)
+         grid-gap: 60px 20px
+      &__item
+         &:nth-child(9)
+            display: block
+      &__photo
+         height: 273px
+         margin-bottom: 20px
+      &__name
+         margin-bottom: 20px
+         font-size: 16px
+         line-height: 130%
+      &__pro
+         font-size: 14px
+
+@media screen and (min-width: $width_desk)
+   .team
+      &__list
+         grid-template-columns: repeat(4, 1fr)
+         grid-gap: 40px 20px
+      &__item
+         display: block
+      &__photo
+         height: 340px
+      &__name
+         font-size: 18px
+         line-height: 150%
+      &__pro
+         line-height: 140%
+
+@media screen and (min-width: $width_big)
+   .team
+      &__photo
+         height: 370px
+
+@media screen and (min-width: $width_huge)
+   .team
+      margin-bottom: 60px
+      &__list
+         margin-bottom: 60px
+         grid-gap: 60px 20px
+      &__photo
+         height: 493px

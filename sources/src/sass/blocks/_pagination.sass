@@ -1,0 +1,35 @@
+.pagination
+   margin-bottom: var(--mainMargin)
+   &__list
+      display: flex
+      justify-content: center
+   &__btn
+      min-width: 48px
+      height: 48px
+      padding: 16px 20px
+      margin-right: 10px
+      font-weight: 600
+      font-size: 16px
+      line-height: 100%
+      text-align: center
+      color: #1F1F1F
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      border: 1px solid #93928D
+      border-radius: 3px
+      &--active
+         color: #fff
+         background: #D82916
+         border-color: #D82916
+      &:last-child
+         margin-right: 0
+
+@media screen and (min-width: $width_tab)
+   .pagination
+      &__btn
+         margin-right: 20px
+
+@media screen and (min-width: $width_huge)
+   .pagination
+      margin-bottom: 60px

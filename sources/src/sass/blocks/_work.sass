@@ -1,0 +1,75 @@
+.work
+   margin-bottom: var(--mainMargin)
+   --workMargin: 14px
+   &__box
+      padding: 16px
+      background: #F8F8F8
+   &__top
+      margin-bottom: 16px
+   &__title
+      margin-bottom: var(--workMargin)
+   &__btn
+      margin-bottom: var(--workMargin)
+   &__name
+      font-weight: 400
+      font-size: 14px
+      line-height: 140%
+   &__pro
+      font-weight: 400
+      font-size: 12px
+      line-height: 140%
+      color: #93928D
+   &__img
+      display: none
+
+@media screen and (min-width: $width_tab)
+   .work
+      --workBlMargin: 20px
+      &__box
+         padding: 30px
+      &__top
+         margin-bottom: var(--workBlMargin)
+      &__info
+         padding-right: 260px
+         position: relative
+      &__list
+         margin-bottom: var(--workBlMargin)
+      &__btn
+         margin-bottom: var(--workBlMargin)
+      &__name
+         margin-bottom: 4px
+      &__img
+         width: 207px
+         display: block
+         position: absolute
+         right: -30px
+         bottom: -30px
+         img
+            width: 100%
+
+@media screen and (min-width: $width_big)
+   .work
+      margin-bottom: 20px
+      &__inner
+         padding: 0
+         height: 100%
+      &__box
+         height: 100%
+      &__info
+         padding-right: 160px
+
+@media screen and (min-width: $width_huge)
+   .work
+      --workBlMargin: 30px
+      &__box
+         padding: 50px
+         padding-bottom: 35px
+      &__title
+         margin-bottom: 26px
+      &__img
+         width: 270px
+         right: -50px
+      &__name
+         font-size: 16px
+      &__pro
+         font-size: 14px

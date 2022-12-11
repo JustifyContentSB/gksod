@@ -1,0 +1,46 @@
+:root
+   //sizes
+   --mainPadding: 14px
+   --mainMargin: 30px
+   --containerWidth: 1796px
+   //colors
+   --accent: #D82916
+   --transition: all .2s ease
+
+// Grid
+$width_1920: 1920px
+$width_huge: 1800px
+$width_big: 1440px
+$width_lg: 1366px
+$width_desk: 1280px
+$width_tab: 768px
+$width_mob: 360px
+
+$grid-width: 1170px
+$grid-gutter: 30px
+$grid-columns: 12
+
+@media screen and (min-width: $width_tab)
+   :root
+      --mainPadding: 20px
+      --mainMargin: 40px
+
+@media screen and (min-width: $width_desk)
+   :root
+      --mainPadding: 30px
+      --mainMargin: 40px
+
+@media screen and (min-width: $width_lg)
+   :root
+      --mainPadding: 40px
+      --mainMargin: 50px
+
+@media screen and (min-width: $width_big)
+   :root
+      --mainPadding: 80px
+      --mainMargin: 60px
+
+@media screen and (min-width: $width_huge)
+   :root
+      --mainPadding: 80px
+      --mainMargin: 100px

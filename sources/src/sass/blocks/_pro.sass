@@ -1,0 +1,119 @@
+.pro
+   --proMargin: 30px
+   margin-bottom: var(--mainMargin)
+   .main-title
+      padding: 0 var(--mainPadding)
+   &__inner
+      padding: 0
+   &__box
+      padding: 20px
+      background: #F8F8F8
+      border-radius: 3px
+   &__content
+      padding: 16px
+      background: #fff
+   &__photo
+      width: 208px
+      margin-bottom: 10px
+      img
+         width: 100%
+   &__sec
+      margin-bottom: var(--proMargin)
+      &:last-child
+         margin-bottom: 0
+   &__type
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 18px
+      line-height: 100%
+   &__list
+      li
+         margin-bottom: 6px
+         padding-left: 18px
+         position: relative
+         &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 4px
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            background: #D9D9D9
+   &__contacts
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+   &__tel
+      margin-bottom: 8px
+   &__email
+      font-weight: 300
+      font-size: 16px
+      line-height: 160%
+      text-decoration-line: underline
+      color: var(--accent)
+
+@media screen and (min-width: $width_tab)
+   .pro
+      font-size: 14px
+      line-height: 143%
+      .main-title
+         padding: 0
+      &__inner
+         padding: 0 var(--mainPadding)
+      &__box
+         padding: 30px 50px
+      &__content
+         width: 100%
+         max-width: 1000px
+         margin: 0 auto
+         padding: 40px
+         display: flex
+         align-items: flex-start
+      &__photo
+         width: 208px
+         min-width: 208px
+         margin: 0
+         margin-right: 60px
+      &__info
+         flex-shrink: 3
+      &__type
+         font-size: 20px
+
+@media screen and (min-width: $width_desk)
+   .pro
+      font-size: 16px
+      line-height: 125%
+      &__box
+         padding: 40px
+      &__content
+         padding: 60px
+      &__photo
+         width: 358px
+         min-width: 358px
+
+@media screen and (min-width: $width_lg)
+   .pro
+      --proMargin: 40px
+      &__list
+         li
+            margin-bottom: 12px
+
+@media screen and (min-width: $width_huge)
+   .pro
+      margin-bottom: 60px
+      font-size: 18px
+      line-height: 144%
+      &__box
+         padding: 50px
+      &__content
+         max-width: 1200px
+         padding: 60px 100px
+      &__photo
+         width: 428px
+         min-width: 428px
+      &__type
+         margin-bottom: 12px
+         font-size: 24px
+      &__email
+         font-size: 18px

@@ -1,0 +1,135 @@
+.finance
+   --financeMargin: 20px
+   background: #F8F8F8
+   font-weight: 300
+   font-size: 12px
+   line-height: 140%
+   .swiper
+      &-wrapper
+         width: 100%
+      &-button
+         &-prev,
+         &-next
+            display: none
+   &__swiper
+      position: relative
+   &__slide
+      width: 100%
+      min-height: 247px
+      padding: 31px 30px 24px
+      background: #F8F8F8
+      position: relative
+      overflow: hidden
+   &__info
+      width: 100%
+      max-width: 210px
+      position: relative
+      z-index: 1
+   &__title, &__text
+      margin-bottom: var(--financeMargin)
+   &__title
+      font-size: 25px
+      font-weight: 800
+      font-size: 24px
+      line-height: 100%
+   &__img
+      position: absolute
+      right: -110px
+      top: 0
+   .services
+      display: none
+
+@media screen and (min-width: 480px)
+   .finance
+      &__img
+         width: 350px
+         right: -80px
+         img
+            width: 100%
+
+@media screen and (min-width: $width_tab)
+   .finance
+      --sidePadding: 30px
+      &__slide
+         padding: 40px 0 8px
+      &__img
+         width: 500px
+         right: 0
+         top: -5px
+      &__info
+         margin-bottom: 42px
+         padding: 0 var(--sidePadding)
+         max-width: 405px
+      &__services
+         padding: 0 var(--sidePadding)
+         position: relative
+         z-index: 1
+      .services
+         display: flex
+      &__title
+         font-size: 35px
+      &__text
+         font-size: 15px
+         line-height: 140%
+
+@media screen and (min-width: $width_desk)
+   .finance
+      --financeMargin: 30px
+      margin-bottom: var(--mainMargin)
+      &__info
+         max-width: 600px
+         padding: 0 var(--mainPadding)
+      &__title
+         font-size: 46px
+      &__text
+         font-size: 17px
+      &__img
+         width: 576px
+      .swiper
+         &-button
+            &-prev,
+            &-next
+               top: 56%
+               display: block
+
+@media screen and (min-width: $width_lg)
+   .finance
+      &__inner
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+      &__slide
+         padding: 60px 0 8px
+      &__info
+         max-width: 810px
+         margin-bottom: 62px
+      &__text
+         font-size: 20px
+      &__img
+         right: 78px
+         top: 0
+
+@media screen and (min-width: $width_huge)
+   .finance
+      &__slide
+         padding: 90px 0 25px
+      &__title
+         font-size: 70px
+      &__img
+         width: 762px
+      &__info
+         margin-bottom: 112px
+      .swiper
+         &-button
+            &-prev,
+            &-next
+               top: 42%
+
+@media screen and (min-width: $width_1920)
+   .finance
+      .swiper
+         &-button
+            &-prev
+               left: -10px
+            &-next
+               right: -10px

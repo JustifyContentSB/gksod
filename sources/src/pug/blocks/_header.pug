@@ -1,0 +1,76 @@
+header.header
+   .header__inner
+      .header__top
+         .header__top-inner.container
+            nav.header__top-nav
+               ul.header__top-list
+                  li
+                     a(href="#") О компании
+                  li
+                     a(href="#") Вакансии
+                  li
+                     a(href="#") Статьи
+                  li
+                     a(href="#") Калькулятор
+                  li
+                     a(href="#") Контакты
+                  li
+                     a(href="#") Официальная информация
+      .header__medium
+         .header__medium-inner.container
+            a.header__logo(href="#")
+               img(src="images/icons/logo.svg", alt="логотип" width="160" height="44")
+            .header__contacts
+               a.header__tel(href="tel:+74953241134") +7 (495) 324-11-34
+               p.header__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+               a.header__email(href="mailto:support@gksod.ru") support@gksod.ru
+            ul.soc.header__soc
+               li
+                  a.soc__link.soc__link--whatsapp(href="#")
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-whatsapp")
+               li
+                  a.soc__link.soc__link--tg(href="#")
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-telegram")
+               li
+                  a.soc__link.soc__link--viber(href="#")
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-viber")
+            .header__right
+               form.header__search.header__medium-search(action="#")
+                  button.header__btn.btn.btn--icon.btn--style
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-search-loop")
+               ul.header__manage
+                  li.header__manage-item
+                     a.header__btn.btn.btn--icon.btn--style(href="tel:+7 (495) 324-11-34")
+                        span.header__btn-text Заказать звонок
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-call")
+                  li.header__manage-item.header__manage-item__burger
+                     a.header__btn.btn.btn--icon(href="#")
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-menu")
+                  li.header__manage-item.header__manage-item__offer
+                     a.header__btn.btn(href="#") Заказать услугу
+      .header__bottom
+         .header__bottom-inner.container
+            nav.header__bottom-nav
+               ul.header__bottom-list
+                  li
+                     a(href="#") Ипотека
+                  li
+                     a(href="#") Кредит под залог
+                  li
+                     a(href="#") Кредит наличными
+                  li
+                     a(href="#") Рефинансирование
+                  li
+                     a(href="#") Кредит для бизнеса
+                  li
+                     a(href="#") Единая заявка на кредит
+            form.header__bottom-search(action="#")
+               button.btn.btn--icon.btn--style
+                  svg
+                     use(href="images/sprites/main.stack.svg#svg-search-loop")

@@ -1,0 +1,133 @@
+.address
+   margin-bottom: var(--mainMargin)
+   font-style: normal
+   &__top
+      margin-bottom: 10px
+   &__title
+      margin-bottom: 6px
+   &__info
+      margin-bottom: 20px
+   &__text
+      margin-bottom: 10px
+      font-weight: 400
+      font-size: 12px
+      line-height: 140%
+      color: #93928D
+   &__contacts
+      margin-bottom: 20px
+   &__tel
+      display: inline-block
+      margin-bottom: 10px
+      font-weight: 600
+      font-size: 20px
+      line-height: 100%
+   &__time
+      font-weight: 400
+      font-size: 12px
+      line-height: 100%
+      color: #93928D
+   &__manage
+      display: flex
+      flex-wrap: wrap
+      li
+         margin-right: 20px
+         margin-bottom: 10px
+         &:last-child
+            margin-right: 0
+   &__map
+      margin-bottom: var(--mainMargin)
+      height: 329px
+      position: relative
+   &__slider
+      position: relative
+   &__slide
+      width: 214px
+   &__img
+      height: 247px
+      position: relative
+
+@media screen and (min-width: $width_tab)
+   .address
+      &__top
+         margin-bottom: 20px
+      &__city
+         font-size: 18px
+      &__text
+         margin-bottom: 24px
+         font-size: 14px
+      &__tel
+         font-size: 24px
+      &__time
+         font-size: 15px
+      &__contacts
+         margin-bottom: 28px
+      &__info
+         margin-bottom: 35px
+
+@media screen and (min-width: $width_desk)
+   .address
+      &__content
+         margin-bottom: var(--mainMargin)
+         display: flex
+      &__map
+         width: 622px
+         min-width: 622px
+         margin: 0
+         margin-right: var(--mainMargin)
+         order: -1
+      &__info
+         margin: 0
+
+@media screen and (min-width: $width_lg)
+   .address
+      &__slider
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+      &__map
+         width: 722px
+         min-width: 722px
+         height: 329px
+      &__info
+         padding-top: 5px
+         display: flex
+         flex-direction: column
+      &__top
+         margin-bottom: 32px
+      &__title
+         margin-bottom: 8px
+      &__text
+         margin-bottom: 32px
+      &__contacts
+         margin-bottom: 40px
+      &__manage
+         margin-top: auto
+         position: relative
+         top: 10px
+      &__img
+         height: 333px
+
+@media screen and (min-width: $width_huge)
+   .address
+      &__map
+         width: 870px
+         min-width: 870px
+         height: 486px
+      &__manage
+         margin: 0
+         margin-bottom: 30px
+      &__title
+         margin-bottom: 6px
+      &__top
+         margin-bottom: 26px
+      &__contacts
+         margin-bottom: 50px
+
+@media screen and (min-width: $width_1920)
+   .address
+      .swiper
+         &-button
+            &-prev
+               left: -10px
+            &-next
+               right: -10px
