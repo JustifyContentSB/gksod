@@ -2,6 +2,8 @@
    width: 100%
    max-width: 100%
    margin: 0 auto
+   display: flex
+   flex-direction: column
 
 .container
    width: 100%
@@ -19,6 +21,11 @@
    font-weight: 700
    font-size: 22px
    line-height: 120%
+   &--special
+      margin-bottom: 20px
+      padding-bottom: 23px
+      border-bottom: 3px solid var(--accent)
+      line-height: 100%
 
 .btn
    padding: 9px 19px
@@ -33,6 +40,7 @@
    display: inline-flex
    justify-content: center
    align-items: center
+   cursor: pointer
    &--sec
       background: #EAEAEA
       color: #1F1F1F
@@ -79,6 +87,9 @@
 @media screen and (min-width: $width_tab)
    .title
       font-size: 24px
+      &--special
+         margin-bottom: 40px
+         padding-bottom: 20px
    .main-title
       font-size: 40px
    .btn

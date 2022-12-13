@@ -1,0 +1,88 @@
+.contacts
+   --contactsMargin: 10px
+   margin-bottom: var(--mainMargin)
+   &__box
+      padding: 20px
+      background: #F8F8F8
+      border-radius: 3px
+   &__content
+      width: 100%
+      max-width: 1000px
+      margin: 0 auto
+      padding: 16px
+      background: #fff
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05)
+      border-radius: 3px
+   &__title
+      display: block
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 18px
+      line-height: 100%
+   &__sec
+      margin-bottom: var(--contactsMargin)
+   &__text
+      margin-bottom: 10px
+   &__email
+      color: var(--accent)
+   &__time
+      margin: 0
+   &__map
+      margin-bottom: var(--contactsMargin)
+      height: 230px
+      position: relative
+      border-radius: 3px
+      overflow: hidden
+
+@media screen and (max-width: 1279px)
+   .contacts
+      font-size: 14px
+
+@media screen and (min-width: $width_tab)
+   .contacts
+      --contactsMargin: 30px
+      &__box
+         padding: 30px 50px
+      &__content
+         padding: 40px 50px
+      &__title
+         font-size: 20px
+      &__map
+         height: 300px
+
+@media screen and (min-width: $width_desk)
+   .contacts
+      --contactsMargin: 40px
+      font-size: 16px
+      line-height: 125%
+      .main-title
+         padding: 0
+      &__inner
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+         padding: 0 var(--mainPadding)
+      &__box
+         padding: 40px
+      &__content
+         padding: 60px 100px
+      &__map
+         height: 400px
+
+@media screen and (min-width: $width_lg)
+   .contacts
+      &__map
+         height: 440px
+      &__box
+         padding: 50px
+
+@media screen and (min-width: $width_huge)
+   .contacts
+      font-size: 18px
+      &__content
+         max-width: 1200px
+      &__title
+         margin-bottom: 15px
+         font-size: 24px
+      &__map
+         height: 520px

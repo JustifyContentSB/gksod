@@ -1,0 +1,62 @@
+.company
+   --companyMargin: 30px
+   margin-bottom: var(--mainMargin)
+   &__notice
+      margin-bottom: var(--companyMargin)
+   .text
+      margin-bottom: var(--companyMargin)
+   &__img
+      height: 240px
+      margin-bottom: var(--companyMargin)
+      position: relative
+      img
+         border-radius: 3px
+   .features
+      margin-bottom: 16px
+      &__list
+         padding-top: 0
+         padding-left: 0
+
+@media screen and (min-width: $width_tab)
+   .company
+      &__img
+         height: 300px
+      .features
+         &__list
+            width: 100%
+            padding: 0
+
+@media screen and (min-width: 1000px)
+   .company
+      &__img
+         height: 400px
+
+@media screen and (min-width: $width_desk)
+   .company
+      .features
+         &__item
+            width: calc(50% - 10px)
+            margin-right: 20px
+            margin-bottom: 20px
+            &:nth-child(2n)
+               margin-right: 0
+
+@media screen and (min-width: $width_lg)
+   .company
+      --companyMargin: 40px
+
+@media screen and (min-width: 1800px)
+   .company
+      .features
+         &__item
+            padding: 30px
+         &__title, p
+            max-width: 100%
+
+@media screen and (min-width: $width_huge)
+   .company
+      --companyMargin: 60px
+      margin-bottom: 10px
+      line-height: 144%
+      .features
+         margin-bottom: 40px

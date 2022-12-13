@@ -1,0 +1,85 @@
+extends base/_layout
+block head
+   title Список вакансий
+block page
+
+   .breadcrumbs
+      ul.breadcrumbs__list
+         li.breadcrumbs__item
+            a.breadcrumbs__link(href="#") Главная
+         li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Список вакансий
+
+   section.vacancy
+      .vacancy__inner.container
+         h1.main-title Список вакансий
+         .vacancy__box.section
+            .vacancy__info.section__info
+               .text
+                  p Экономия огромного пласта времени, так как с вас потребуется только документация и ничего более.
+                  p.
+                     Вы можете прийти в отделение, а можете подать заявку онлайн. #[br]
+                     Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ.
+               ul.vacancy__list
+                  li.vacancy__job
+                     h2.vacancy__pro Менеджер по продаже кредитных продуктов
+                     p.vacancy__text Мы оказываем результативную помощь в поиске наилучшего кредитного продукта. Мы помогаем людям приобрести квартиру или получить средства на личные цели на самых выгодных условиях.
+                     a.btn.btn--other.vacancy__btn(href="#") Подробнее о вакансии
+                  li.vacancy__job
+                     h2.vacancy__pro Вторая вакансия, если есть
+                     p.vacancy__text Мы оказываем результативную помощь в поиске наилучшего кредитного продукта. Мы помогаем людям приобрести квартиру или получить средства на личные цели на самых выгодных условиях.
+                     a.btn.btn--other.vacancy__btn(href="#") Подробнее о вакансии
+                  li.vacancy__job
+                     h2.vacancy__pro Вторая вакансия, если есть
+                     p.vacancy__text Мы оказываем результативную помощь в поиске наилучшего кредитного продукта. Мы помогаем людям приобрести квартиру или получить средства на личные цели на самых выгодных условиях.
+                     a.btn.btn--other.vacancy__btn(href="#") Подробнее о вакансии
+                  li.vacancy__job
+                     h2.vacancy__pro Вторая вакансия, если есть
+                     p.vacancy__text Мы оказываем результативную помощь в поиске наилучшего кредитного продукта. Мы помогаем людям приобрести квартиру или получить средства на личные цели на самых выгодных условиях.
+                     a.btn.btn--other.vacancy__btn(href="#") Подробнее о вакансии
+   
+            aside.section__aside
+               form.form.form--aside(action="#")
+                  .form__inner
+                     .form__top
+                        h2.form__title Бесплатная консультация по списанию долгов
+                        p.form__text Оставьте свой телефон, специалист перезвонит вам в течение 1 минуты
+                     .form__manage
+                        label.form__label
+                           span.form__type Additional text
+                           input.form__field(type="text" placeholder="Placeholder")
+                           span.form__notif Additional text
+                        label.form__label
+                           span.form__type Additional text
+                           input.form__field(type="text" placeholder="Placeholder")
+                           span.form__notif Additional text
+                     button.form__submit.btn.btn--wide Название кнопки
+                     label.form__agree
+                        input(type="checkbox")
+                        span.form__agree-checkbox
+                        span Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с Политикой конфиденциальности
+                     .form__bottom
+                        a.form__tel(href="#") +7 (495) 324-11-34
+                        p.form__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                        a.form__email(href="mailto:support@gksod.ru") support@gksod.ru
+
+   address.address
+      .address__inner
+         .address__content.container
+            .address__info
+               .address__top
+                  h2.title.address__title Наш офис
+                  p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
+               p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+               .address__contacts
+                  a.address__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.address__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+               ul.address__manage
+                  li
+                     a.btn.btn--sec(href="#") Заказать звонок
+                  li
+                     a.btn(href="#") Заказать услугу
+            .address__map
+               .background-image
+                  picture
+                     img(src="images/address/map.jpg" alt="карта" width="332" height="330")

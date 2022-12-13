@@ -1,0 +1,40 @@
+@media screen and (min-width: $width_desk)
+   .section
+      display: flex
+      align-items: flex-start
+      &__aside
+         width: 400px
+         min-width: 400px
+         margin-left: 30px
+         padding-bottom: 30px
+         position: sticky
+         top: 0
+         bottom: 20px
+         .form
+            max-height: 100vh
+            padding: 10px
+            padding-top: 0
+            overflow-y: auto
+            -ms-overflow-style: none
+            overflow: -moz-scrollbars-none
+            &::-webkit-scrollbar
+               width: 0
+               height: 0
+
+@media screen and (max-width: 1279px)
+   .section
+      font-size: 14px
+      line-height: 143%
+
+@media screen and (min-width: $width_lg)
+   .section
+      line-height: 125%
+
+@media screen and (min-width: $width_huge)
+   .section
+      line-height: 144%
+      &__aside
+         width: 496px
+         min-width: 496px
+         margin-left: 50px
+         padding-bottom: 50px

@@ -1,0 +1,145 @@
+.form
+   --formMargin: 20px
+   font-weight: 300
+   font-size: 14px
+   line-height: 129%
+   &__inner
+      padding: 20px
+      padding-top: 15px
+      background: #fff
+      border-top: 5px solid var(--accent)
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+      border-radius: 4px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+   &__top
+      margin-bottom: var(--formMargin)
+   &__title
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 18px
+      line-height: 100%
+   &__text
+      color: #393939
+   &__manage
+      width: 100%
+      margin-bottom: var(--formMargin)
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 20px
+   &__label
+      width: 100%
+      display: block
+   &__type
+      display: block
+      margin-bottom: 10px
+      font-weight: 600
+      font-size: 14px
+      line-height: 114%
+      color: #323232
+   &__notif
+      display: block
+      padding: 10px 0 0
+      font-weight: 400
+      font-size: 13px
+      line-height: 100%
+      color: #93928D
+   &__field
+      width: 100%
+      height: 42px
+      padding: 11px 14px
+      border: 1px solid #93928D
+      border-radius: 3px
+      font-weight: 400
+      font-size: 14px
+      line-height: 100%
+      &::placeholder
+         color: #93928D
+   &__submit
+      margin-bottom: var(--formMargin)
+   &__agree
+      width: 100%
+      margin-bottom: var(--formMargin)
+      display: flex
+      align-items: flex-start
+      font-size: 11px
+      line-height: 130%
+      &-checkbox
+         width: 20px
+         min-width: 20px
+         height: 20px
+         margin: 2px
+         margin-right: 12px
+         border: 1px solid #BEBEBE
+         border-radius: 3px
+      input
+         display: none
+   &__tel
+      margin-bottom: 8px
+      display: inline-flex
+      font-weight: 600
+      font-size: 20px
+      line-height: 100%
+      white-space: nowrap
+   &__time
+      font-weight: 400
+      font-size: 13px
+      line-height: 100%
+      color: #93928D
+   &__email
+      font-weight: 400
+      font-size: 13px
+      line-height: 100%
+      text-decoration-line: underline
+      color: #323232
+   .btn
+      padding: 15px 32px
+
+@media screen and (min-width: $width_tab)
+   .form
+      &__inner
+         padding: 30px
+         padding-top: 25px
+      &__title
+         font-size: 20px
+      &__type
+         font-size: 16px
+      &__field
+         padding: 14px 18px
+         height: 52px
+      &--aside
+         .form
+            &__manage
+               grid-template-columns: 1fr 1fr
+      .btn
+         font-size: 20px
+      &__agree
+         font-size: 12px
+         line-height: 130%
+      &__time
+         font-size: 15px
+
+@media screen and (min-width: $width_desk)
+   .form
+      &--aside
+         .form
+            &__manage
+               grid-template-columns: 1fr
+
+@media screen and (min-width: $width_huge)
+   .form
+      --formMargin: 30px
+      &__inner
+         padding: 40px
+         padding-top: 35px
+      &__title
+         font-size: 24px
+         line-height: 117%
+      &__manage
+         grid-gap: 20px
+      &__type
+         margin-bottom: 8px
+      &__agree
+         font-size: 14px
+         line-height: 140%

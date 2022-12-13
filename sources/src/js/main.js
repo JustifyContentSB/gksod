@@ -3,7 +3,7 @@
 $(document).ready(function () {
    // Your code here
    offerSlider();
-   addressSlider();
+   officeSlider();
    certSlider();
    articlesSlider();
    reviewsSlider();
@@ -30,8 +30,8 @@ function offerSlider() {
    });
 }
 
-function addressSlider() {
-   let swiper = new Swiper(".address__swiper", {
+function officeSlider() {
+   let swiper = new Swiper(".office__swiper", {
       slidesPerView: 'auto',
       spaceBetween: 12,
       speed: 500,
@@ -50,8 +50,8 @@ function addressSlider() {
          },
       },
       navigation: {
-         nextEl: '.address__next',
-         prevEl: '.address__prev',
+         nextEl: '.office__next',
+         prevEl: '.office__prev',
       },
    });
 }

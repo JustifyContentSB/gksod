@@ -1,0 +1,50 @@
+.vacancy
+   margin-bottom: var(--mainMargin)
+   &__list
+      margin-bottom: var(--mainMargin)
+      padding: 10px
+      background: #F8F8F8
+      border-radius: 3px
+   &__job
+      margin-bottom: 10px
+      padding: 20px
+      background: #fff
+      &:last-child
+         margin-bottom: 0
+   &__pro
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 18px
+      line-height: 100%
+   &__text
+      margin-bottom: 20px
+   .text
+      margin-bottom: 30px
+
+@media screen and (min-width: $width_tab)
+   .vacancy
+      &__list
+         padding: 30px
+      &__job
+         margin-bottom: 20px
+         padding: 40px
+      &__pro
+         font-size: 20px
+
+@media screen and (min-width: $width_big)
+   .vacancy
+      .text
+         margin-bottom: 40px
+      &__list
+         .btn
+            font-size: 20px
+
+@media screen and (min-width: $width_huge)
+   .vacancy
+      margin-bottom: 50px
+      .text
+         margin-bottom: 60px
+      &__pro
+         font-size: 24px
+      &__list
+         margin-bottom: 50px

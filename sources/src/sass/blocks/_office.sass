@@ -1,0 +1,27 @@
+.office
+   margin-bottom: var(--mainMargin)
+   &__slider
+      position: relative
+   &__slide
+      width: 214px
+   &__img
+      height: 247px
+      position: relative
+
+@media screen and (min-width: $width_lg)
+   .office
+      &__slider
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+      &__img
+         height: 333px
+
+@media screen and (min-width: $width_1920)
+   .office
+      .swiper
+         &-button
+            &-prev
+               left: -10px
+            &-next
+               right: -10px
