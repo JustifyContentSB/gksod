@@ -1,0 +1,111 @@
+extends base/_layout
+block head
+   title Менеджер по продаже кредитных продуктов
+block page
+
+   .breadcrumbs
+      ul.breadcrumbs__list
+         li.breadcrumbs__item
+            a.breadcrumbs__link(href="#") Главная
+         li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Менеджер по продаже кредитных продуктов
+
+   section.vacancy
+      .vacancy__inner.container
+         h1.main-title Менеджер по продаже кредитных продуктов
+         .vacancy__box.section
+            .vacancy__info.section__info
+               .vacancy__about
+                  .text
+                     p.
+                        Мы — Группа Компаний Содействие. Уже 13 лет мы помогаем нашим клиентам получать кредиты, ипотеку, проводить рефинансировать и решать сложные финансовые задачи.
+                     p.
+                        #[strong Мы входим в тройку самых крупных кредитных/ипотечных брокеров Москвы.] #[br]
+                        Если ты хочешь работать в крутой команде, тебе нравится общаться с людьми, для тебя важен результат и ты хочешь достойно зарабатывать приходи к нам!
+               .vacancy__data
+                  .vacancy__more
+                     h3.vacancy__more-title Мы предлагаем:
+                     ul.listing
+                        li Работу в надежной и стабильной компании;
+                        li Оформление согласно ТК РФ, график 5/2 с 10.00 до 19.00;
+                        li Фиксированный оклад + высокий % с продаж + бонус за выполненный план отдела (потолка нет);
+                        li Мы всегда ЗА развитие поэтому тренинги и обучение за наш счет;
+                        li Обязательно, своевременную выплату зарплаты;
+                        li Замечательную команду, с которой всегда можно и в огонь и в воду;
+                        li Конкурсы, подарки, праздники и уютную рабочую атмосферу;
+                        li Чай, кофе для бодрости духа;
+                        li Современный офис в 5 мин. от м. Курская (Бизнес-квартал АРМА-Завод).
+
+                  .vacancy__more
+                     h3.vacancy__more-title Кого мы ищем:
+                     ul.listing
+                        li Честного и порядочного человека;
+                        li Активного и готового добиваться результатов сотрудника;
+                        li Того, кто искренне верит в продукт, который он продает и любит свое дело;
+                        li Готового учиться, развиваться и знает, что можно много зарабатывать честным путем;
+                        li Приветствуем опыт в продажах и/или банковской сфере.
+
+                  .vacancy__more
+                     h3.vacancy__more-title Что предстоит делать:
+                     ul.listing
+                        li Отвечать на входящие заявки, обратившихся в компанию клиентов (без холодного поиска);
+                        li Консультировать клиентов по всем кредитным продуктам и предлагать самые выгодные для них решения;
+                        li Назначать и проводить встречи с клиентами в офисе компании;
+                        li Работать в CRM;
+                        li Выезжать на сделки в банки с клиентами;
+                        li Выполнять личный план продаж.
+               
+               .vacancy__contacts
+                  p.vacancy__contacts-lead Присоединяйся к нам и становись успешным!
+                  a.vacancy__contacts-tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.vacancy__contacts-time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  a.vacancy__contacts-email(href="mailto:support@gksod.ru") support@gksod.ru
+   
+            aside.section__aside
+               form.form.form--aside(action="#")
+                  .form__inner
+                     .form__top
+                        h2.form__title Бесплатная консультация по списанию долгов
+                        p.form__text Оставьте свой телефон, специалист перезвонит вам в течение 1 минуты
+                     .form__manage
+                        label.form__label
+                           span.form__type Additional text
+                           input.form__field(type="text" placeholder="Placeholder")
+                           span.form__notif Additional text
+                        label.form__label
+                           span.form__type Additional text
+                           input.form__field(type="text" placeholder="Placeholder")
+                           span.form__notif Additional text
+                     button.form__submit.btn.btn--wide Название кнопки
+                     .form__agree
+                        label.form__agree-label
+                           input(type="checkbox")
+                           span.form__agree-checkbox
+                              span.form__agree-checkbox__check
+                           span.form__agree-text.
+                              Я принимаю условия #[a(href="#") Пользовательского соглашения] и даю свое согласие на обработку моих персональных данных в соответствии с #[a(href="#") Политикой конфиденциальности]
+                     .form__bottom
+                        a.form__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                        p.form__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                        a.form__email(href="mailto:support@gksod.ru") support@gksod.ru
+
+   address.address
+      .address__inner
+         .address__content.container
+            .address__info
+               .address__top
+                  p.title.address__title Наш офис
+                  p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
+               p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+               .address__contacts
+                  a.address__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.address__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+               ul.address__manage
+                  li
+                     a.btn.btn--sec(href="#") Заказать звонок
+                  li
+                     a.btn(href="#") Заказать услугу
+            .address__map
+               .background-image
+                  picture
+                     img(src="images/address/map.jpg" alt="карта" width="332" height="330")

@@ -1,0 +1,43 @@
+.content
+   background: #F3F3F3
+   .num-list
+      display: none
+      padding-top: 20px
+      font-size: 12px
+      p
+         display: inline
+         border-bottom: 1px dashed #C1C1C1
+   &__inner
+      padding: 20px
+      border-radius: 4px
+   &__top
+      display: flex
+      align-items: center
+      justify-content: space-between
+      cursor: pointer
+   &__title
+      font-weight: 500
+      font-size: 15px
+      line-height: 120%
+   &__toggle
+      width: 18px
+      min-width: 18px
+      height: 18px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      transform: rotate(180deg)
+      &--active
+         transform: rotate(0)
+
+// @media screen and (min-width: $width_tab)
+//    .content
+//       &__inner
+//          padding: 30px
+
+// @media screen and (min-width: $width_desk)
+//    .content
+//       &__title
+//          font-size: 16px
+//       .num-list
+//          font-size: 13px

@@ -28,6 +28,10 @@
       display: grid
       grid-template-columns: 1fr
       grid-gap: 20px
+      &-box
+         display: grid
+         grid-template-columns: 1fr
+         grid-gap: 20px
    &__label
       width: 100%
       display: block
@@ -37,44 +41,87 @@
       font-weight: 600
       font-size: 14px
       line-height: 114%
-      color: #323232
+      color: var(--thColor)
    &__notif
       display: block
       padding: 10px 0 0
       font-weight: 400
       font-size: 13px
       line-height: 100%
-      color: #93928D
+      color: var(--textSec)
    &__field
       width: 100%
       height: 42px
       padding: 11px 14px
-      border: 1px solid #93928D
+      border: 1px solid var(--textSec)
       border-radius: 3px
       font-weight: 400
       font-size: 14px
       line-height: 100%
       &::placeholder
-         color: #93928D
+         color: var(--textSec)
    &__submit
       margin-bottom: var(--formMargin)
    &__agree
-      width: 100%
       margin-bottom: var(--formMargin)
-      display: flex
-      align-items: flex-start
       font-size: 11px
       line-height: 130%
+      &-label
+         display: flex
+         align-items: flex-start
+         cursor: pointer
       &-checkbox
          width: 20px
          min-width: 20px
          height: 20px
-         margin: 2px
-         margin-right: 12px
-         border: 1px solid #BEBEBE
-         border-radius: 3px
+         margin-right: 14px
+         margin-top: 3px
+         display: inline-block
+         position: relative
+         z-index: 1
+         &::before
+            content: ''
+            position: absolute
+            top: -8px
+            left: -8px
+            right: -8px
+            bottom: -8px
+            border-radius: 50%
+            background: rgba(0, 0, 0, 0.05)
+            opacity: 0
+            transition: var(--transition)
+         &:hover,
+         &:focus
+            &::before
+               opacity: 1
+         &__check
+            width: 20px
+            min-width: 20px
+            height: 20px
+            display: inline-block
+            border: 1px solid #BEBEBE
+            border-radius: 4px
+            background: #fff
+            position: relative
+            &::after
+               content: ''
+               position: absolute
+               top: 50%
+               left: 50%
+               transform: translate(-50%, -50%)
+               width: 15px
+               height: 10px
+               background: url('../images/icons/check.svg') no-repeat center / contain
+               opacity: 0
+      a
+         text-decoration: underline
       input
          display: none
+         &:checked ~ .form__agree-checkbox .form__agree-checkbox__check
+            background: var(--accent)
+            border: 1px solid var(--accent)
+            &::after
+               opacity: 1
    &__tel
       margin-bottom: 8px
       display: inline-flex
@@ -86,21 +133,29 @@
       font-weight: 400
       font-size: 13px
       line-height: 100%
-      color: #93928D
+      color: var(--textSec)
    &__email
       font-weight: 400
       font-size: 13px
       line-height: 100%
       text-decoration-line: underline
-      color: #323232
+      color: var(--thColor)
    .btn
       padding: 15px 32px
+   &--order
+      .form
+         &__inner
+            padding-top: 20px
+            border-top: 0
 
 @media screen and (min-width: $width_tab)
    .form
       &__inner
          padding: 30px
          padding-top: 25px
+      &__manage
+         &-box
+            grid-template-columns: 1fr 1fr
       &__title
          font-size: 20px
       &__type
@@ -119,13 +174,31 @@
          line-height: 130%
       &__time
          font-size: 15px
+      &__desc
+         font-size: 16px
+      &--order
+         .form
+            &__inner
+               padding: 40px 50px
+            &__manage
+               grid-gap: 30px
 
 @media screen and (min-width: $width_desk)
    .form
+      &__desc
+         font-size: 18px
       &--aside
          .form
             &__manage
                grid-template-columns: 1fr
+      &--order
+         .form
+            &__inner
+               padding: 60px 100px
+            &__top
+               margin-bottom: 47px
+            &__tel
+               font-size: 24px
 
 @media screen and (min-width: $width_huge)
    .form

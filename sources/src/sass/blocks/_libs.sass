@@ -4,13 +4,23 @@
          width: 48px
          height: 48px
          padding: 6px
-         background: #F8F8F8
+         background: var(--boxBg)
          border-radius: 3px
          pointer-events: auto
          display: none
+         transition: var(--transition)
          &::after
             color: #1F1F1F
             font-size: 20px
+         &:hover,
+         &:focus
+            background: var(--accent)
+            &::after
+               color: #fff
+         &:active
+            background: var(--thColor)
+            &::after
+               color: #fff
       &-prev
          left: 10px
       &-next

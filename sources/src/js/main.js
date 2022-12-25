@@ -2,14 +2,46 @@
 
 $(document).ready(function () {
    // Your code here
+   financeSlider();
    offerSlider();
    officeSlider();
    certSlider();
    articlesSlider();
    reviewsSlider();
+   imgPopup();
+   headerMenuShow();
+   headerSubmenuMenuShow();
+   headerSubmenuMenuHidden();
+   headerSubmenuMenuShowDesk();
 });
 
 // Your functions here
+
+function financeSlider() {
+   var swiper = new Swiper(".finance__thumbs", {
+      spaceBetween: 16,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+         1280: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+         },
+      },
+   });
+   var swiper2 = new Swiper(".finance__swiper", {
+      spaceBetween: 10,
+      speed: 400,
+      navigation: {
+         nextEl: ".finance__next",
+         prevEl: ".finance__prev",
+      },
+      thumbs: {
+         swiper: swiper,
+      },
+   });
+}
 
 function offerSlider() {
    let swiper = new Swiper(".offer__swiper", {
@@ -136,3 +168,61 @@ function reviewsSlider() {
       },
    });
 }
+
+function imgPopup() {
+   $('.certificate__list').magnificPopup({
+      delegate: 'a',
+      type: 'image'
+   });
+}
+
+function headerMenuShow() {
+   if ($(window).width() < 1280) {
+      $('.header__burger').on('click', function (e) {
+         e.preventDefault();
+         $(this).toggleClass('header__burger--active');
+         $('.header').toggleClass('header--active');
+         $('body').toggleClass('no-scroll');
+      });
+   }
+}
+
+function headerSubmenuMenuShow() {
+   if ($(window).width() < 1280) {
+      $('.header__main-toggle').on('click', function (e) {
+         e.preventDefault();
+         $('.header__main-toggle').addClass('header__main-toggle--active');
+         $(this).next('.header__main-submenu__wrapper').addClass('header__main-submenu__wrapper--active');
+      });
+   }
+}
+
+function headerSubmenuMenuHidden() {
+   if ($(window).width() < 1280) {
+      $('.header__main-submenu__prev').on('click', function (e) {
+         e.preventDefault();
+         $('.header__main-toggle').removeClass('header__main-toggle--active');
+         $('.header__main-submenu__wrapper').removeClass('header__main-submenu__wrapper--active');
+      });
+   }
+}
+
+function headerSubmenuMenuShowDesk() {
+   if ($(window).width() >= 1280) {
+      $('.header__main-toggle').on('click', function (e) {
+         e.preventDefault();
+         $('.header__main-toggle').removeClass('header__main-toggle--clicked');
+         $(this).toggleClass('header__main-toggle--clicked');
+         $('body').toggleClass('no-scroll');
+      });
+   }
+}
+
+// let headerNav = $('.header__main-nav');
+
+
+// $(document).mouseup(function (e)) {
+//    if(!headerNav.is(e.target) && headerNav.has(e.target).length === 0) {
+//       $('.header__main-submenu__wrapper').fadeOut();
+//    }
+// }

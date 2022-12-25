@@ -14,14 +14,20 @@
    &__btn
       display: inline-block
       padding: 9px 20px
-      border: 1px solid #93928D
+      border: 1px solid var(--textSec)
       border-radius: 3px
       text-align: center
       font-weight: 300
       font-size: 14px
       line-height: 100%
+      transition: var(--transition)
+      &:hover,
+      &:focus
+         background: #1F1F1F
+         color: #fff
       &--active
          background: #1F1F1F
+         border-color: #1F1F1F
          color: #fff
 
 @media screen and (min-width: $width_desk)

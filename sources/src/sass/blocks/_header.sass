@@ -1,14 +1,25 @@
 .header
-   margin-bottom: var(--mainMargin)
+   --headerMargin: 30px
+   min-height: 71px
    background: #fff
-   border-bottom: 1px solid #EAEAEA
+   &__wrapper
+      position: fixed
+      z-index: 1000
+      top: 0
+      left: 0
+      right: 0
+      background: #fff
+      border-bottom: 1px solid #EAEAEA
    &--sec
       margin-bottom: 0
    &__top
       display: none
+      &-email
+         text-decoration: underline
    &__medium
       &-inner
          padding: 13px var(--mainPadding)
+         background: #fff
          display: flex
          align-items: center
    &__logo
@@ -23,30 +34,210 @@
    &__manage
       display: flex
       &-item
-         &__offer
-            display: none
-   &__btn
-      margin-left: 10px
-      &-text
-         display: none
+         margin-left: 10px
    &__bottom
-      display: none
+      padding: 20px 30px 40px
+      position: fixed
+      transform: translateX(-100%)
+      top: 71px
+      left: 0
+      width: 100%
+      height: calc(100% - 70px)
+      background: #fff
+      z-index: 100
+      overflow-y: auto
+      transition: transform .3s ease
+   &__main
+      &-nav
+         margin-bottom: var(--headerMargin)
       &-list
          font-weight: 700
          font-size: 13px
          line-height: 100%
-         color: #1F1F1F
          text-transform: uppercase
+         &--active
+            .header
+               &__main
+                  &-toggle
+                     display: none
+         a
+            display: block
+            padding: 19px 0
+            border-bottom: 1px solid #EAEAEA
+         li
+            &:last-child
+               a
+                  border-bottom: 0
+      &-toggle
+         position: relative
+         &.header__main-toggle--active
+            display: none
+         &::after
+            content: ''
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 20px
+            height: 20px
+            background: url('../images/icons/arrow-right.svg') no-repeat center / contain
+      &-submenu
+         &__wrapper
+            display: none
+            &--active
+               display: block
+         &__content
+            margin-bottom: var(--mainMargin)
+         a
+            padding: 16px 0
+            font-weight: 400
+            font-size: 15px
+            line-height: 130%
+            color: var(--thColor)
+            text-transform: none
+         &__img
+            width: 300px
+            img
+               width: 100%
+               border-radius: 3px
+         .header__main-submenu__prev
+            display: inline-flex
+            margin-bottom: 15px
+            padding: 8px 27px
+            padding-left: 42px
+            border: 1px solid var(--textSec)
+            border-radius: 3px
+            font-weight: 600
+            font-size: 14px
+            position: relative
+            &::before
+               content: ''
+               position: absolute
+               left: 16px
+               width: 16px
+               height: 16px
+               background: url('../images/icons/arrow-left.svg') no-repeat center / contain
+      &-search
+         display: none
+   &__menu
+      &-list
+         margin-bottom: var(--headerMargin)
+      .soc
+         margin-bottom: var(--headerMargin)
+         justify-content: flex-start
+         a
+            background: var(--textSec)
+            transition: var(--transition)
+            &:hover,
+            &:focus
+               background: #1F1F1F
+      .header
+         &__logo
+            display: none
    &__contacts
-      display: none
-   .soc
-      display: none
+      margin-bottom: 20px
+   &__tel
+      display: inline-block
+      margin-bottom: 6px
+      font-weight: 600
+      font-size: 16px
+      line-height: 100%
+   &__time
+      font-weight: 400
+      font-size: 12px
+      line-height: 100%
+      color: var(--textSec)
+   &__shedule
+      margin-bottom: var(--headerMargin)
+      font-weight: 400
+      font-size: 14px
+      line-height: 100%
+      li
+         margin-bottom: 20px
+         &:last-child
+            margin-bottom: 0
+      a
+         &:hover,
+         &:focus
+            color: #000
+   &__email
+      font-weight: 400
+      font-size: 13px
+      line-height: 100%
+      text-decoration: underline
+   &__btns
+      margin-bottom: var(--headerMargin)
+      display: flex
+      flex-direction: column
+      .btn
+         margin-bottom: 10px
+         &:last-child
+            margin-bottom: 0
+   &__desc
+      font-weight: 400
+      font-size: 13px
+      line-height: 100%
+      li
+         margin-bottom: 5px
+         &:last-child
+            margin-bottom: 0
+      a
+         &:hover,
+         &:focus
+            color: #000
+   &--active
+      .header
+         &__medium
+            &-inner
+               box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.05)
+               position: relative
+               z-index: 1000
+               transition: var(--transition)
+         &__bottom
+            transform: translateX(0)
+   &__burger
+      padding: 8px
+      display: flex
+      flex-direction: column
+      &-line
+         margin-bottom: 3px
+         width: 16px
+         height: 1px
+         background: #fff
+         border-radius: 1px
+         &:last-child
+            margin-bottom: 0
+         &_1
+            transform-origin: 0% 0%
+            transition: transform 0.4s ease-in-out
+         &_2
+            transition: transform 0.2s ease-in-out
+         &_3
+            transform-origin: 0% 100%
+            transition: transform 0.4s ease-in-out
+      &--active
+         .header
+            &__burger
+               &-line
+                  &_1
+                     transform: rotate(45deg) translateY(-3px) translateX(1px)
+                  &_2
+                     transform: scaleY(0)
+                  &_3
+                     transform: rotate(-45deg) translateY(3px) translateX(1px)
 
 @media screen and (min-width: $width_tab)
    .header
+      &__logo
+         margin-right: 40px
+
+@media screen and (min-width: $width_desk)
+   .header
+      --headerMargin: 0
+      min-height: 184px
       &__top
          display: block
-         background: #F8F8F8
+         background: var(--boxBg)
          border-bottom: 1px solid #EAEAEA
          &-list
             padding: 12px 0
@@ -58,89 +249,162 @@
             li
                margin-right: 30px
                &:last-child
-                  margin-left: auto
                   margin-right: 0
-      &__logo
-         margin-right: 40px
-      &__contacts
-         display: block
-      &__tel
-         display: inline-block
-         margin-bottom: 6px
-         font-weight: 600
-         font-size: 16px
-         line-height: 100%
-      &__time
-         font-weight: 400
-         font-size: 12px
-         line-height: 100%
-         color: #93928D
-      &__email
-         font-weight: 400
-         font-size: 13px
-         line-height: 100%
-         text-decoration: underline
-         display: none
-
-@media screen and (min-width: $width_desk)
-   .header
+            a:hover,
+            a:focus
+               color: #000
+         &-right
+            margin-left: auto
       &__logo
          margin-top: auto
       &__email
          display: inline
-      &__contacts
-         margin-right: 60px
       &__tel
          margin-bottom: 8px
-      &__medium
-         &-inner
-            padding: 20px var(--mainPadding) 5px
-         &-search
-            display: none
+      &__shedule, &__desc
+         display: none
       &__btn
          width: auto
          height: auto
          min-height: 48px
          margin-left: 20px
-         svg
-            display: none
-         &-text
-            display: inline
       .btn
          &--style
             color: #1F1F1F
             background: #EAEAEA
             padding: 15px 31px
-      &__bottom
-         display: block
-         &-inner
-            padding: 11px var(--mainPadding) 6px
-            display: flex
-            justify-content: space-between
-            align-items: center
+            &:hover,
+            &:focus
+               background: #D8D8D8
+               color: #1F1F1F
+            &:active
+               background: var(--thColor)
+               color: #fff
+      &__main
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+         padding: 0 var(--mainPadding)
+         order: 1
+         display: flex
+         justify-content: space-between
+         align-items: center
          &-list
+            margin-right: auto
             display: flex
             align-items: center
             li
                margin-right: 40px
+               &:last-child
+                  margin-right: 0
+            a
+               border-bottom: 0
          &-search
+            display: block
+            margin-left: 20px
             .btn
                padding: 0
                background: transparent
                svg
                   width: 28px
                   height: 28px
-      &__manage
-         &-item
-            &__burger
+         .header
+            &__main
+               &-toggle
+                  display: block
+                  &::after
+                     display: none
+                  &--clicked
+                     position: relative
+                     &::before
+                        content: ''
+                        position: absolute
+                        bottom: -1px
+                        left: -18px
+                        right: -18px
+                        height: 1px
+                        background: var(--accent)
+                     & ~ .header
+                        &__main
+                           &-submenu
+                              &__wrapper
+                                 display: block
+         &-submenu
+            display: block
+            background: #fff
+            &__wrapper
                display: none
-            &__offer
-               display: inline-flex
-      .soc
+               position: fixed
+               z-index: 100
+               top: 198px
+               left: 0
+               right: 0
+               overflow-y: auto
+               height: calc(100% - 184px)
+               background: rgba(0, 0, 0, 0.5)
+            &__inner
+               width: 100%
+               max-width: var(--containerWidth)
+               padding: 40px var(--mainPadding)
+               margin: 0 auto
+               background: #fff
+               display: flex
+               align-items: flex-start
+            &__content
+               width: 100%
+               max-width: 800px
+               margin: 0
+               margin-right: 40px
+               display: grid
+               grid-template-columns: 1fr 1fr
+            .header__main-submenu__prev
+               display: none
+            &__img
+               width: calc(100% - 840px)
+               max-width: 380px
+            &__list
+               min-width: 260px
+               margin-right: 40px
+               margin-bottom: 40px
+               li
+                  margin-right: 0
+                  &:hover,
+                  &:focus
+                     text-decoration: underline
+      &__medium
+         display: none
+      &__bottom
+         padding: 0
+         position: static
+         transform: none
+         overflow-y: visible
+         &-inner
+            display: flex
+            flex-direction: column
+      &__menu
+         width: 100%
+         max-width: var(--containerWidth)
+         margin: 0 auto
+         padding: 23px var(--mainPadding)
          display: flex
+         align-items: center
+         .header
+            &__logo
+               display: inline-flex
+      &__contacts
+         margin: 0
+         margin-right: auto
+         padding-right: 10px
+      &__btns
+         margin-left: 30px
+         flex-direction: row
+         .btn
+            margin: 0
+            margin-left: 20px
 
 @media screen and (min-width: $width_lg)
    .header
+      min-height: 185px
       &__logo
          width: 180px
          min-width: 180px
@@ -151,21 +415,26 @@
 
 @media screen and (min-width: $width_big)
    .header
+      min-height: 191px
       &__medium
          &-inner
             padding: 17px var(--mainPadding) 5px
-      &__bottom
-         &-inner
-            padding: 9px var(--mainPadding) 6px
       &__logo
          width: 200px
          min-width: 200px
          margin-right: 60px
          margin-top: 0
+      &__main
+         &-submenu
+            &__content
+               max-width: 860px
+               grid-template-columns: repeat(3, 1fr)
+            &__list
+               margin-bottom: 0
 
 @media screen and (min-width: $width_huge)
    .header
-      margin-bottom: 60px
+      min-height: 198px
       &__top
          &-list
             li
@@ -179,17 +448,8 @@
          margin-right: 140px
          position: relative
          bottom: 5px
-      &__contacts
-         margin-right: 70px
       &__tel
          margin-bottom: 6px
          font-size: 20px
       &__time
          font-size: 15px
-      &__bottom
-         &-inner
-            padding: 4px var(--mainPadding) 6px
-         &-list
-            font-size: 14px
-            li
-               margin-right: 50px

@@ -7,9 +7,11 @@
 // From libs:
 //@import "../libs/LIB_NAME/path/to/style.scss"
 @import "../libs/swiper/swiper-bundle.min.css"
+@import "../libs/magnific-popup/dist/magnific-popup.css"
 
 html
    box-sizing: border-box
+   scrollbar-gutter: stable
 
 *,
 *::before,
@@ -21,8 +23,6 @@ html
    box-sizing: content-box
 
 body
-   display: flex
-   flex-direction: column
    background: #FFF
    font-family: 'Proxima Nova', 'Helvetica', Arial, sans-serif
    width: 100%
@@ -30,10 +30,14 @@ body
    min-height: 100vh
    -webkit-font-smoothing: antialiased
    -moz-osx-font-smoothing: grayscale
-   font-weight: 300
+   font-weight: 400
    font-size: 14px
    line-height: 129%
    color: #1F1F1F
+   scrollbar-gutter: stable
+   &.no-scroll
+      overflow: hidden
+      scrollbar-gutter: stable
 
 @media screen and (min-width: $width_tab)
    body

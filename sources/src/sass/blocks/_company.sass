@@ -16,6 +16,8 @@
       &__list
          padding-top: 0
          padding-left: 0
+   .tabs
+      padding-left: 0
 
 @media screen and (min-width: $width_tab)
    .company
@@ -25,6 +27,8 @@
          &__list
             width: 100%
             padding: 0
+      .tabs
+         margin-bottom: 10px
 
 @media screen and (min-width: 1000px)
    .company
@@ -40,10 +44,17 @@
             margin-bottom: 20px
             &:nth-child(2n)
                margin-right: 0
+      .tabs
+         margin-bottom: 20px
 
 @media screen and (min-width: $width_lg)
    .company
       --companyMargin: 40px
+
+@media screen and (min-width: $width_big)
+   .company
+      .tabs
+         margin-bottom: 30px
 
 @media screen and (min-width: 1800px)
    .company

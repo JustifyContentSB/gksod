@@ -11,15 +11,14 @@ block page
             a.breadcrumbs__link.breadcrumbs__link--active(href="#") Единая заявка на кредит
 
    section.application
-      .application__inner.container
-         h1.main-title Единая заявка на кредит
-         .application__box.box
-            .application__content.box__content
-               form.form(action="#")
+      .application__inner.box.container
+         h1.main-title.container Единая заявка на кредит
+         .box__inner
+            .box__content
+               form.form.form--order(action="#")
                   .form__inner
                      .form__top
-                        h2.form__title Бесплатная консультация по списанию долгов
-                        p.form__text Оставьте свой телефон, специалист перезвонит вам в течение 1 минуты
+                        p.form__desc Примерное время заполнения анкеты ~ 1 минута.
                      .form__manage
                         label.form__label
                            span.form__type Additional text
@@ -29,14 +28,15 @@ block page
                            span.form__type Additional text
                            input.form__field(type="text" placeholder="Placeholder")
                            span.form__notif Additional text
-                        label.form__label
-                           span.form__type Additional text
-                           input.form__field(type="text" placeholder="Placeholder")
-                           span.form__notif Additional text
-                        label.form__label
-                           span.form__type Additional text
-                           input.form__field(type="text" placeholder="Placeholder")
-                           span.form__notif Additional text
+                        .form__manage-box
+                           label.form__label
+                              span.form__type Additional text
+                              input.form__field(type="text" placeholder="Placeholder")
+                              span.form__notif Additional text
+                           label.form__label
+                              span.form__type Additional text
+                              input.form__field(type="text" placeholder="Placeholder")
+                              span.form__notif Additional text
                         label.form__label
                            span.form__type Additional text
                            input.form__field(type="text" placeholder="Placeholder")
@@ -46,21 +46,50 @@ block page
                            input.form__field(type="text" placeholder="Placeholder")
                            span.form__notif Additional text
                      button.form__submit.btn.btn--wide Название кнопки
-                     label.form__agree
-                        input(type="checkbox")
-                        span.form__agree-checkbox
-                        span Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с Политикой конфиденциальности
+                     .form__agree
+                        label.form__agree-label
+                           input(type="checkbox")
+                           span.form__agree-checkbox
+                              span.form__agree-checkbox__check
+                           span.form__agree-text.
+                              Я принимаю условия #[a(href="#") Пользовательского соглашения] и даю свое согласие на обработку моих персональных данных в соответствии с #[a(href="#") Политикой конфиденциальности]
                      .form__bottom
                         a.form__tel(href="#") +7 (495) 324-11-34
                         p.form__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
                         a.form__email(href="mailto:support@gksod.ru") support@gksod.ru
+
+   section.explane
+      .explane__inner.container
+         h2.title.visually-hidden Информация о нашей компании
+         .explane__content
+            .explane__box.explane__box--active
+               article.explane__article
+                  h2.title.explane__title Кредитный брокер
+                  p Кредитный брокер — финансовый помощник, который является посредником между кредитной организацией и потенциальным заемщиком, желающим взять кредит в банке. Помощь кредитного брокера заключается в проверке кредитной истории заявителя, выборе наиболее надежного банка, комфортного условия кредитования, сборе и подаче необходимых документов, выборе способа и графика погашения займа, тщательной проверке документов и поиске подводных камней, если таковые имеются.
+               article.explane__article
+                  h2.title.explane__title Кто обращается к брокерам?
+                  p.
+                     Или другая ситуация. Потенциальный заявитель изучал информацию о кредитах в интернете и наткнулся на Хатон.ру. Отзывы прекрасные и знакомые советуют. Клиент будущего банка по кредитам решил, что это отличная возможность собрать информацию о комфортных условиях кредитования, процентных ставках и сроках платежей. Ведь человек не является специалистом и не знать, где, как и что искать. #[br]
+                     Молодой человек предоставил все необходимые документы и спокойно работал дальше, пока брокер делал все за него. А в какой-то момент ему просто предоставили целый пакет документов с процентными ставками, предложениями и видами кредитов. Так клиент кредитования выбрал наиболее удобный вариант для себя и не потратил огромное количество времени на бессмысленные поиски лучшего варианта. Все сделали за него. Причем среди всех предложений, он выбрал с самой низкой ставкой — 4.9% годовых. Сам бы он вряд ли нашел такое хорошее решение.
+            .explane__box
+               article.explane__article
+                  h2.title.explane__title Преимущества брокера Хатон.ру
+                  p Экономия огромного пласта времени, так как с вас потребуется только документация и ничего более.
+
+                  p Вы можете прийти в отделение, а можете подать заявку онлайн.
+                  p Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ.
+                  p Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться.
+                  p Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                  p В заключении можно сказать, что если и стоит обращаться к кредитному брокеру, только к таким проверенным, как Хатон.ру.
+
+         a.explane__more(href="#") Развернуть СЕО-тест
 
    address.address
       .address__inner
          .address__content.container
             .address__info
                .address__top
-                  h2.title.address__title Наш офис
+                  p.title.address__title Наш офис
                   p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
                p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
                .address__contacts

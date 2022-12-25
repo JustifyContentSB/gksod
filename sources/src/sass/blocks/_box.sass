@@ -1,0 +1,21 @@
+.box
+   padding: 0
+   margin-bottom: var(--mainMargin)
+   &__inner
+      padding: 20px
+      background: var(--boxBg)
+      border-radius: 3px
+
+@media screen and (min-width: $width_tab)
+   .box
+      &__inner
+         padding: 30px 50px
+      .form
+         width: 100%
+         max-width: 928px
+         margin: 0 auto
+
+@media screen and (min-width: $width_desk)
+   .box
+      &__inner
+         padding: 50px

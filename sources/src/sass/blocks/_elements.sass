@@ -26,6 +26,9 @@
       padding-bottom: 23px
       border-bottom: 3px solid var(--accent)
       line-height: 100%
+   &--subtitle
+      margin-bottom: 20px
+      font-size: 18px
 
 .btn
    padding: 9px 19px
@@ -41,13 +44,41 @@
    justify-content: center
    align-items: center
    cursor: pointer
+   transition: var(--transition)
+   &:hover,
+   &:focus
+      background: #B22414
+   &:active
+      background: #942114
    &--sec
       background: #EAEAEA
       color: #1F1F1F
+      &:hover,
+      &:focus
+         background: #D8D8D8
+         color: #1F1F1F
+      &:active
+         background: var(--thColor)
+         color: #fff
+   &--third
+      background: var(--thColor)
+      color: #fff
+      &:hover,
+      &:focus
+         background: #4B4B4B
+      &:active
+         background: var(--thColor)
    &--other
       background: #fff
       color: #1F1F1F
-      border: 1px solid #93928D
+      border: 1px solid var(--textSec)
+      &:hover,
+      &:focus
+         background: #1F1F1F
+         border-color: #1F1F1F
+         color: #fff
+      &:active
+         opacity: 0.5
    &--wide
       min-height: 48px
       font-size: 16px
@@ -58,7 +89,14 @@
       min-height: 36px
       padding: 5px
    &--style
-      background: #F8F8F8
+      background: var(--boxBg)
+      &:hover,
+      &:focus
+         background: #D8D8D8
+         color: #1F1F1F
+      &:active
+         background: var(--thColor)
+         color: #fff
    svg
       width: 23px
       height: 23px
@@ -80,9 +118,93 @@
          border-radius: 50%
          border: 3px solid #D82916
 
+.listing
+   li
+      margin-bottom: 6px
+      padding-left: 18px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         left: 0
+         top: 5px
+         width: 8px
+         height: 8px
+         border-radius: 50%
+         background: #D9D9D9
+
 .text
    p
       margin-bottom: 17px
+   strong
+      font-weight: 700
+
+.num-list
+   $liMargin: 10px
+   margin: 0
+   padding: 0
+   font-weight: 400
+   font-size: 15px
+   line-height: 120%
+   list-style-type: none
+   counter-reset: list1
+   li
+      margin-bottom: $liMargin
+      padding-left: 20px
+      position: relative
+      list-style-type: none
+      &:last-child
+         margin-bottom: 0
+      &::before
+         font-weight: 500
+         position: absolute
+         top: 0
+         left: 0
+         width: 22px
+         text-align: left
+         color: #D82816
+         font-size: 16px
+         counter-increment: list1
+         content: counter(list1) "."
+   ol
+      margin-top: $liMargin
+      padding: 0
+      padding-left: 10px
+      counter-reset: list2
+      li
+         padding-left: 32px
+         margin-bottom: 15px
+         &::before
+            width: 32px
+            counter-increment: list2
+            content: counter(list1) "." counter(list2) "."
+
+.dot-list
+   margin-bottom: 20px
+   padding-left: 20px
+   padding-right: 10px
+   font-weight: 400
+   font-size: 13px
+   line-height: 138%
+   li
+      margin-bottom: 10px
+      padding-left: 20px
+      position: relative
+      &::before
+         content: ''
+         width: 8px
+         height: 8px
+         border-radius: 50%
+         background: var(--accent)
+         position: absolute
+         left: 0
+         top: 5px
+
+.sub-title
+   margin-bottom: 14px
+   font-weight: 700
+   font-size: 14px
+   line-height: 125%
 
 @media screen and (min-width: $width_tab)
    .title
@@ -90,6 +212,9 @@
       &--special
          margin-bottom: 40px
          padding-bottom: 20px
+      &--subtitle
+         margin-bottom: 30px
+         font-size: 20px
    .main-title
       font-size: 40px
    .btn
@@ -109,6 +234,9 @@
    .text
       p
          margin-bottom: 21px
+   .listing
+      li
+         margin-bottom: 8px
 
 @media screen and (min-width: $width_desk)
    .main-title
@@ -117,6 +245,9 @@
 @media screen and (min-width: $width_lg)
    .title
       font-size: 28px
+   .listing
+      li
+         margin-bottom: 10px
 
 @media screen and (min-width: $width_huge)
    .main-title
@@ -135,3 +266,7 @@
    .text
       p
          margin-bottom: 27px
+   .listing
+      li
+         &::before
+            top: 8px

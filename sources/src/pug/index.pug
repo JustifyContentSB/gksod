@@ -2,120 +2,520 @@ extends base/_layout
 block head
    title Главная
 block header
-   header.header.header--sec
-      .header__inner
-         .header__top
-            .header__top-inner.container
-               nav.header__top-nav
-                  ul.header__top-list
-                     li
-                        a(href="#") О компании
-                     li
-                        a(href="#") Вакансии
-                     li
-                        a(href="#") Статьи
-                     li
-                        a(href="#") Калькулятор
-                     li
-                        a(href="#") Контакты
-                     li
-                        a(href="#") Официальная информация
-         .header__medium
-            .header__medium-inner.container
-               a.header__logo(href="#")
-                  img(src="images/icons/logo.svg", alt="логотип" width="160" height="44")
-               .header__contacts
-                  a.header__tel(href="tel:+74953241134") +7 (495) 324-11-34
-                  p.header__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
-                  a.header__email(href="mailto:support@gksod.ru") support@gksod.ru
-               ul.soc.header__soc
-                  li
-                     a.soc__link.soc__link--whatsapp(href="#")
-                        svg
-                           use(href="images/sprites/main.stack.svg#svg-whatsapp")
-                  li
-                     a.soc__link.soc__link--tg(href="#")
-                        svg
-                           use(href="images/sprites/main.stack.svg#svg-telegram")
-                  li
-                     a.soc__link.soc__link--viber(href="#")
-                        svg
-                           use(href="images/sprites/main.stack.svg#svg-viber")
-               .header__right
-                  form.header__search.header__medium-search(action="#")
-                     button.header__btn.btn.btn--icon.btn--style
-                        svg
-                           use(href="images/sprites/main.stack.svg#svg-search-loop")
-                  ul.header__manage
-                     li.header__manage-item
-                        a.header__btn.btn.btn--icon.btn--style(href="tel:+7 (495) 324-11-34")
-                           span.header__btn-text Заказать звонок
+   header.header
+      .header__wrapper
+         .header__inner
+            .header__top
+               .header__top-inner.container
+                  nav.header__top-nav
+                     ul.header__top-list
+                        li
+                           a(href="company.html") О компании
+                        li
+                           a(href="vacancy.html") Вакансии
+                        li
+                           a(href="#") Статьи
+                        li
+                           a(href="#") Калькулятор
+                        li
+                           a(href="contacts.html") Контакты
+                        li.header__top-right
+                           a(href="#") Официальная информация
+                        li
+                           a.header__top-email(href="mailto:support@gksod.ru") support@gksod.ru
+            .header__medium
+               .header__medium-inner.container
+                  a.header__logo(href="#")
+                     img(src="images/icons/logo.svg" alt="логотип" width="160" height="44")
+                  .header__right
+                     form.header__search.header__medium-search(action="#")
+                        button.header__btn.btn.btn--icon.btn--style
                            svg
-                              use(href="images/sprites/main.stack.svg#svg-call")
-                     li.header__manage-item.header__manage-item__burger
-                        a.header__btn.btn.btn--icon(href="#")
+                              use(href="images/sprites/main.stack.svg#svg-search-loop")
+                     ul.header__manage
+                        li.header__manage-item
+                           a.header__btn.btn.btn--icon.btn--style(href="tel:+74953241134")
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-call")
+                        li.header__manage-item
+                           a.header__btn.btn.btn--icon.header__burger(href="#")
+                              span.header__burger-line.header__burger-line_1
+                              span.header__burger-line.header__burger-line_2
+                              span.header__burger-line.header__burger-line_3
+            .header__bottom
+               .header__bottom-inner
+                  .header__main
+                     nav.header__main-nav
+                        ul.header__main-list
+                           li.header__main-item
+                              a.header__main-toggle(href="#") Ипотека
+                              .header__main-submenu__wrapper
+                                 .header__main-submenu
+                                    .header__main-submenu__box
+                                       a.header__main-submenu__prev(href="#") Назад
+                                       .header__main-submenu__inner
+                                          .header__main-submenu__content
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог с плохой кредитной историей
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                          .header__main-submenu__img
+                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
+                           li.header__main-item
+                              a.header__main-toggle.header__main-toggle--active(href="#") Кредит под залог
+                              .header__main-submenu__wrapper
+                                 .header__main-submenu
+                                    .header__main-submenu__box
+                                       a.header__main-submenu__prev(href="#") Назад
+                                       .header__main-submenu__inner
+                                          .header__main-submenu__content
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог с плохой кредитной историей
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                          .header__main-submenu__img
+                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
+                           li.header__main-item
+                              a.header__main-toggle(href="#") Кредит наличными
+                              .header__main-submenu__wrapper
+                                 .header__main-submenu
+                                    .header__main-submenu__box
+                                       a.header__main-submenu__prev(href="#") Назад
+                                       .header__main-submenu__inner
+                                          .header__main-submenu__content
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог с плохой кредитной историей
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                          .header__main-submenu__img
+                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
+                           li.header__main-item
+                              a.header__main-toggle(href="#") Рефинансирование
+                              .header__main-submenu__wrapper
+                                 .header__main-submenu
+                                    .header__main-submenu__box
+                                       a.header__main-submenu__prev(href="#") Назад
+                                       .header__main-submenu__inner
+                                          .header__main-submenu__content
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог с плохой кредитной историей
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                          .header__main-submenu__img
+                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
+                           li.header__main-item
+                              a.header__main-toggle(href="#") Кредит для бизнеса
+                              .header__main-submenu__wrapper
+                                 .header__main-submenu
+                                    .header__main-submenu__box
+                                       a.header__main-submenu__prev(href="#") Назад
+                                       .header__main-submenu__inner
+                                          .header__main-submenu__content
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог с плохой кредитной историей
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                          .header__main-submenu__img
+                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
+                           li.header__main-item
+                              a.header__main-toggle(href="#") Единая заявка на кредит
+                              .header__main-submenu__wrapper
+                                 .header__main-submenu
+                                    .header__main-submenu__box
+                                       a.header__main-submenu__prev(href="#") Назад
+                                       .header__main-submenu__inner
+                                          .header__main-submenu__content
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог с плохой кредитной историей
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                             ul.header__main-submenu__list
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог земельного участка
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Кредит под залог комнаты
+                                                li
+                                                   a(href="#") Кредит под залог недвижимости
+                                                li
+                                                   a(href="#") Частный инвестор перезалог
+                                                li
+                                                   a(href="#") Кредит под залог в Москве
+                                          .header__main-submenu__img
+                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
+
+                     form.header__main-search(action="#")
+                        button.btn.btn--icon.btn--style
                            svg
-                              use(href="images/sprites/main.stack.svg#svg-menu")
-                     li.header__manage-item.header__manage-item__offer
-                        a.header__btn.btn(href="#") Заказать услугу
-         .header__bottom
-            .header__bottom-inner.container
-               nav.header__bottom-nav
-                  ul.header__bottom-list
-                     li
-                        a(href="#") Ипотека
-                     li
-                        a(href="#") Кредит под залог
-                     li
-                        a(href="#") Кредит наличными
-                     li
-                        a(href="#") Рефинансирование
-                     li
-                        a(href="#") Кредит для бизнеса
-                     li
-                        a(href="#") Единая заявка на кредит
-               form.header__bottom-search(action="#")
-                  button.btn.btn--icon.btn--style
-                     svg
-                        use(href="images/sprites/main.stack.svg#svg-search-loop")
+                              use(href="images/sprites/main.stack.svg#svg-search-loop")
+                  .header__menu
+                     a.header__logo(href="#")
+                        img(src="images/icons/logo.svg" alt="логотип" width="160" height="44")
+                     ul.header__shedule
+                        li
+                           a(href="#") О компании
+                        li
+                           a(href="#") Вакансии
+                        li
+                           a(href="#") Статьи
+                        li
+                           a(href="#") Калькулятор
+                        li
+                           a(href="#") Контакты
+                     .header__contacts
+                        a.header__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                        p.header__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                     ul.soc.header__soc
+                        li
+                           a.soc__link.soc__link--whatsapp(href="#")
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-whatsapp")
+                        li
+                           a.soc__link.soc__link--tg(href="#")
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-telegram")
+                     .header__btns
+                        a.btn.btn--sec.btn--wide(href="#") Заказать звонок
+                        a.btn.btn--wide(href="#") Заказать услугу
+                     ul.header__desc
+                        li
+                           a(href="#") Официальная информация
+                        li
+                           a.header__email(href="mailto:support@gksod.ru") support@gksod.ru
+
 
 block page
 
    section.finance
       .finance__inner
-         .finance__slider
-            .finance__swiper
-               .swiper-wrapper
-                  .finance__slide
-                     .finance__slide-inner
-                        .finance__info
-                           h2.main-title.finance__title Рефинансируйте #[br] кредиты
-                           p.finance__text.
-                              Рефинансирование кредита на лучших условиях, с возможностью получения дополнительных средств.
-                           a.btn.btn--big(href="#") Заказать услугу
-                        ul.services.finance__services
-                           li.services__item
-                              h3.services__title Кредит под залог
-                              p.services__text.
-                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
-                           li.services__item
-                              h3.services__title Кредит под залог
-                              p.services__text.
-                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
-                           li.services__item
-                              h3.services__title Кредит под залог
-                              p.services__text.
-                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
-                           li.services__item
-                              h3.services__title Кредит под залог
-                              p.services__text.
-                                 Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
-                        .finance__img
-                           picture
-                              source(srcset="images/finance/finance-pic.webp" type="image/webp")
-                              img(src="images/finance/finance-pic.png" alt="картинка" width="280" height="247")
-               button.swiper-button-prev.finance__prev
-               button.swiper-button-next.finance__next
+         button.swiper-button-prev.finance__prev
+         button.swiper-button-next.finance__next
+         .finance__slider-wrapper
+            .finance__slider
+               .finance__swiper
+                  .swiper-wrapper
+                     .finance__slide.swiper-slide
+                        .finance__slide-inner
+                           .finance__info
+                              h1.main-title.finance__title Рефинансируйте #[br] кредиты
+                              p.finance__text.
+                                 Рефинансирование кредита на лучших условиях, с возможностью получения дополнительных средств.
+                              a.btn.btn--big(href="#") Заказать услугу
+                           .finance__img
+                              picture
+                                 source(srcset="images/finance/finance-pic.webp" type="image/webp")
+                                 img(src="images/finance/finance-pic.png" alt="картинка" width="280" height="247")
+                     .finance__slide.swiper-slide
+                        .finance__slide-inner
+                           .finance__info
+                              h1.main-title.finance__title Рефинансируйте #[br] кредиты
+                              p.finance__text.
+                                 Рефинансирование кредита на лучших условиях, с возможностью получения дополнительных средств.
+                              a.btn.btn--big(href="#") Заказать услугу
+                           .finance__img
+                              picture
+                                 source(srcset="images/finance/finance-pic.webp" type="image/webp")
+                                 img(src="images/finance/finance-pic.png" alt="картинка" width="280" height="247")
+                     .finance__slide.swiper-slide
+                        .finance__slide-inner
+                           .finance__info
+                              h1.main-title.finance__title Рефинансируйте #[br] кредиты
+                              p.finance__text.
+                                 Рефинансирование кредита на лучших условиях, с возможностью получения дополнительных средств.
+                              a.btn.btn--big(href="#") Заказать услугу
+                           .finance__img
+                              picture
+                                 source(srcset="images/finance/finance-pic.webp" type="image/webp")
+                                 img(src="images/finance/finance-pic.png" alt="картинка" width="280" height="247")
+                     .finance__slide.swiper-slide
+                        .finance__slide-inner
+                           .finance__info
+                              h1.main-title.finance__title Рефинансируйте #[br] кредиты
+                              p.finance__text.
+                                 Рефинансирование кредита на лучших условиях, с возможностью получения дополнительных средств.
+                              a.btn.btn--big(href="#") Заказать услугу
+                           .finance__img
+                              picture
+                                 source(srcset="images/finance/finance-pic.webp" type="image/webp")
+                                 img(src="images/finance/finance-pic.png" alt="картинка" width="280" height="247")
+
+            .finance__thumbs-slider
+               .finance__thumbs.services(thumbsSlider)
+                  .swiper-wrapper
+                     .services__item.swiper-slide
+                        h3.services__title Кредит под залог
+                        p.services__text.
+                           Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
+                     .services__item.swiper-slide
+                        h3.services__title Кредит под залог
+                        p.services__text.
+                           Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
+                     .services__item.swiper-slide
+                        h3.services__title Кредит под залог
+                        p.services__text.
+                           Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
+                     .services__item.swiper-slide
+                        h3.services__title Кредит под залог
+                        p.services__text.
+                           Совершайте покупки, оплачивайте услуги без комиссии, управляйте своими картами.
 
    .features-wrapper
       .features-wrapper__inner
@@ -351,7 +751,7 @@ block page
          .address__content.container
             .address__info
                .address__top
-                  h2.title.address__title Наш офис
+                  p.title.address__title Наш офис
                   p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
                p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
                .address__contacts
@@ -366,63 +766,63 @@ block page
                .background-image
                   picture
                      img(src="images/address/map.jpg" alt="карта" width="332" height="330")
-      
-      section.office
-         h2.visually-hidden Наш офис
-         .office__inner
-            .office__slider
-               .slider.office__swiper.swiper-container
-                  .swiper-wrapper
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-1.webp" type="image/webp")
-                                 img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-2.webp" type="image/webp")
-                                 img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-3.webp" type="image/webp")
-                                 img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-4.webp" type="image/webp")
-                                 img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-1.webp" type="image/webp")
-                                 img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-2.webp" type="image/webp")
-                                 img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-3.webp" type="image/webp")
-                                 img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
-                     .office__slide.swiper-slide
-                        .office__img
-                           .background-image
-                              picture
-                                 source(srcset="images/office/office-4.webp" type="image/webp")
-                                 img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
-               button.swiper-button-prev.office__prev
-               button.swiper-button-next.office__next
+
+   section.office
+      h2.visually-hidden Наш офис
+      .office__inner
+         .office__slider
+            .slider.office__swiper.swiper-container
+               .swiper-wrapper
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-1.webp" type="image/webp")
+                              img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-2.webp" type="image/webp")
+                              img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-3.webp" type="image/webp")
+                              img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-4.webp" type="image/webp")
+                              img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-1.webp" type="image/webp")
+                              img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-2.webp" type="image/webp")
+                              img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-3.webp" type="image/webp")
+                              img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
+                  .office__slide.swiper-slide
+                     .office__img
+                        .background-image
+                           picture
+                              source(srcset="images/office/office-4.webp" type="image/webp")
+                              img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
+            button.swiper-button-prev.office__prev
+            button.swiper-button-next.office__next
 
    section.cert
       .cert__inner
@@ -612,6 +1012,7 @@ block page
 
    section.explane
       .explane__inner.container
+         h2.title.visually-hidden Информация о нашей компании
          .explane__content
             .explane__box.explane__box--active
                article.explane__article
@@ -628,9 +1029,9 @@ block page
                   p Экономия огромного пласта времени, так как с вас потребуется только документация и ничего более.
 
                   p Вы можете прийти в отделение, а можете подать заявку онлайн.
-                  p Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ. 
+                  p Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ.
                   p Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться.
-                  p Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат. 
+                  p Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
                   p В заключении можно сказать, что если и стоит обращаться к кредитному брокеру, только к таким проверенным, как Хатон.ру.
 
          a.explane__more(href="#") Развернуть СЕО-тест

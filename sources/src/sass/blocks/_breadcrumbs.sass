@@ -1,4 +1,5 @@
 .breadcrumbs
+   padding-top: 30px
    &__list
       padding-bottom: 12px
       padding-left: var(--mainPadding)
@@ -27,11 +28,11 @@
             display: none
          .breadcrumbs
             &__link
-               color: #323232
+               color: var(--thColor)
    &__link
-      color: #93928D
+      color: var(--textSec)
       &--active
-         color: #323232
+         color: var(--thColor)
 
 @media screen and (min-width: $width_tab)
    .breadcrumbs
@@ -39,9 +40,14 @@
 
 @media screen and (min-width: $width_desk)
    .breadcrumbs
+      padding-top: 40px
       &__list
          width: 100%
          max-width: var(--containerWidth)
          margin: 0 auto
          margin-bottom: 20px
          padding: 0 var(--mainPadding)
+
+@media screen and (min-width: $width_huge)
+   .breadcrumbs
+      padding-top: 60px

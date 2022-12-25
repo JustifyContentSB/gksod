@@ -3,7 +3,7 @@
    --workMargin: 14px
    &__box
       padding: 16px
-      background: #F8F8F8
+      background: var(--boxBg)
    &__top
       margin-bottom: 16px
    &__title
@@ -18,7 +18,7 @@
       font-weight: 400
       font-size: 12px
       line-height: 140%
-      color: #93928D
+      color: var(--textSec)
    &__img
       display: none
 
@@ -38,6 +38,14 @@
          margin-bottom: var(--workBlMargin)
       &__name
          margin-bottom: 4px
+      &__inner
+         display: flex
+      &__box
+         height: 100%
+         display: flex
+         flex-direction: column
+      &__info
+         flex-grow: 1
       &__img
          width: 207px
          display: block

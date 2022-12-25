@@ -1,9 +1,10 @@
 .vacancy
+   --vacancyMargin: 20px
    margin-bottom: var(--mainMargin)
    &__list
       margin-bottom: var(--mainMargin)
       padding: 10px
-      background: #F8F8F8
+      background: var(--boxBg)
       border-radius: 3px
    &__job
       margin-bottom: 10px
@@ -20,9 +21,50 @@
       margin-bottom: 20px
    .text
       margin-bottom: 30px
+   &__more
+      margin-bottom: var(--vacancyMargin)
+      &:last-child
+         margin-bottom: 0
+      &-title
+         margin-bottom: 12px
+   .vacancy
+      &__about
+         margin-bottom: var(--vacancyMargin)
+   &__data
+      margin-bottom: var(--vacancyMargin)
+      padding-bottom: var(--vacancyMargin)
+      border-bottom: 1px solid #EAEAEA
+   &__info
+      margin-bottom: var(--vacancyMargin)
+   &__contacts
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      font-weight: 300
+      &-lead
+         margin-bottom: 8px
+      &-tel
+         margin-bottom: 8px
+         font-weight: 600
+         font-size: 20px
+         line-height: 100%
+         white-space: nowrap
+      &-time
+         margin-bottom: 4px
+         font-weight: 400
+         font-size: 15px
+         line-height: 100%
+         color: var(--textSec)
+      &-email
+         font-weight: 400
+         font-size: 13px
+         line-height: 100%
+         text-decoration-line: underline
+         color: var(--thColor)
 
 @media screen and (min-width: $width_tab)
    .vacancy
+      --vacancyMargin: 30px
       &__list
          padding: 30px
       &__job
@@ -30,17 +72,28 @@
          padding: 40px
       &__pro
          font-size: 20px
+      &__more
+         &-title
+            font-size: 20px
 
 @media screen and (min-width: $width_big)
    .vacancy
+      --vacancyMargin: 40px
       .text
          margin-bottom: 40px
       &__list
          .btn
             font-size: 20px
+      &__contacts
+         &-lead
+            font-size: 18px
+      &__more
+         &-title
+            margin-bottom: 17px
 
 @media screen and (min-width: $width_huge)
    .vacancy
+      --vacancyMargin: 50px
       margin-bottom: 50px
       .text
          margin-bottom: 60px
@@ -48,3 +101,7 @@
          font-size: 24px
       &__list
          margin-bottom: 50px
+      &__more
+         &-title
+            margin-bottom: 20px
+            font-size: 24px

@@ -1,6 +1,6 @@
 .finance
    --financeMargin: 20px
-   background: #F8F8F8
+   background: var(--boxBg)
    font-weight: 300
    font-size: 12px
    line-height: 140%
@@ -11,13 +11,20 @@
          &-prev,
          &-next
             display: none
+   &__slider
+      &-wrapper
+         overflow: hidden
+         position: relative
+   &__inner
+      position: relative
    &__swiper
       position: relative
+      overflow: hidden
    &__slide
       width: 100%
       min-height: 247px
       padding: 31px 30px 24px
-      background: #F8F8F8
+      background: var(--boxBg)
       position: relative
       overflow: hidden
    &__info
@@ -38,6 +45,8 @@
       top: 0
    .services
       display: none
+   &__thumbs
+      padding: 0 var(--mainPadding)
 
 @media screen and (min-width: 480px)
    .finance
@@ -71,6 +80,8 @@
       &__text
          font-size: 15px
          line-height: 140%
+      &__thumbs
+         padding: 0 var(--sidePadding)
 
 @media screen and (min-width: $width_desk)
    .finance
@@ -133,3 +144,12 @@
                left: -10px
             &-next
                right: -10px
+
+@media screen and (min-width: 2560px)
+   .finance
+      .swiper
+         &-button
+            &-prev
+               left: -150px
+            &-next
+               right: -150px

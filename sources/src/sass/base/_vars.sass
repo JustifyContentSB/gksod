@@ -1,12 +1,3 @@
-:root
-   //sizes
-   --mainPadding: 14px
-   --mainMargin: 30px
-   --containerWidth: 1796px
-   //colors
-   --accent: #D82916
-   --transition: all .2s ease
-
 // Grid
 $width_1920: 1920px
 $width_huge: 1800px
@@ -19,6 +10,41 @@ $width_mob: 360px
 $grid-width: 1170px
 $grid-gutter: 30px
 $grid-columns: 12
+
+//mixins
+%hoverLink
+   --hoverColor: #fff
+   position: relative
+   &::after
+      content: ''
+      position: absolute
+      right: 0
+      width: 0
+      bottom: 0
+      height: 1px
+      background: var(--hoverColor)
+      transition: all .2s ease
+   &:hover,
+   &:focus
+      color: var(--hoverColor)
+      &::after
+         left: 0
+         right: auto
+         width: 100%
+
+//root   
+:root
+   //sizes
+   --mainPadding: 14px
+   --mainMargin: 30px
+   --containerWidth: 1796px
+   //colors
+   --accent: #D82916
+   --textSec: #93928D
+   --borderColor: #BEBEBE
+   --boxBg: #F8F8F8
+   --thColor: #323232
+   --transition: all .2s ease
 
 @media screen and (min-width: $width_tab)
    :root

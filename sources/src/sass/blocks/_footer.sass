@@ -9,15 +9,12 @@
       display: flex
       flex-direction: column
       align-items: center
-      border-bottom: 1px solid #323232
+      border-bottom: 1px solid var(--thColor)
       .btn
          width: 100%
          margin-bottom: 12px
          &:last-child
             margin-bottom: 0
-         &--sec
-            background: #323232
-            color: #fff
    &__logo
       min-width: 150px
       display: block
@@ -28,7 +25,7 @@
    &__nav
       margin-bottom: 20px
       padding-bottom: 20px
-      border-bottom: 1px solid #323232
+      border-bottom: 1px solid var(--thColor)
       &-col
          margin-bottom: 20px
          &:last-child
@@ -53,14 +50,18 @@
          font-weight: 300
          font-size: 14px
          line-height: 120%
-         color: #93928D
+         color: var(--textSec)
+         a
+            &:hover,
+            &:focus
+               color: #fff
    &__text
       margin-bottom: 20px
       padding-bottom: 20px
       font-size: 11px
       line-height: 136%
-      color: #93928D
-      border-bottom: 1px solid #323232
+      color: var(--textSec)
+      border-bottom: 1px solid var(--thColor)
    &__soc
       margin-bottom: 13px
    &__address
@@ -80,7 +81,7 @@
       font-weight: 400
       font-size: 13px
       line-height: 100%
-      color: #93928D
+      color: var(--textSec)
    &__location
       margin-bottom: 9px
       font-size: 13px
@@ -103,7 +104,7 @@
             width: 44px
             min-width: 44px
             height: 44px
-            background: #1F1F1F
+            background: #323232
             svg
                width: 24px
                height: 24px
