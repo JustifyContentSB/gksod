@@ -1,446 +1,6 @@
 extends base/_layout
 block head
    title Главная
-block header
-   header.header
-      .header__wrapper
-         .header__inner
-            .header__top
-               .header__top-inner.container
-                  nav.header__top-nav
-                     ul.header__top-list
-                        li
-                           a(href="company.html") О компании
-                        li
-                           a(href="vacancy.html") Вакансии
-                        li
-                           a(href="#") Статьи
-                        li
-                           a(href="#") Калькулятор
-                        li
-                           a(href="contacts.html") Контакты
-                        li.header__top-right
-                           a(href="#") Официальная информация
-                        li
-                           a.header__top-email(href="mailto:support@gksod.ru") support@gksod.ru
-            .header__medium
-               .header__medium-inner.container
-                  a.header__logo(href="#")
-                     img(src="images/icons/logo.svg" alt="логотип" width="160" height="44")
-                  .header__right
-                     form.header__search.header__medium-search(action="#")
-                        button.header__btn.btn.btn--icon.btn--style
-                           svg
-                              use(href="images/sprites/main.stack.svg#svg-search-loop")
-                     ul.header__manage
-                        li.header__manage-item
-                           a.header__btn.btn.btn--icon.btn--style(href="tel:+74953241134")
-                              svg
-                                 use(href="images/sprites/main.stack.svg#svg-call")
-                        li.header__manage-item
-                           a.header__btn.btn.btn--icon.header__burger(href="#")
-                              span.header__burger-line.header__burger-line_1
-                              span.header__burger-line.header__burger-line_2
-                              span.header__burger-line.header__burger-line_3
-            .header__bottom
-               .header__bottom-inner
-                  .header__main
-                     nav.header__main-nav
-                        ul.header__main-list
-                           li.header__main-item
-                              a.header__main-toggle(href="#") Ипотека
-                              .header__main-submenu__wrapper
-                                 .header__main-submenu
-                                    .header__main-submenu__box
-                                       a.header__main-submenu__prev(href="#") Назад
-                                       .header__main-submenu__inner
-                                          .header__main-submenu__content
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог с плохой кредитной историей
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                          .header__main-submenu__img
-                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
-                           li.header__main-item
-                              a.header__main-toggle.header__main-toggle--active(href="#") Кредит под залог
-                              .header__main-submenu__wrapper
-                                 .header__main-submenu
-                                    .header__main-submenu__box
-                                       a.header__main-submenu__prev(href="#") Назад
-                                       .header__main-submenu__inner
-                                          .header__main-submenu__content
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог с плохой кредитной историей
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                          .header__main-submenu__img
-                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
-                           li.header__main-item
-                              a.header__main-toggle(href="#") Кредит наличными
-                              .header__main-submenu__wrapper
-                                 .header__main-submenu
-                                    .header__main-submenu__box
-                                       a.header__main-submenu__prev(href="#") Назад
-                                       .header__main-submenu__inner
-                                          .header__main-submenu__content
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог с плохой кредитной историей
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                          .header__main-submenu__img
-                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
-                           li.header__main-item
-                              a.header__main-toggle(href="#") Рефинансирование
-                              .header__main-submenu__wrapper
-                                 .header__main-submenu
-                                    .header__main-submenu__box
-                                       a.header__main-submenu__prev(href="#") Назад
-                                       .header__main-submenu__inner
-                                          .header__main-submenu__content
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог с плохой кредитной историей
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                          .header__main-submenu__img
-                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
-                           li.header__main-item
-                              a.header__main-toggle(href="#") Кредит для бизнеса
-                              .header__main-submenu__wrapper
-                                 .header__main-submenu
-                                    .header__main-submenu__box
-                                       a.header__main-submenu__prev(href="#") Назад
-                                       .header__main-submenu__inner
-                                          .header__main-submenu__content
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог с плохой кредитной историей
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                          .header__main-submenu__img
-                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
-                           li.header__main-item
-                              a.header__main-toggle(href="#") Единая заявка на кредит
-                              .header__main-submenu__wrapper
-                                 .header__main-submenu
-                                    .header__main-submenu__box
-                                       a.header__main-submenu__prev(href="#") Назад
-                                       .header__main-submenu__inner
-                                          .header__main-submenu__content
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог с плохой кредитной историей
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                             ul.header__main-submenu__list
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог земельного участка
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Кредит под залог комнаты
-                                                li
-                                                   a(href="#") Кредит под залог недвижимости
-                                                li
-                                                   a(href="#") Частный инвестор перезалог
-                                                li
-                                                   a(href="#") Кредит под залог в Москве
-                                          .header__main-submenu__img
-                                             img(src="images/header/header.jpg" alt="картинка" width="300" height="200")
-
-                     form.header__main-search(action="#")
-                        button.btn.btn--icon.btn--style
-                           svg
-                              use(href="images/sprites/main.stack.svg#svg-search-loop")
-                  .header__menu
-                     a.header__logo(href="#")
-                        img(src="images/icons/logo.svg" alt="логотип" width="160" height="44")
-                     ul.header__shedule
-                        li
-                           a(href="#") О компании
-                        li
-                           a(href="#") Вакансии
-                        li
-                           a(href="#") Статьи
-                        li
-                           a(href="#") Калькулятор
-                        li
-                           a(href="#") Контакты
-                     .header__contacts
-                        a.header__tel(href="tel:+74953241134") +7 (495) 324-11-34
-                        p.header__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
-                     ul.soc.header__soc
-                        li
-                           a.soc__link.soc__link--whatsapp(href="#")
-                              svg
-                                 use(href="images/sprites/main.stack.svg#svg-whatsapp")
-                        li
-                           a.soc__link.soc__link--tg(href="#")
-                              svg
-                                 use(href="images/sprites/main.stack.svg#svg-telegram")
-                     .header__btns
-                        a.btn.btn--sec.btn--wide(href="#") Заказать звонок
-                        a.btn.btn--wide(href="#") Заказать услугу
-                     ul.header__desc
-                        li
-                           a(href="#") Официальная информация
-                        li
-                           a.header__email(href="mailto:support@gksod.ru") support@gksod.ru
-
 
 block page
 
@@ -561,17 +121,339 @@ block page
                         img(src="images/work/work-pro.png" alt="Гладкова Юлия" width="207" height="305")
 
    section.offer
-      .offer__inner
+      .offer__inner#offerSlider
          .offer__top
             h2.title.offer__title.container Наши выгодные предложения
-            ul.tabs
+            ul.tabs(data-id="offerSlider")
                li.tabs__item
-                  a.tabs__btn(href="#") Рефинансирование
+                  a.tabs__btn(href="#offerSlider1") Рефинансирование
                li.tabs__item
-                  a.tabs__btn.tabs__btn--active(href="#") Рефинансирование
+                  a.tabs__btn(href="#offerSlider2") Рефинансирование
                li.tabs__item
-                  a.tabs__btn(href="#") Рефинансирование
-         .offer__slider
+                  a.tabs__btn(href="#offerSlider3") Рефинансирование
+         .offer__slider.tabs-content.tabs-content--active#offerSlider1
+            button.swiper-button-prev.offer__prev
+            button.swiper-button-next.offer__next
+            .offer__swiper.swiper-container
+               .swiper-wrapper
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+         .offer__slider.tabs-content#offerSlider2
+            button.swiper-button-prev.offer__prev
+            button.swiper-button-next.offer__next
+            .offer__swiper.swiper-container
+               .swiper-wrapper
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .offer__slide.swiper-slide
+                     .offer__img
+                        .background-image
+                           picture
+                              source(srcset="images/offer/offer.webp" type="image/webp")
+                              img(src="images/offer/offer.jpg" alt="картинка" width="307" height="180")
+                     .offer__info
+                        h3.offer__name Ипотечное кредитование
+                        ul.offer__list
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                           li Кредитование бизнеса
+                        ul.offer__table
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                           li.offer__table-item
+                              p.offer__table-type Размер кредита
+                              p.offer__table-nums 300 тыс. — 30 млн. руб.
+                        a.offer__btn.btn.btn--big(href="#") Заказать услугу
+                        .offer__contacts
+                           p.offer__desc Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+                           a.offer__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                           p.offer__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+         .offer__slider.tabs-content#offerSlider3
+            button.swiper-button-prev.offer__prev
+            button.swiper-button-next.offer__next
             .offer__swiper.swiper-container
                .swiper-wrapper
                   .offer__slide.swiper-slide
@@ -772,55 +654,63 @@ block page
       .office__inner
          .office__slider
             .slider.office__swiper.swiper-container
-               .swiper-wrapper
+               .swiper-wrapper.office__popup
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-1.webp" type="image/webp")
-                              img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-1.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-1.webp" type="image/webp")
+                                 img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-2.webp" type="image/webp")
-                              img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-2.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-2.webp" type="image/webp")
+                                 img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-3.webp" type="image/webp")
-                              img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-3.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-3.webp" type="image/webp")
+                                 img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-4.webp" type="image/webp")
-                              img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-4.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-4.webp" type="image/webp")
+                                 img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-1.webp" type="image/webp")
-                              img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-1.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-1.webp" type="image/webp")
+                                 img(src="images/office/office-1.jpg" alt="картинка" width="394" height="333")
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-2.webp" type="image/webp")
-                              img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-2.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-2.webp" type="image/webp")
+                                 img(src="images/office/office-2.jpg" alt="картинка" width="394" height="333")
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-3.webp" type="image/webp")
-                              img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-3.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-3.webp" type="image/webp")
+                                 img(src="images/office/office-3.jpg" alt="картинка" width="394" height="333")
                   .office__slide.swiper-slide
-                     .office__img
-                        .background-image
-                           picture
-                              source(srcset="images/office/office-4.webp" type="image/webp")
-                              img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
+                     a.office__gallery(href="images/office/office-4.jpg") 
+                        .office__img
+                           .background-image
+                              picture
+                                 source(srcset="images/office/office-4.webp" type="image/webp")
+                                 img(src="images/office/office-4.jpg" alt="картинка" width="394" height="333")
             button.swiper-button-prev.office__prev
             button.swiper-button-next.office__next
 
@@ -829,47 +719,57 @@ block page
          h2.title.cert__title.container Сертификаты
          .cert__slider
             .slider.cert__swiper.swiper-container
-               .swiper-wrapper
+               .swiper-wrapper.cert__popup
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
                   .cert__slide.swiper-slide
-                     .cert__img
-                        .background-image
-                           img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
+                     a.cert__gallery(href="images/cert/cert.jpg")
+                        .cert__img
+                           .background-image
+                              img(src="images/cert/cert.jpg" alt="сертификат" width="130" height="200")
             button.swiper-button-prev.cert__prev
             button.swiper-button-next.cert__next
 
@@ -1037,16 +937,314 @@ block page
          a.explane__more(href="#") Развернуть СЕО-тест
 
    section.info.info--reviews
-      .info__inner
+      .info__inner#reviewsSlider
          h2.title.info__title.container Отзывы
-         ul.tabs
+         ul.tabs(data-id='reviewsSlider')
             li.tabs__item
-               a.tabs__btn(href="#") Рефинансирование
+               a.tabs__btn(href="#reviews-1") Рефинансирование
             li.tabs__item
-               a.tabs__btn.tabs__btn--active(href="#") Рефинансирование
+               a.tabs__btn(href="#reviews-2") Рефинансирование
             li.tabs__item
-               a.tabs__btn(href="#") Рефинансирование
-         .info__slider
+               a.tabs__btn(href="#reviews-3") Рефинансирование
+         .info__slider.tabs-content.tabs-content--active#reviews-1
+            .slider.info__swiper-reviews
+               .swiper-wrapper
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-1.webp" type="image/webp")
+                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-2.webp" type="image/webp")
+                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-3.webp" type="image/webp")
+                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-4.webp" type="image/webp")
+                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-1.webp" type="image/webp")
+                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-2.webp" type="image/webp")
+                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-3.webp" type="image/webp")
+                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-4.webp" type="image/webp")
+                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+            button.swiper-button-prev.reviews__prev
+            button.swiper-button-next.reviews__next
+         .info__slider.tabs-content#reviews-2
+            .slider.info__swiper-reviews
+               .swiper-wrapper
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-1.webp" type="image/webp")
+                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-2.webp" type="image/webp")
+                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-3.webp" type="image/webp")
+                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-4.webp" type="image/webp")
+                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-1.webp" type="image/webp")
+                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-2.webp" type="image/webp")
+                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-3.webp" type="image/webp")
+                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  .info__item.swiper-slide
+                     a.info__video(href="#")
+                        .background-image
+                           picture
+                              source(srcset="images/info/reviews-4.webp" type="image/webp")
+                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                        .info__video-play
+                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+            button.swiper-button-prev.reviews__prev
+            button.swiper-button-next.reviews__next
+         .info__slider.tabs-content#reviews-3
             .slider.info__swiper-reviews
                .swiper-wrapper
                   .info__item.swiper-slide

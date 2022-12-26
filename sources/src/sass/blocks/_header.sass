@@ -235,6 +235,9 @@
    .header
       --headerMargin: 0
       min-height: 184px
+      &__wrapper
+         position: static
+         border-bottom: 0
       &__top
          display: block
          background: var(--boxBg)
@@ -282,13 +285,22 @@
                color: #fff
       &__main
          width: 100%
-         max-width: var(--containerWidth)
-         margin: 0 auto
-         padding: 0 var(--mainPadding)
          order: 1
-         display: flex
-         justify-content: space-between
-         align-items: center
+         border-bottom: 1px solid #EAEAEA
+         &-inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+            max-width: var(--containerWidth)
+            margin: 0 auto
+            padding: 0 var(--mainPadding)
+         &--fixed
+            position: fixed
+            z-index: 1000
+            top: 0
+            left: 0
+            right: 0
+            background: #fff
          &-list
             margin-right: auto
             display: flex
@@ -312,10 +324,20 @@
             &__main
                &-toggle
                   display: block
+                  position: relative
+                  &:hover,
+                  &:focus
+                     &::before
+                        content: ''
+                        position: absolute
+                        bottom: -1px
+                        left: -18px
+                        right: -18px
+                        height: 1px
+                        background: var(--accent)
                   &::after
                      display: none
                   &--clicked
-                     position: relative
                      &::before
                         content: ''
                         position: absolute

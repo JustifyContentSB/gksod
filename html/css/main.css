@@ -1333,7 +1333,8 @@ template {
 }
 html {
   box-sizing: border-box;
-  scrollbar-gutter: stable
+  scrollbar-gutter: stable;
+  margin: 0!important
 }
 *,
 ::after,
@@ -2209,6 +2210,10 @@ svg {
     --headerMargin: 0;
     min-height: 184px
   }
+  .header__wrapper {
+    position: static;
+    border-bottom: 0
+  }
   .header__top {
     display: block;
     background: var(--boxBg);
@@ -2274,12 +2279,12 @@ svg {
   }
   .header__main {
     width: 100%;
-    max-width: var(--containerWidth);
-    margin: 0 auto;
-    padding: 0 var(--mainPadding);
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+    border-bottom: 1px solid #eaeaea
+  }
+  .header__main-inner {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -2288,7 +2293,18 @@ svg {
     justify-content: space-between;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    max-width: var(--containerWidth);
+    margin: 0 auto;
+    padding: 0 var(--mainPadding)
+  }
+  .header__main--fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff
   }
   .header__main-list {
     margin-right: auto;
@@ -2321,13 +2337,21 @@ svg {
     height: 28px
   }
   .header__main .header__main-toggle {
-    display: block
+    display: block;
+    position: relative
+  }
+  .header__main .header__main-toggle:focus::before,
+  .header__main .header__main-toggle:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -18px;
+    right: -18px;
+    height: 1px;
+    background: var(--accent)
   }
   .header__main .header__main-toggle::after {
     display: none
-  }
-  .header__main .header__main-toggle--clicked {
-    position: relative
   }
   .header__main .header__main-toggle--clicked::before {
     content: "";
@@ -2995,6 +3019,12 @@ svg {
   border-color: #1f1f1f;
   color: #fff
 }
+.tabs-content {
+  display: none
+}
+.tabs-content--active {
+  display: block
+}
 @media screen and (min-width:1280px) {
   .tabs {
     width: 100%;
@@ -3025,6 +3055,13 @@ svg {
 }
 .offer__title {
   margin-bottom: 7px
+}
+.offer__slider {
+  position: relative
+}
+.offer__slider .swiper-button-next,
+.offer__slider .swiper-button-prev {
+  z-index: 1000
 }
 .offer__slide {
   width: 280px;
@@ -4876,6 +4913,9 @@ svg {
 .office__slider {
   position: relative
 }
+.office__gallery {
+  display: block
+}
 .office__slide {
   width: 214px
 }
@@ -5424,7 +5464,7 @@ svg {
     padding-bottom: 30px;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 51px;
     bottom: 20px
   }
   .section__aside .form {
