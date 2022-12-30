@@ -76,6 +76,26 @@
          &-prev,
          &-next
             top: 46%
+   &__more
+      font-size: 12px
+   &__about
+      .info
+         &__name, &__more
+            padding-left: 30px
+            position: relative
+            &::before
+               content: ''
+               position: absolute
+               left: 0
+               top: 0
+               width: 20px
+               height: 20px
+               background: url('../images/icons/smile.svg') no-repeat center / contain
+         &__name
+            margin-bottom: 10px
+            &::before
+               background-image: url('../images/icons/question.svg')
+
 
 @media screen and (max-width: 767px)
    .info
@@ -107,6 +127,8 @@
          .info
             &__item
                width: auto
+      &__more
+         font-size: 14px
 
 @media screen and (min-width: $width_desk)
    .info
@@ -138,6 +160,11 @@
          line-height: 150%
       .tabs
          margin-bottom: 20px
+      &__about
+         .info
+            &__name, &__more
+               &::before
+                  top: 2px
 
 @media screen and (min-width: $width_huge)
    .info

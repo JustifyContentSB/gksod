@@ -90,12 +90,14 @@
       &__info
          max-width: 600px
          padding: 0 var(--mainPadding)
+         padding-left: 100px
       &__title
          font-size: 46px
       &__text
          font-size: 17px
       &__img
          width: 576px
+         right: 80px
       .swiper
          &-button
             &-prev,
@@ -120,6 +122,11 @@
          right: 78px
          top: 0
 
+@media screen and (min-width: $width_big)
+   .finance
+      &__info
+         padding: 0 var(--mainPadding)
+
 @media screen and (min-width: $width_huge)
    .finance
       &__slide
@@ -128,6 +135,7 @@
          font-size: 70px
       &__img
          width: 762px
+         right: var(--mainPadding)
       &__info
          margin-bottom: 112px
       .swiper

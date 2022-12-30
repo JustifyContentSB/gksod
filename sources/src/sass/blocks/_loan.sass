@@ -1,0 +1,88 @@
+.loan
+   margin-bottom: var(--mainMargin)
+   .title
+      margin-bottom: 16px
+   .form
+      &__title
+         margin-bottom: 16px
+         font-size: 20px
+      &__inner
+         border: 1px solid var(--thColor)
+         border-radius: 4px
+      &__agree
+         margin-bottom: 0
+      &__type
+         font-size: 16px
+      &__field
+         height: 52px
+   .btn
+      width: 100%
+   &__img
+      position: relative
+
+@media screen and (min-width: $width_tab)
+   .loan
+      .title
+         margin-bottom: 20px
+      &__box
+         display: flex
+         border: 2px solid var(--thColor)
+         border-radius: 4px
+      &__img
+         width: 186px
+         min-width: 186px
+         display: block
+      .form
+         &__inner
+            padding: 30px
+            border: 0
+         &__manage
+            display: grid
+            grid-template-columns: 1fr 1fr
+         &__total
+            margin-bottom: 24px
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 20px
+            &-field
+               margin: 0
+      .btn
+         width: auto
+
+@media screen and (min-width: $width_big)
+   .loan
+      margin-bottom: 40px
+      .title
+         margin-bottom: 30px
+      &__img
+         width: 318px
+         min-width: 318px
+      .form
+         &__inner
+            padding: 40px
+         &__title
+            margin-bottom: 32px
+         &__manage
+            margin-bottom: 32px
+         &__submit
+            margin-bottom: 30px
+
+@media screen and (min-width: $width_huge)
+   .loan
+      .form
+         &__inner
+            padding: 60px
+         &__title
+            margin-bottom: 42px
+            font-size: 24px
+         &__manage
+            margin-bottom: 40px
+         &__total
+            margin-bottom: 40px
+         &__notice
+            margin-bottom: 40px
+         .btn
+            margin-bottom: 30px
+      &__img
+         width: 386px
+         min-width: 386px

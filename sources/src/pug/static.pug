@@ -86,164 +86,511 @@ block page
                         a.form__email(href="mailto:support@gksod.ru") support@gksod.ru
 
    section.info.info--reviews
-      .info__inner
+      .info__inner#reviewsSlider
          h2.title.info__title.container Отзывы
-         ul.tabs
+         ul.tabs(data-id='reviewsSlider')
             li.tabs__item
-               a.tabs__btn(href="#") Рефинансирование
+               a.tabs__btn(href="#reviews-1") Рефинансирование
             li.tabs__item
-               a.tabs__btn.tabs__btn--active(href="#") Рефинансирование
+               a.tabs__btn(href="#reviews-2") Рефинансирование
             li.tabs__item
-               a.tabs__btn(href="#") Рефинансирование
-         .info__slider
-            .slider.info__swiper-reviews
-               .swiper-wrapper
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-1.webp" type="image/webp")
-                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-2.webp" type="image/webp")
-                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-3.webp" type="image/webp")
-                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-4.webp" type="image/webp")
-                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-1.webp" type="image/webp")
-                              img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-2.webp" type="image/webp")
-                              img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-3.webp" type="image/webp")
-                              img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-                  .info__item.swiper-slide
-                     a.info__video(href="#")
-                        .background-image
-                           picture
-                              source(srcset="images/info/reviews-4.webp" type="image/webp")
-                              img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
-                        .info__video-play
-                           img(src="images/icons/play.svg" alt="play" width="24" height="24")
-                     .info__desc
-                        .data.info__data
-                           p.data__day 31 октября 2020
-                           .data__info
-                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
-                              span.data__num 543
-                           .data__info
-                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
-                              span.data__num 12
-                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
-            button.swiper-button-prev.reviews__prev
-            button.swiper-button-next.reviews__next
+               a.tabs__btn(href="#reviews-3") Рефинансирование
+         .tabs-content__wrapper
+            .info__slider.tabs-content.tabs-content--active#reviews-1
+               .slider.info__swiper-reviews.info__swiper-reviews-1
+                  .swiper-wrapper
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+               button.swiper-button-prev.reviews__prev.reviews__prev-1
+               button.swiper-button-next.reviews__next.reviews__next-1
+            .info__slider.tabs-content#reviews-2
+               .slider.info__swiper-reviews.info__swiper-reviews-2
+                  .swiper-wrapper
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+               button.swiper-button-prev.reviews__prev.reviews__prev-2
+               button.swiper-button-next.reviews__next.reviews__next-2
+            .info__slider.tabs-content#reviews-3
+               .slider.info__swiper-reviews.info__swiper-reviews-3
+                  .swiper-wrapper
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+               button.swiper-button-prev.reviews__prev.reviews__prev-3
+               button.swiper-button-next.reviews__next.reviews__next-3
 
    section.explane
       .explane__inner.container

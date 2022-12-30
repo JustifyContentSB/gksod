@@ -26,6 +26,11 @@
       padding-bottom: 23px
       border-bottom: 3px solid var(--accent)
       line-height: 100%
+   &--est
+      margin-bottom: 20px
+      padding-bottom: 23px
+      border-bottom: 3px solid #EAEAEA
+      line-height: 100%
    &--subtitle
       margin-bottom: 20px
       font-size: 18px
@@ -205,6 +210,14 @@
    font-weight: 700
    font-size: 14px
    line-height: 125%
+
+.dropdown
+   &-toggle
+      &::after
+         transition: all .35s ease
+      &--active
+         &::after
+            transform: rotate(180deg)
 
 @media screen and (min-width: $width_tab)
    .title

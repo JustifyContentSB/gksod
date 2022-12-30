@@ -45,12 +45,21 @@
             width: 24px
             height: 24px
             background: url('../images/icons/arrow-down.svg') no-repeat center / contain
+            transition: all .35s ease
+         &--active
+            &::after
+               transform: rotate(180deg)
       &-list
+         padding-top: 10px
          display: none
          font-weight: 300
          font-size: 14px
          line-height: 120%
          color: var(--textSec)
+         li
+            margin-bottom: 10px
+            &:last-child
+               margin-bottom: 0
          a
             &:hover,
             &:focus
@@ -195,11 +204,8 @@
             &::after
                display: none
          &-list
+            padding-top: 0
             display: block
-            li
-               margin-bottom: 10px
-               &:last-child
-                  margin-bottom: 0
       &__contacts
          display: flex
          align-items: flex-start

@@ -1,0 +1,49 @@
+.positive
+   margin-bottom: var(--mainMargin)
+   &__item
+      margin-bottom: 20px
+      padding-left: 44px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         left: 0
+         top: 0
+         width: 28px
+         height: 25px
+         background: url('../images/icons/check-green.svg') no-repeat center / contain
+      &:last-child
+         margin-bottom: 0
+   &__name
+      margin-bottom: 12px
+      font-weight: 700
+      font-size: 16px
+      line-height: 112%
+
+@media screen and (min-width: $width_tab)
+   .positive
+      .title
+         margin-bottom: 30px
+      &__list
+         display: grid
+         grid-template-columns: 1fr 1fr
+         grid-gap: 50px 20px
+      &__name
+         font-size: 18px
+
+@media screen and (min-width: $width_big)
+   .positive
+      font-size: 14px
+
+@media screen and (min-width: $width_tab)
+   .positive
+      .title
+         margin-bottom: 50px
+      &__list
+         font-size: 14px
+         line-height: 110%
+         grid-gap: 50px 20px
+
+@media screen and (min-width: $width_huge)
+   .positive
+      margin-bottom: 60px

@@ -1,0 +1,127 @@
+.credit
+   --creditMargin: 20px
+   color: var(--thColor)
+   margin-bottom: var(--mainMargin)
+   &__box
+      @extend %box
+      margin-bottom: var(--creditMargin)
+   .title
+      margin-bottom: var(--creditMargin)
+      font-size: 18px
+      line-height: 111%
+   &__percent
+      margin-bottom: var(--creditMargin)
+      font-size: 18px
+      line-height: 100%
+      &-num
+         margin: 0 12px
+         color: var(--accent)
+         font-weight: 800
+         font-size: 70px
+         line-height: 70%
+   .btn
+      margin-bottom: var(--creditMargin)
+      padding: 15px 32px
+      font-size: 20px
+   &__features
+      margin-bottom: var(--creditMargin)
+      padding-bottom: 20px
+      border-bottom: 3px solid #EAEAEA
+      li
+         margin-bottom: 16px
+         padding-left: 36px
+         position: relative
+         font-size: 15px
+         line-height: 120%
+         &:last-child
+            margin-bottom: 0
+         &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            width: 21px
+            height: 19px
+            background: url('../images/icons/check-red.svg') no-repeat center / contain
+   &__table
+      li
+         margin-bottom: 18px
+         &:last-child
+            margin-bottom: 0
+   &__type
+      margin-bottom: 6px
+      font-weight: 300
+      font-size: 14px
+      line-height: 129%
+   &__nums
+      font-weight: 700
+      font-size: 18px
+      line-height: 100%
+
+@media screen and (min-width: $width_tab)
+   .credit
+      .title
+         font-size: 20px
+      &__inner
+         display: grid
+         grid-template-columns: 1fr 1fr
+         grid-gap: 20px
+      &__box
+         padding: 30px
+      &__take
+         margin: 0
+      &__info
+         margin: 0
+         padding: 24px
+      &__features
+         padding-bottom: 30px
+      &__table
+         li
+            margin-bottom: 25px
+      &__type
+         margin-bottom: 8px
+      &__nums
+         font-size: 20px
+      &__about
+         display: flex
+         flex-direction: column
+         .credit_box
+            width: 100%
+      &__take
+         margin-top: auto
+      &__offer
+         flex-grow: 1
+
+@media screen and (min-width: $width_big)
+   .credit
+      margin-bottom: 40px
+      &__features
+         margin-bottom: 30px
+         li
+            margin-bottom: 30px
+            font-size: 16px
+      &__info
+         padding: 30px 24px
+      &__type
+         font-size: 16px
+
+@media screen and (min-width: $width_huge)
+   .credit
+      --creditMargin: 35px
+      .title
+         font-size: 24px
+      &__box
+         padding: 40px
+      &__info
+         padding: 40px 35px
+      &__features
+         li
+            margin-bottom: 16px
+      &__table
+         li
+            margin-bottom: 34px
+      &__type
+         margin-bottom: 10px
+         font-size: 18px
+      &__nums
+         font-size: 24px

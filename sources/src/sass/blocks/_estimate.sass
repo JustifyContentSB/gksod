@@ -1,0 +1,48 @@
+.estimate
+   margin-bottom: var(--mainMargin)
+   .features
+      &__list
+         width: calc(100% + (var(--mainPadding)*2))
+         position: relative
+         left: var(--mainPaddingMinus)
+         right: var(--mainPaddingMinus)
+   &__text
+      margin-bottom: var(--mainMargin)
+   .section__aside
+      padding-bottom: 0
+      display: none
+
+@media screen and (min-width: $width_tab)
+   .estimate
+      .features
+         margin-bottom: 16px
+         &__list
+            width: 100%
+            padding: 0
+            position: static
+         .title
+            margin-bottom: 27px
+
+@media screen and (min-width: $width_desk)
+   .estimate
+      .features
+         &__item
+            width: calc(50% - 10px)
+            margin-bottom: 20px
+            &:nth-child(2n)
+               margin-right: 0
+      .faq
+         margin-bottom: 0
+      .section__aside
+         display: block
+
+@media screen and (min-width: $width_big)
+   .estimate
+      &__text
+         margin-bottom: 40px
+
+@media screen and (min-width: $width_huge)
+   .estimate
+      margin-bottom: 60px
+      &__text
+         margin-bottom: 56px

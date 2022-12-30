@@ -1,6 +1,5 @@
 .form
    --formMargin: 20px
-   font-weight: 300
    font-size: 14px
    line-height: 129%
    &__inner
@@ -147,6 +146,28 @@
          &__inner
             padding-top: 20px
             border-top: 0
+   &__total
+      width: 100%
+      margin-bottom: 16px
+      &-field
+         margin-bottom: 20px
+         padding: 14px 20px
+         background: var(--boxBg)
+         &:last-child
+            margin-bottom: 0
+      &-type
+         margin-bottom: 6px
+         font-weight: 300
+         font-size: 16px
+         line-height: 125%
+      &-nums
+         font-weight: 700
+         font-size: 28px
+         line-height: 100%
+   &__notice
+      margin-bottom: 16px
+      font-size: 12px
+      line-height: 133%
 
 @media screen and (min-width: $width_tab)
    .form
@@ -199,6 +220,9 @@
                margin-bottom: 47px
             &__tel
                font-size: 24px
+      &__notice
+         margin-bottom: 30px
+         font-size: 14px
 
 @media screen and (min-width: $width_huge)
    .form
@@ -216,3 +240,10 @@
       &__agree
          font-size: 14px
          line-height: 140%
+      &__total
+         &-field
+            padding: 20px 40px
+         &-type
+            font-size: 18px
+         &-nums
+            font-size: 32px

@@ -1,0 +1,34 @@
+.faq
+   margin-bottom: var(--mainMargin)
+   &__list
+      border-top: 1px solid #EAEAEA
+   &__item
+      border-bottom: 1px solid #EAEAEA
+   &__question
+      display: block
+      padding: 20px 0
+      font-weight: 600
+      font-size: 16px
+      line-height: 100%
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         right: 0
+         top: 50%
+         transform: translateY(-50%)
+         width: 18px
+         height: 18px
+         background: url('../images/icons/arrow-faq.svg') no-repeat center / contain
+      &.dropdown-toggle--active
+         &::after
+            transform: translateY(-50%) rotate(180deg)
+   &__answer
+      padding: 10px 0 20px
+      display: none
+
+@media screen and (min-width: $width_tab)
+   .faq
+      &__question
+         padding: 30px 0
+         font-size: 18px

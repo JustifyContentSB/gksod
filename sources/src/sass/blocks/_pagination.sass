@@ -18,10 +18,18 @@
       align-items: center
       border: 1px solid var(--textSec)
       border-radius: 3px
+      transition: var(--transition)
+      &:hover,
+      &:focus
+         border-color: var(--accent)
+         color: var(--accent)
       &--active
          color: #fff
          background: #D82916
          border-color: #D82916
+         &:hover,
+         &:focus
+            color: #fff
       &:last-child
          margin-right: 0
 

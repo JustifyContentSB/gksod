@@ -30,9 +30,19 @@
          border-color: #1F1F1F
          color: #fff
    &-content
-      display: none
+      position: absolute !important
+      z-index: -1
+      opacity: 0
+      left: 0
+      right: 0
+      top: 0
+      transition: all .4s ease
+      &__wrapper
+         position: relative
       &--active
-         display: block
+         z-index: 100
+         opacity: 1
+         position: relative !important
 
 @media screen and (min-width: $width_desk)
    .tabs

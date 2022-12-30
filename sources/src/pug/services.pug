@@ -1,0 +1,898 @@
+extends base/_layout
+block head
+   title Услуги
+block page
+
+   .breadcrumbs
+      ul.breadcrumbs__list
+         li.breadcrumbs__item
+            a.breadcrumbs__link(href="#") Главная
+         li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Название услуги
+
+   section.estimate
+      .estimate__inner.container
+         h1.main-title Рефинансирование ипотеки
+         .estimate__box.section
+            .estimate__info.section__info
+               section.credit
+                  .credit__inner
+                     .credit__about
+                        .credit__offer.credit__box
+                           h2.title Рефинансируйте ипотеку и закройте все кредиты под
+                           p.credit__percent от #[span.credit__percent-num 8.7%] годовых
+                           p Потребительские кредиты, карты, все это можно объединить под ставку ипотечного кредита. #[br] Все кредиты в одном платеже по низкой ставке.
+                        .credit__take.credit__box
+                           a.btn.btn--wide(href="#") Оформить онлайн
+                           p Бесплатная консультация, без предоплаты. Короткие сроки процедуры рефинансирования.
+                     .credit__info.credit__box
+                        ul.credit__features
+                           li Без справок и поручителей
+                           li Уменьшение ежемесячного платежа
+                           li Понижение процентной ставки
+                        ul.credit__table
+                           li
+                              p.credit__type Сумма кредита
+                              p.credit__nums до 60 млн. рублей
+                           li
+                              p.credit__type Срок кредита
+                              p.credit__nums 3 мес. - 20 лет
+                           li
+                              p.credit__type Процентные ставки
+                              p.credit__nums от 4,5% годовых
+                           li
+                              p.credit__type Рассмотрение заявки
+                              p.credit__nums 1 рабочий день
+
+               .text.estimate__text
+                  p.
+                     Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. #[br]
+                     Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                  p.
+                     В заключении можно сказать, что если и стоит обращаться к кредитному брокеру, только к таким проверенным, как Хатон.ру.
+                     
+               section.loan
+                  .loan__inner
+                     h2.title Калькулятор рефинансирования ипотеки
+                     .loan__box
+                        form.form(action="#")
+                           .form__inner
+                              h2.form__title Выберите сумму и срок рефинансирования
+                              .form__manage
+                                 label.form__label
+                                    span.form__type Сумма рефинансирования
+                                    input.form__field(type="text" placeholder="Placeholder")
+                                 label.form__label
+                                    span.form__type Срок рефинансирования
+                                    input.form__field(type="text" placeholder="Placeholder")
+                              .form__total
+                                 .form__total-field
+                                    p.form__total-type Ставка % годовых
+                                    p.form__total-nums 4,7
+                                 .form__total-field
+                                    p.form__total-type Ежемесячный платеж
+                                    p.form__total-nums 2 584 ₽
+                              p.form__notice *Настройки калькулятора позволяют задавать дополнительные параметры кредита, но нужно учитывать, что в каждом банке есть свои особенности расчетов.
+                              .form__manage
+                                 label.form__label
+                                    span.form__type ФИО
+                                    input.form__field(type="text" placeholder="Петров Василий")
+                                 label.form__label
+                                    span.form__type Ваш телефон
+                                    input.form__field(type="tel" placeholder="+7")
+                              button.form__submit.btn.btn--wide Отправить заявку
+                              .form__agree
+                                 label.form__agree-label
+                                    input(type="checkbox")
+                                    span.form__agree-checkbox
+                                       span.form__agree-checkbox__check
+                                    span.form__agree-text.
+                                       Я принимаю условия #[a(href="#") Пользовательского соглашения] и даю свое согласие на обработку моих персональных данных в соответствии с #[a(href="#") Политикой конфиденциальности]
+                        .loan__img
+                           .background-image
+                              source(srcset="images/loan/loan.webp" type="image/webp")
+                              img(src="images/loan/loan.jpg" alt="Картинка" width="386" height="314")
+
+               section.features
+                  .features__inner
+                     h2.title.title--est Почему с нами надежно и выгодно:
+                     ul.features__list
+                        li.features__item
+                           img.features__icon(src="images/features/features-1.svg" alt="иконка" width="40" height="40")
+                           h2.features__title Лучшие условия для быстрого получения кредита
+                           p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+                        li.features__item
+                           img.features__icon(src="images/features/features-2.svg" alt="иконка" width="40" height="40")
+                           h2.features__title Лучшие условия для быстрого получения кредита
+                           p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+                        li.features__item
+                           img.features__icon(src="images/features/features-3.svg" alt="иконка" width="40" height="40")
+                           h2.features__title Лучшие условия для быстрого получения кредита
+                           p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+                        li.features__item
+                           img.features__icon(src="images/features/features-4.svg" alt="иконка" width="40" height="40")
+                           h2.features__title Лучшие условия для быстрого получения кредита
+                           p  Мы предлагаем лучшие условия на рынке кредитования и гарантируем быстрое принятие решения.
+
+               section.positive
+                  .positive__inner
+                     h2.title.title--est Положительное решение даже в случае:
+                     ul.positive__list
+                        li.positive__item
+                           h3.positive__name Уменьшение ежемесячного платежа
+                           p.
+                              Рефинансирование ипотеки позволит вам, существенно сократить ежемесячный платеж по кредиту.
+                        li.positive__item
+                           h3.positive__name Быстрое рефинансирование ипотеки
+                           p.
+                              В заключении можно сказать, что если и стоит обращаться к кредитному брокеру, только к таким проверенным
+                        li.positive__item
+                           h3.positive__name Сократи переплату более чем на 1 млн. рублей
+                           p.
+                              Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                        li.positive__item
+                           h3.positive__name Получите дополнительно нужную сумму
+                           p.
+                              Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами
+               
+               section.faq
+                  .faq__inner
+                     ul.faq__list
+                        li.faq__item
+                           a.faq__question.dropdown-toggle(href="#") Условия кредитования
+                           .faq__answer
+                              p.
+                                 Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. #[br]
+                                 Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                        li.faq__item
+                           a.faq__question.dropdown-toggle(href="#") Процентные ставки
+                           .faq__answer
+                              p.
+                                 Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. #[br]
+                                 Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                        li.faq__item
+                           a.faq__question.dropdown-toggle(href="#") Требования к заемщику
+                           .faq__answer
+                              p.
+                                 Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. #[br]
+                                 Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                        li.faq__item
+                           a.faq__question.dropdown-toggle(href="#") Необходимые документы
+                           .faq__answer
+                              p.
+                                 Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. #[br]
+                                 Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                        li.faq__item
+                           a.faq__question.dropdown-toggle(href="#") Пример расчета кредита
+                           .faq__answer
+                              p.
+                                 Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. #[br]
+                                 Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                        li.faq__item
+                           a.faq__question.dropdown-toggle(href="#") Информация о последствиях неуплаты
+                           .faq__answer
+                              p.
+                                 Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. #[br]
+                                 Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+
+            aside.section__aside
+               .person
+                  .person__info
+                     p.person__name Лилия Фахритдинова
+                     p.person__pro Менеджер по кредитным продуктам
+                  .person__img
+                     span.person__circle.person__circle-1
+                     span.person__circle.person__circle-2
+                     span.person__circle.person__circle-3
+                     img.person__img-photo(src="images/work/work-pro.png", alt="Лилия Фахритдинова" width="187")
+                  .person__contacts
+                     a.person__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                     p.person__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                     a.person__email(href="mailto:support@gksod.ru") support@gksod.ru
+                  a.btn(href="#") Обратиться к специалисту
+   
+   section.process
+      .process__inner
+         h2.title.process__title.container Как мы работаем?
+         ul.process__list
+            li.process__item.
+               Рефинансирование ипотеки позволит вам, существенно сократить ежемесячный платеж по кредиту.
+            li.process__item.
+               Рефинансирование ипотеки позволит вам, существенно сократить ежемесячный платеж по кредиту.
+            li.process__item.
+               Рефинансирование ипотеки позволит вам, существенно сократить ежемесячный платеж по кредиту.
+            li.process__item.
+               Рефинансирование ипотеки позволит вам, существенно сократить ежемесячный платеж по кредиту.
+            li.process__item.
+               Рефинансирование ипотеки позволит вам, существенно сократить ежемесячный платеж по кредиту.
+
+   section.info.info--reviews
+      .info__inner#reviewsSlider
+         h2.title.info__title.container Отзывы
+         ul.tabs(data-id='reviewsSlider')
+            li.tabs__item
+               a.tabs__btn(href="#reviews-1") Рефинансирование
+            li.tabs__item
+               a.tabs__btn(href="#reviews-2") Рефинансирование
+            li.tabs__item
+               a.tabs__btn(href="#reviews-3") Рефинансирование
+         .tabs-content__wrapper
+            .info__slider.tabs-content.tabs-content--active#reviews-1
+               .slider.info__swiper-reviews.info__swiper-reviews-1
+                  .swiper-wrapper
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+               button.swiper-button-prev.reviews__prev.reviews__prev-1
+               button.swiper-button-next.reviews__next.reviews__next-1
+            .info__slider.tabs-content#reviews-2
+               .slider.info__swiper-reviews.info__swiper-reviews-2
+                  .swiper-wrapper
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+               button.swiper-button-prev.reviews__prev.reviews__prev-2
+               button.swiper-button-next.reviews__next.reviews__next-2
+            .info__slider.tabs-content#reviews-3
+               .slider.info__swiper-reviews.info__swiper-reviews-3
+                  .swiper-wrapper
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-2.webp" type="image/webp")
+                                 img(src="images/info/reviews-2.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-3.webp" type="image/webp")
+                                 img(src="images/info/reviews-3.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-4.webp" type="image/webp")
+                                 img(src="images/info/reviews-4.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+                     .info__item.swiper-slide
+                        a.info__video(href="#")
+                           .background-image
+                              picture
+                                 source(srcset="images/info/reviews-1.webp" type="image/webp")
+                                 img(src="images/info/reviews-1.jpg" alt="картинка" width="394" height="358")
+                           .info__video-play
+                              img(src="images/icons/play.svg" alt="play" width="24" height="24")
+                        .info__desc
+                           .data.info__data
+                              p.data__day 31 октября 2020
+                              .data__info
+                                 img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                                 span.data__num 543
+                              .data__info
+                                 img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                                 span.data__num 12
+                           .info__about
+                              h3.info__name Заголовок проблемы и особенности. Возможно в две строки...
+                              p.info__more Решение проблемы и небольшой комментарий к отзыву, если необходимо. Блок фиксированной высоты...
+               button.swiper-button-prev.reviews__prev.reviews__prev-3
+               button.swiper-button-next.reviews__next.reviews__next-3
+
+   section.info
+      .info__inner
+         h2.title.info__title.container Интересная информация
+         .info__slider
+            .slider.info__swiper-articles
+               .swiper-wrapper
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-1.webp" type="image/webp")
+                              img(src="images/info/info-1.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-2.webp" type="image/webp")
+                              img(src="images/info/info-2.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-3.webp" type="image/webp")
+                              img(src="images/info/info-3.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-4.webp" type="image/webp")
+                              img(src="images/info/info-4.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-1.webp" type="image/webp")
+                              img(src="images/info/info-1.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-2.webp" type="image/webp")
+                              img(src="images/info/info-2.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-3.webp" type="image/webp")
+                              img(src="images/info/info-3.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+                  a.info__item.swiper-slide(href="#")
+                     .info__img
+                        .background-image
+                           picture
+                              source(srcset="images/info/info-4.webp" type="image/webp")
+                              img(src="images/info/info-4.jpg" alt="картинка" width="394" height="358")
+                     .info__desc
+                        .data.info__data
+                           p.data__day 31 октября 2020
+                           .data__info
+                              img.data__icon(src="images/icons/eye.svg" alt="просмотры" width="18" height="18")
+                              span.data__num 543
+                           .data__info
+                              img.data__icon(src="images/icons/comment.svg" alt="коммент" width="18" height="18")
+                              span.data__num 12
+                        h3.info__name Кредит для самозанятых в Россельхозбанке: условия, требования к заемщику
+            button.swiper-button-prev.articles__prev
+            button.swiper-button-next.articles__next
+
+   section.explane
+      .explane__inner.container
+         h2.title.visually-hidden Информация о нашей компании
+         .explane__content
+            .explane__box.explane__box--active
+               article.explane__article
+                  h2.title.explane__title Кредитный брокер
+                  p Кредитный брокер — финансовый помощник, который является посредником между кредитной организацией и потенциальным заемщиком, желающим взять кредит в банке. Помощь кредитного брокера заключается в проверке кредитной истории заявителя, выборе наиболее надежного банка, комфортного условия кредитования, сборе и подаче необходимых документов, выборе способа и графика погашения займа, тщательной проверке документов и поиске подводных камней, если таковые имеются.
+               article.explane__article
+                  h2.title.explane__title Кто обращается к брокерам?
+                  p.
+                     Или другая ситуация. Потенциальный заявитель изучал информацию о кредитах в интернете и наткнулся на Хатон.ру. Отзывы прекрасные и знакомые советуют. Клиент будущего банка по кредитам решил, что это отличная возможность собрать информацию о комфортных условиях кредитования, процентных ставках и сроках платежей. Ведь человек не является специалистом и не знать, где, как и что искать. #[br]
+                     Молодой человек предоставил все необходимые документы и спокойно работал дальше, пока брокер делал все за него. А в какой-то момент ему просто предоставили целый пакет документов с процентными ставками, предложениями и видами кредитов. Так клиент кредитования выбрал наиболее удобный вариант для себя и не потратил огромное количество времени на бессмысленные поиски лучшего варианта. Все сделали за него. Причем среди всех предложений, он выбрал с самой низкой ставкой — 4.9% годовых. Сам бы он вряд ли нашел такое хорошее решение.
+            .explane__box
+               article.explane__article
+                  h2.title.explane__title Преимущества брокера Хатон.ру
+                  p Экономия огромного пласта времени, так как с вас потребуется только документация и ничего более.
+
+                  p Вы можете прийти в отделение, а можете подать заявку онлайн.
+                  p Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ.
+                  p Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться.
+                  p Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                  p В заключении можно сказать, что если и стоит обращаться к кредитному брокеру, только к таким проверенным, как Хатон.ру.
+
+         a.explane__more(href="#") Развернуть СЕО-тест
+
+   address.address
+      .address__inner
+         .address__content.container
+            .address__info
+               .address__top
+                  p.title.address__title Наш офис
+                  p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
+               p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+               .address__contacts
+                  a.address__tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.address__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+               ul.address__manage
+                  li
+                     a.btn.btn--sec(href="#") Заказать звонок
+                  li
+                     a.btn(href="#") Заказать услугу
+            .address__map
+               .background-image
+                  picture
+                     img(src="images/address/map.jpg" alt="карта" width="332" height="330")

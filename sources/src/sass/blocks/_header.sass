@@ -3,18 +3,25 @@
    min-height: 71px
    background: #fff
    &__wrapper
-      position: fixed
-      z-index: 1000
-      top: 0
-      left: 0
-      right: 0
       background: #fff
       border-bottom: 1px solid #EAEAEA
+      transition: all .3s ease
+      top: -70px
+      &--fixed
+         position: fixed
+         z-index: 1000
+         top: -71px
+         left: 0
+         right: 0
+         transition: all .3s ease
+      &--visible
+         top: 0 !important
    &--sec
       margin-bottom: 0
    &__top
       display: none
       &-email
+         display: none
          text-decoration: underline
    &__medium
       &-inner
@@ -225,23 +232,22 @@
                      transform: scaleY(0)
                   &_3
                      transform: rotate(-45deg) translateY(3px) translateX(1px)
+   &__overlay
+      display: none
 
 @media screen and (min-width: $width_tab)
    .header
-      &__logo
-         margin-right: 40px
-
-@media screen and (min-width: $width_desk)
-   .header
-      --headerMargin: 0
-      min-height: 184px
+      min-height: 109px
       &__wrapper
-         position: static
-         border-bottom: 0
+         top: -109px
+      &__bottom
+         top: 109px
       &__top
          display: block
          background: var(--boxBg)
          border-bottom: 1px solid #EAEAEA
+         position: relative
+         z-index: 10000
          &-list
             padding: 12px 0
             display: flex
@@ -258,6 +264,29 @@
                color: #000
          &-right
             margin-left: auto
+      &__logo
+         margin-right: 40px
+
+@media screen and (min-width: $width_desk)
+   .header
+      --headerMargin: 0
+      min-height: 184px
+      &__wrapper
+         position: static
+         border-bottom: 0
+      &__overlay
+         position: fixed
+         z-index: 1000
+         left: 0
+         top: 0
+         right: 0
+         bottom: 0
+         background: rgba(#000, 0.5)
+         &--active
+            display: block
+      &__top
+         &-email
+            display: block
       &__logo
          margin-top: auto
       &__email
@@ -286,7 +315,15 @@
       &__main
          width: 100%
          order: 1
-         border-bottom: 1px solid #EAEAEA
+         position: relative
+         &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            height: 1px
+            background: #EAEAEA
          &-inner
             display: flex
             justify-content: space-between
@@ -296,7 +333,7 @@
             padding: 0 var(--mainPadding)
          &--fixed
             position: fixed
-            z-index: 1000
+            z-index: 10000
             top: 0
             left: 0
             right: 0
@@ -330,7 +367,8 @@
                      &::before
                         content: ''
                         position: absolute
-                        bottom: -1px
+                        z-index: 100
+                        bottom: 0
                         left: -18px
                         right: -18px
                         height: 1px
@@ -341,7 +379,8 @@
                      &::before
                         content: ''
                         position: absolute
-                        bottom: -1px
+                        z-index: 100
+                        bottom: 0
                         left: -18px
                         right: -18px
                         height: 1px
@@ -358,12 +397,10 @@
                display: none
                position: fixed
                z-index: 100
-               top: 198px
                left: 0
                right: 0
                overflow-y: auto
-               height: calc(100% - 184px)
-               background: rgba(0, 0, 0, 0.5)
+               max-height: calc(100% - 184px)
             &__inner
                width: 100%
                max-width: var(--containerWidth)
@@ -397,7 +434,9 @@
          display: none
       &__bottom
          padding: 0
-         position: static
+         position: relative
+         z-index: 10000
+         top: 0
          transform: none
          overflow-y: visible
          &-inner

@@ -32,10 +32,16 @@ $grid-columns: 12
          right: auto
          width: 100%
 
+%box
+   padding: 20px
+   background: var(--boxBg)
+   border-radius: 4px
+
 //root   
 :root
    //sizes
    --mainPadding: 14px
+   --mainPaddingMinus: -14px
    --mainMargin: 30px
    --containerWidth: 1796px
    //colors
@@ -54,19 +60,21 @@ $grid-columns: 12
 @media screen and (min-width: $width_desk)
    :root
       --mainPadding: 30px
+      --mainPaddingMinus: -30px
       --mainMargin: 40px
 
 @media screen and (min-width: $width_lg)
    :root
       --mainPadding: 40px
+      --mainPaddingMinus: -40px
       --mainMargin: 50px
 
 @media screen and (min-width: $width_big)
    :root
       --mainPadding: 80px
+      --mainPaddingMinus: -80px
       --mainMargin: 60px
 
 @media screen and (min-width: $width_huge)
    :root
-      --mainPadding: 80px
       --mainMargin: 100px
