@@ -402,14 +402,15 @@ $(document).ready(function () {
 });
 
 function tabsToggle() {
-   $('.tabs .tabs__btn').removeClass('tabs__btn--active');
-   $('.tabs .tabs__item:first-child .tabs__btn').addClass('tabs__btn--active');
-   $('.tab-content').removeClass('tabs-content--active');
-   $('.tab-content:first').addClass('tabs-content--active');
+   $(document).ready(function () {
+      $('.tabs .tabs__btn').removeClass('tabs__btn--active');
+      $('.tabs .tabs__item:first-child .tabs__btn').addClass('tabs__btn--active');
+      $('.tab-content').removeClass('tabs-content--active');
+      $('.tab-content:first-child').addClass('tabs-content--active');
+   })
    $('.tabs__btn').click(function (e) {
       e.preventDefault();
       $(this).parent('.tabs__item').parent('.tabs').find('.tabs__item .tabs__btn').removeClass('tabs__btn--active');
-      
       $(this).addClass('tabs__btn--active');
 
       let currentTab = $(this).attr('href');

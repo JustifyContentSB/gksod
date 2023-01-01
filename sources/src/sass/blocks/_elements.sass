@@ -219,6 +219,30 @@
          &::after
             transform: rotate(180deg)
 
+.tel
+   display: inline-block
+   font-weight: 600
+   font-size: 16px
+   line-height: 100%
+   white-space: nowrap
+   color: #1F1F1F
+
+.time
+   font-weight: 400
+   font-size: 12px
+   line-height: 100%
+   color: var(--textSec)
+
+.email
+   font-weight: 400
+   font-size: 13px
+   line-height: 100%
+   text-decoration: underline
+   white-space: nowrap
+   &:hover,
+   &:focus
+      text-decoration: none
+
 @media screen and (min-width: $width_tab)
    .title
       font-size: 24px
@@ -258,6 +282,10 @@
 @media screen and (min-width: $width_lg)
    .title
       font-size: 28px
+   .tel
+      font-size: 18px
+   .time
+      font-size: 13px
    .listing
       li
          margin-bottom: 10px
@@ -283,3 +311,7 @@
       li
          &::before
             top: 8px
+   .tel
+      font-size: 20px
+   .time
+      font-size: 15px

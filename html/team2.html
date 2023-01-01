@@ -104,7 +104,7 @@
                                       <li><a href="#">Кредит под залог в Москве</a></li>
                                     </ul>
                                   </div>
-                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="картинка" width="300" height="200"></div>
+                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="баннер" width="300" height="200"></div>
                                 </div>
                               </div>
                             </div>
@@ -146,7 +146,7 @@
                                       <li><a href="#">Кредит под залог в Москве</a></li>
                                     </ul>
                                   </div>
-                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="картинка" width="300" height="200"></div>
+                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="баннер" width="300" height="200"></div>
                                 </div>
                               </div>
                             </div>
@@ -188,7 +188,7 @@
                                       <li><a href="#">Кредит под залог в Москве</a></li>
                                     </ul>
                                   </div>
-                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="картинка" width="300" height="200"></div>
+                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="баннер" width="300" height="200"></div>
                                 </div>
                               </div>
                             </div>
@@ -230,7 +230,7 @@
                                       <li><a href="#">Кредит под залог в Москве</a></li>
                                     </ul>
                                   </div>
-                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="картинка" width="300" height="200"></div>
+                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="баннер" width="300" height="200"></div>
                                 </div>
                               </div>
                             </div>
@@ -272,7 +272,7 @@
                                       <li><a href="#">Кредит под залог в Москве</a></li>
                                     </ul>
                                   </div>
-                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="картинка" width="300" height="200"></div>
+                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="баннер" width="300" height="200"></div>
                                 </div>
                               </div>
                             </div>
@@ -314,7 +314,7 @@
                                       <li><a href="#">Кредит под залог в Москве</a></li>
                                     </ul>
                                   </div>
-                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="картинка" width="300" height="200"></div>
+                                  <div class="header__main-submenu__img"><img src="images/header/header.jpg" alt="баннер" width="300" height="200"></div>
                                 </div>
                               </div>
                             </div>
@@ -339,8 +339,8 @@
                     <li><a href="#">Калькулятор</a></li>
                     <li><a href="#">Контакты</a></li>
                   </ul>
-                  <div class="header__contacts"><a class="header__tel" href="tel:+74953241134">+7 (495) 324-11-34</a>
-                    <p class="header__time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p>
+                  <div class="header__contacts"><a class="header__tel tel" href="tel:+74953241134">+7 (495) 324-11-34</a>
+                    <p class="header__time time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p>
                   </div>
                   <ul class="soc header__soc">
                     <li><a class="soc__link soc__link--whatsapp" href="#">
@@ -355,7 +355,7 @@
                   <div class="header__btns"><a class="btn btn--sec btn--wide" href="#">Заказать звонок</a><a class="btn btn--wide" href="#">Заказать услугу</a></div>
                   <ul class="header__desc">
                     <li><a href="#">Официальная информация</a></li>
-                    <li><a class="header__email" href="mailto:support@gksod.ru">support@gksod.ru</a></li>
+                    <li><a class="header__email email" href="mailto:support@gksod.ru">support@gksod.ru</a></li>
                   </ul>
                 </div>
               </div>
@@ -372,166 +372,492 @@
           </ul>
         </div>
         <section class="team team--sec">
-          <div class="team__inner container">
+          <div class="team__inner container" id="teamList">
             <h1 class="main-title">Наша команда</h1>
-            <ul class="team__list">
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-1.webp" type="image/webp"><img src="images/team/team-1.jpg" alt="команда" width="160" height="191">
-                    </picture>
+            <div class="team__top">
+              <h2 class="team__title">Отделы компании</h2>
+              <ul class="tabs" data-id="teamList">
+                <li class="tabs__item"><a class="tabs__btn" href="#team-1">Сотрудники</a></li>
+                <li class="tabs__item"><a class="tabs__btn" href="#team-2">Сотрудники</a></li>
+                <li class="tabs__item"><a class="tabs__btn" href="#team-3">Сотрудники</a></li>
+              </ul>
+            </div>
+            <div class="tabs-content__wrapper">
+              <ul class="team__list tabs-content tabs-content--active" id="team-1">
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-1.webp" type="image/webp"><img src="images/team/team-1.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Механтьев Мариан Ефремович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-2.webp" type="image/webp"><img src="images/team/team-2.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                  <div class="team__info">
+                    <p class="team__name">Механтьев Мариан Ефремович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Викашев Август Емельянович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-3.webp" type="image/webp"><img src="images/team/team-3.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-2.webp" type="image/webp"><img src="images/team/team-2.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Милехин Стакрат Георгиевич</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-4.webp" type="image/webp"><img src="images/team/team-4.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                  <div class="team__info">
+                    <p class="team__name">Викашев Август Емельянович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Покровский Мефодий Ипполитович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-5.webp" type="image/webp"><img src="images/team/team-5.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-3.webp" type="image/webp"><img src="images/team/team-3.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Подшивалов Еремей Ростиславович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-6.webp" type="image/webp"><img src="images/team/team-6.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                  <div class="team__info">
+                    <p class="team__name">Милехин Стакрат Георгиевич</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Толстокожев Вячеслав Филиппович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-7.webp" type="image/webp"><img src="images/team/team-7.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-4.webp" type="image/webp"><img src="images/team/team-4.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Яромеев Моисей Святославович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-8.webp" type="image/webp"><img src="images/team/team-8.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                  <div class="team__info">
+                    <p class="team__name">Покровский Мефодий Ипполитович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Кондуров Никита Германович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item team__item--hidden">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-9.webp" type="image/webp"><img src="images/team/team-9.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-5.webp" type="image/webp"><img src="images/team/team-5.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Пронин Абрам Эммануилович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item team__item--hidden">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-10.webp" type="image/webp"><img src="images/team/team-10.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                  <div class="team__info">
+                    <p class="team__name">Подшивалов Еремей Ростиславович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Прокофий Александрович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item team__item--hidden">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-11.webp" type="image/webp"><img src="images/team/team-11.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-6.webp" type="image/webp"><img src="images/team/team-6.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Розанов Мариан Илларионович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-              <li class="team__item team__item--hidden">
-                <div class="team__photo">
-                  <div class="background-image">
-                    <picture>
-                      <source srcset="images/team/team-12.webp" type="image/webp"><img src="images/team/team-12.jpg" alt="команда" width="160" height="191">
-                    </picture>
+                  <div class="team__info">
+                    <p class="team__name">Толстокожев Вячеслав Филиппович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
                   </div>
-                </div>
-                <div class="team__info">
-                  <p class="team__name">Воронов Авдей Святославович</p>
-                  <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-7.webp" type="image/webp"><img src="images/team/team-7.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Яромеев Моисей Святославович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-8.webp" type="image/webp"><img src="images/team/team-8.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Кондуров Никита Германович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-9.webp" type="image/webp"><img src="images/team/team-9.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Пронин Абрам Эммануилович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-10.webp" type="image/webp"><img src="images/team/team-10.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Прокофий Александрович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-11.webp" type="image/webp"><img src="images/team/team-11.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Розанов Мариан Илларионович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-12.webp" type="image/webp"><img src="images/team/team-12.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Воронов Авдей Святославович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="team__list tabs-content" id="team-2">
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-1.webp" type="image/webp"><img src="images/team/team-1.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Механтьев Мариан Ефремович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-2.webp" type="image/webp"><img src="images/team/team-2.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Викашев Август Емельянович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-3.webp" type="image/webp"><img src="images/team/team-3.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Милехин Стакрат Георгиевич</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-4.webp" type="image/webp"><img src="images/team/team-4.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Покровский Мефодий Ипполитович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-5.webp" type="image/webp"><img src="images/team/team-5.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Подшивалов Еремей Ростиславович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-6.webp" type="image/webp"><img src="images/team/team-6.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Толстокожев Вячеслав Филиппович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-7.webp" type="image/webp"><img src="images/team/team-7.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Яромеев Моисей Святославович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-8.webp" type="image/webp"><img src="images/team/team-8.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Кондуров Никита Германович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-9.webp" type="image/webp"><img src="images/team/team-9.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Пронин Абрам Эммануилович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-10.webp" type="image/webp"><img src="images/team/team-10.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Прокофий Александрович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-11.webp" type="image/webp"><img src="images/team/team-11.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Розанов Мариан Илларионович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-12.webp" type="image/webp"><img src="images/team/team-12.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Воронов Авдей Святославович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="team__list tabs-content" id="team-3">
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-1.webp" type="image/webp"><img src="images/team/team-1.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Механтьев Мариан Ефремович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-2.webp" type="image/webp"><img src="images/team/team-2.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Викашев Август Емельянович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-3.webp" type="image/webp"><img src="images/team/team-3.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Милехин Стакрат Георгиевич</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-4.webp" type="image/webp"><img src="images/team/team-4.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Покровский Мефодий Ипполитович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-5.webp" type="image/webp"><img src="images/team/team-5.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Подшивалов Еремей Ростиславович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-6.webp" type="image/webp"><img src="images/team/team-6.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Толстокожев Вячеслав Филиппович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-7.webp" type="image/webp"><img src="images/team/team-7.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Яромеев Моисей Святославович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-8.webp" type="image/webp"><img src="images/team/team-8.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Кондуров Никита Германович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-9.webp" type="image/webp"><img src="images/team/team-9.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Пронин Абрам Эммануилович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-10.webp" type="image/webp"><img src="images/team/team-10.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Прокофий Александрович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-11.webp" type="image/webp"><img src="images/team/team-11.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Розанов Мариан Илларионович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+                <li class="team__item team__item--hidden">
+                  <div class="team__photo">
+                    <div class="background-image">
+                      <picture>
+                        <source srcset="images/team/team-12.webp" type="image/webp"><img src="images/team/team-12.jpg" alt="команда" width="160" height="191">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="team__info">
+                    <p class="team__name">Воронов Авдей Святославович</p>
+                    <p class="team__pro">Руководитель направления розничного кредитования для привелигированных клиентов</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="pagination">
               <div class="pagination__list"><a class="pagination__btn" href="#">1</a><a class="pagination__btn pagination__btn--active" href="#">2</a><a class="pagination__btn" href="#">3</a><a class="pagination__btn" href="#">...</a><a class="pagination__btn" href="#">45</a></div>
             </div>
@@ -576,8 +902,8 @@
                   <p class="address__city">г. Москва, Нижний Сусальный переулок, д. 5, стр. 1</p>
                 </div>
                 <p class="address__text">Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.</p>
-                <div class="address__contacts"><a class="address__tel" href="tel:+74953241134">+7 (495) 324-11-34</a>
-                  <p class="address__time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p>
+                <div class="address__contacts"><a class="address__tel tel" href="tel:+74953241134">+7 (495) 324-11-34</a>
+                  <p class="address__time time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p>
                 </div>
                 <ul class="address__manage">
                   <li><a class="btn btn--sec" href="#">Заказать звонок</a></li>
@@ -585,9 +911,7 @@
                 </ul>
               </div>
               <div class="address__map">
-                <div class="background-image">
-                  <picture><img src="images/address/map.jpg" alt="карта" width="332" height="330"></picture>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17961.85417182666!2d37.68580660191187!3d55.75447590574944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aa4681e5943%3A0x4ce0b691b25536c4!2z0YAt0L0g0JvQtdGE0L7RgNGC0L7QstC-LCDQnNC-0YHQutCy0LA!5e0!3m2!1sru!2sru!4v1672594843788!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
@@ -666,8 +990,8 @@
                       <use href="images/sprites/main.stack.svg#svg-telegram"></use>
                     </svg></a></li>
               </ul>
-              <address class="footer__address"><a class="footer__tel" href="tel:+74953241134">+7 (495) 324-11-34</a>
-                <p class="footer__time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p>
+              <address class="footer__address"><a class="footer__tel tel" href="tel:+74953241134">+7 (495) 324-11-34</a>
+                <p class="footer__time time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p>
                 <p class="footer__location">г. Москва, Нижний Сусальный переулок, д. 5, стр. 1</p><a class="footer__email" href="mailto:support@gksod.ru">support@gksod.ru</a>
               </address>
               <ul class="footer__count">

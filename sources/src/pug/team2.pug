@@ -11,117 +11,345 @@ block page
             a.breadcrumbs__link.breadcrumbs__link--active(href="#") Наша команда
 
    section.team.team--sec
-      .team__inner.container
+      .team__inner.container#teamList
          h1.main-title Наша команда
-         ul.team__list
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-1.webp" type="image/webp")
-                        img(src="images/team/team-1.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Механтьев Мариан Ефремович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-2.webp" type="image/webp")
-                        img(src="images/team/team-2.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Викашев Август Емельянович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-3.webp" type="image/webp")
-                        img(src="images/team/team-3.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Милехин Стакрат Георгиевич
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-4.webp" type="image/webp")
-                        img(src="images/team/team-4.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Покровский Мефодий Ипполитович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-5.webp" type="image/webp")
-                        img(src="images/team/team-5.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Подшивалов Еремей Ростиславович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-6.webp" type="image/webp")
-                        img(src="images/team/team-6.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Толстокожев Вячеслав Филиппович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-7.webp" type="image/webp")
-                        img(src="images/team/team-7.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Яромеев Моисей Святославович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-8.webp" type="image/webp")
-                        img(src="images/team/team-8.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Кондуров Никита Германович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item.team__item--hidden
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-9.webp" type="image/webp")
-                        img(src="images/team/team-9.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Пронин Абрам Эммануилович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item.team__item--hidden
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-10.webp" type="image/webp")
-                        img(src="images/team/team-10.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Прокофий Александрович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item.team__item--hidden
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-11.webp" type="image/webp")
-                        img(src="images/team/team-11.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Розанов Мариан Илларионович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
-            li.team__item.team__item--hidden
-               .team__photo
-                  .background-image
-                     picture
-                        source(srcset="images/team/team-12.webp" type="image/webp")
-                        img(src="images/team/team-12.jpg" alt="команда" width="160" height="191")
-               .team__info
-                  p.team__name Воронов Авдей Святославович
-                  p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+         .team__top
+            h2.team__title Отделы компании
+            ul.tabs(data-id='teamList')
+               li.tabs__item
+                  a.tabs__btn(href="#team-1") Сотрудники
+               li.tabs__item
+                  a.tabs__btn(href="#team-2") Сотрудники
+               li.tabs__item
+                  a.tabs__btn(href="#team-3") Сотрудники
+         .tabs-content__wrapper
+            ul.team__list.tabs-content.tabs-content--active#team-1
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-1.webp" type="image/webp")
+                           img(src="images/team/team-1.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Механтьев Мариан Ефремович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-2.webp" type="image/webp")
+                           img(src="images/team/team-2.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Викашев Август Емельянович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-3.webp" type="image/webp")
+                           img(src="images/team/team-3.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Милехин Стакрат Георгиевич
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-4.webp" type="image/webp")
+                           img(src="images/team/team-4.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Покровский Мефодий Ипполитович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-5.webp" type="image/webp")
+                           img(src="images/team/team-5.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Подшивалов Еремей Ростиславович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-6.webp" type="image/webp")
+                           img(src="images/team/team-6.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Толстокожев Вячеслав Филиппович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-7.webp" type="image/webp")
+                           img(src="images/team/team-7.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Яромеев Моисей Святославович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-8.webp" type="image/webp")
+                           img(src="images/team/team-8.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Кондуров Никита Германович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-9.webp" type="image/webp")
+                           img(src="images/team/team-9.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Пронин Абрам Эммануилович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-10.webp" type="image/webp")
+                           img(src="images/team/team-10.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Прокофий Александрович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-11.webp" type="image/webp")
+                           img(src="images/team/team-11.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Розанов Мариан Илларионович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-12.webp" type="image/webp")
+                           img(src="images/team/team-12.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Воронов Авдей Святославович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+            ul.team__list.tabs-content#team-2
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-1.webp" type="image/webp")
+                           img(src="images/team/team-1.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Механтьев Мариан Ефремович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-2.webp" type="image/webp")
+                           img(src="images/team/team-2.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Викашев Август Емельянович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-3.webp" type="image/webp")
+                           img(src="images/team/team-3.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Милехин Стакрат Георгиевич
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-4.webp" type="image/webp")
+                           img(src="images/team/team-4.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Покровский Мефодий Ипполитович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-5.webp" type="image/webp")
+                           img(src="images/team/team-5.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Подшивалов Еремей Ростиславович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-6.webp" type="image/webp")
+                           img(src="images/team/team-6.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Толстокожев Вячеслав Филиппович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-7.webp" type="image/webp")
+                           img(src="images/team/team-7.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Яромеев Моисей Святославович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-8.webp" type="image/webp")
+                           img(src="images/team/team-8.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Кондуров Никита Германович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-9.webp" type="image/webp")
+                           img(src="images/team/team-9.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Пронин Абрам Эммануилович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-10.webp" type="image/webp")
+                           img(src="images/team/team-10.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Прокофий Александрович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-11.webp" type="image/webp")
+                           img(src="images/team/team-11.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Розанов Мариан Илларионович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-12.webp" type="image/webp")
+                           img(src="images/team/team-12.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Воронов Авдей Святославович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+            ul.team__list.tabs-content#team-3
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-1.webp" type="image/webp")
+                           img(src="images/team/team-1.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Механтьев Мариан Ефремович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-2.webp" type="image/webp")
+                           img(src="images/team/team-2.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Викашев Август Емельянович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-3.webp" type="image/webp")
+                           img(src="images/team/team-3.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Милехин Стакрат Георгиевич
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-4.webp" type="image/webp")
+                           img(src="images/team/team-4.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Покровский Мефодий Ипполитович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-5.webp" type="image/webp")
+                           img(src="images/team/team-5.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Подшивалов Еремей Ростиславович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-6.webp" type="image/webp")
+                           img(src="images/team/team-6.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Толстокожев Вячеслав Филиппович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-7.webp" type="image/webp")
+                           img(src="images/team/team-7.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Яромеев Моисей Святославович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-8.webp" type="image/webp")
+                           img(src="images/team/team-8.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Кондуров Никита Германович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-9.webp" type="image/webp")
+                           img(src="images/team/team-9.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Пронин Абрам Эммануилович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-10.webp" type="image/webp")
+                           img(src="images/team/team-10.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Прокофий Александрович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-11.webp" type="image/webp")
+                           img(src="images/team/team-11.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Розанов Мариан Илларионович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
+               li.team__item.team__item--hidden
+                  .team__photo
+                     .background-image
+                        picture
+                           source(srcset="images/team/team-12.webp" type="image/webp")
+                           img(src="images/team/team-12.jpg" alt="команда" width="160" height="191")
+                  .team__info
+                     p.team__name Воронов Авдей Святославович
+                     p.team__pro Руководитель направления розничного кредитования для привелигированных клиентов
          
          .pagination
             .pagination__list
@@ -166,14 +394,12 @@ block page
                   p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
                p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
                .address__contacts
-                  a.address__tel(href="tel:+74953241134") +7 (495) 324-11-34
-                  p.address__time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  a.address__tel.tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.address__time.time Ежедневно без выходных с 10:00 до 19:00 (мск.)
                ul.address__manage
                   li
                      a.btn.btn--sec(href="#") Заказать звонок
                   li
                      a.btn(href="#") Заказать услугу
             .address__map
-               .background-image
-                  picture
-                     img(src="images/address/map.jpg" alt="карта" width="332" height="330")
+               iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17961.85417182666!2d37.68580660191187!3d55.75447590574944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aa4681e5943%3A0x4ce0b691b25536c4!2z0YAt0L0g0JvQtdGE0L7RgNGC0L7QstC-LCDQnNC-0YHQutCy0LA!5e0!3m2!1sru!2sru!4v1672594843788!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")

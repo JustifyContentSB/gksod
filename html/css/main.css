@@ -1137,6 +1137,7 @@ template {
   --mainPadding: 14px;
   --mainPaddingMinus: -14px;
   --mainMargin: 30px;
+  --secMargin: 30px;
   --containerWidth: 1796px;
   --accent: #D82916;
   --textSec: #93928D;
@@ -1148,28 +1149,30 @@ template {
 @media screen and (min-width:768px) {
   :root {
     --mainPadding: 20px;
-    --mainMargin: 40px
+    --mainMargin: 40px;
+    --secMargin: 40px
   }
 }
 @media screen and (min-width:1280px) {
   :root {
     --mainPadding: 30px;
-    --mainPaddingMinus: -30px;
-    --mainMargin: 40px
+    --mainPaddingMinus: -30px
   }
 }
 @media screen and (min-width:1366px) {
   :root {
     --mainPadding: 40px;
     --mainPaddingMinus: -40px;
-    --mainMargin: 50px
+    --mainMargin: 50px;
+    --secMargin: 50px
   }
 }
 @media screen and (min-width:1440px) {
   :root {
     --mainPadding: 80px;
     --mainPaddingMinus: -80px;
-    --mainMargin: 60px
+    --mainMargin: 60px;
+    --secMargin: 60px
   }
 }
 @media screen and (min-width:1800px) {
@@ -1763,6 +1766,31 @@ svg {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg)
 }
+.tel {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  white-space: nowrap;
+  color: #1f1f1f
+}
+.time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: var(--textSec)
+}
+.email {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  text-decoration: underline;
+  white-space: nowrap
+}
+.email:focus,
+.email:hover {
+  text-decoration: none
+}
 @media screen and (min-width:768px) {
   .title {
     font-size: 24px
@@ -1812,6 +1840,12 @@ svg {
   .title {
     font-size: 28px
   }
+  .tel {
+    font-size: 18px
+  }
+  .time {
+    font-size: 13px
+  }
   .listing li {
     margin-bottom: 10px
   }
@@ -1839,6 +1873,12 @@ svg {
   }
   .listing li::before {
     top: 8px
+  }
+  .tel {
+    font-size: 20px
+  }
+  .time {
+    font-size: 15px
   }
 }
 .main {
@@ -2105,17 +2145,7 @@ svg {
   margin-bottom: 20px
 }
 .header__tel {
-  display: inline-block;
-  margin-bottom: 6px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%
-}
-.header__time {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  color: var(--textSec)
+  margin-bottom: 6px
 }
 .header__shedule {
   margin-bottom: var(--headerMargin);
@@ -2132,12 +2162,6 @@ svg {
 .header__shedule a:focus,
 .header__shedule a:hover {
   color: #000
-}
-.header__email {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 100%;
-  text-decoration: underline
 }
 .header__btns {
   margin-bottom: var(--headerMargin);
@@ -2548,12 +2572,6 @@ svg {
     width: 180px;
     min-width: 180px
   }
-  .header__tel {
-    font-size: 18px
-  }
-  .header__time {
-    font-size: 13px
-  }
 }
 @media screen and (min-width:1440px) {
   .header {
@@ -2594,11 +2612,7 @@ svg {
     bottom: 5px
   }
   .header__tel {
-    margin-bottom: 6px;
-    font-size: 20px
-  }
-  .header__time {
-    font-size: 15px
+    margin-bottom: 6px
   }
 }
 .finance {
@@ -3229,23 +3243,19 @@ svg {
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
-  color: var(--textSec);
   display: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
-  align-items: flex-start
+  align-items: flex-start;
+  color: var(--textSec)
 }
 .offer__desc {
   margin-bottom: 10px
 }
 .offer__tel {
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
   color: #1f1f1f
 }
 @media screen and (min-width:340px) {
@@ -3370,11 +3380,7 @@ svg {
     margin-bottom: 16px
   }
   .offer__tel {
-    margin-bottom: 8px;
-    font-size: 20px
-  }
-  .offer__time {
-    font-size: 15px
+    margin-bottom: 8px
   }
   .offer__table {
     margin-bottom: 26px
@@ -3513,17 +3519,8 @@ svg {
   margin-bottom: 20px
 }
 .address__tel {
-  display: inline-block;
   margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%
-}
-.address__time {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  color: var(--textSec)
+  font-size: 20px
 }
 .address__manage {
   display: -webkit-flex;
@@ -3546,6 +3543,10 @@ svg {
   position: relative;
   border-radius: 3px;
   overflow: hidden
+}
+.address__map iframe {
+  width: 100%;
+  height: 100%
 }
 @media screen and (min-width:768px) {
   .address__top {
@@ -4337,17 +4338,11 @@ svg {
 }
 .footer__tel {
   margin-bottom: 9px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  white-space: nowrap
+  font-size: 20px
 }
 .footer__time {
   margin-bottom: 9px;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 100%;
-  color: var(--textSec)
+  font-size: 13px
 }
 .footer__location {
   margin-bottom: 9px;
@@ -4570,10 +4565,13 @@ svg {
   }
 }
 .team {
-  margin-bottom: var(--mainMargin)
+  margin-bottom: var(--secMargin)
+}
+.team__title {
+  margin-bottom: 8px
 }
 .team__list {
-  margin-bottom: var(--mainMargin);
+  margin-bottom: var(--secMargin);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px 12px
@@ -4604,6 +4602,11 @@ svg {
   font-size: 12px;
   line-height: 120%;
   color: var(--textSec)
+}
+.team .tabs {
+  width: calc(100% + var(--mainPadding) * 2);
+  position: relative;
+  left: var(--mainPaddingMinus)
 }
 @media screen and (max-width:767px) {
   .team--sec .team__list {
@@ -4663,6 +4666,16 @@ svg {
   .team__pro {
     line-height: 140%
   }
+  .team .tabs {
+    width: 100%;
+    padding: 0;
+    position: static
+  }
+}
+@media screen and (min-width:1366px) {
+  .team__title {
+    margin-bottom: 15px
+  }
 }
 @media screen and (min-width:1440px) {
   .team__photo {
@@ -4670,11 +4683,7 @@ svg {
   }
 }
 @media screen and (min-width:1800px) {
-  .team {
-    margin-bottom: 60px
-  }
   .team__list {
-    margin-bottom: 60px;
     grid-gap: 60px 20px
   }
   .team__photo {
@@ -4744,7 +4753,7 @@ svg {
 }
 .pro {
   --proMargin: 30px;
-  margin-bottom: var(--mainMargin)
+  margin-bottom: var(--secMargin)
 }
 .pro .main-title {
   padding: 0 var(--mainPadding)
@@ -4866,7 +4875,6 @@ svg {
 }
 @media screen and (min-width:1800px) {
   .pro {
-    margin-bottom: 60px;
     font-size: 18px;
     line-height: 144%
   }
@@ -4977,6 +4985,10 @@ svg {
   position: relative;
   border-radius: 3px;
   overflow: hidden
+}
+.contacts__map iframe {
+  width: 100%;
+  height: 100%
 }
 @media screen and (max-width:1279px) {
   .contacts {
@@ -5337,26 +5349,14 @@ svg {
 }
 .form__tel {
   margin-bottom: 8px;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  white-space: nowrap
+  font-size: 20px
 }
 .form__time {
-  font-weight: 400;
+  margin-bottom: 4px;
   font-size: 13px;
-  line-height: 100%;
   color: var(--textSec)
 }
 .form__email {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 100%;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
   color: var(--thColor)
 }
 .form .btn {
@@ -5555,24 +5555,13 @@ svg {
 }
 .vacancy__contacts-tel {
   margin-bottom: 8px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  white-space: nowrap
+  font-size: 20px
 }
 .vacancy__contacts-time {
   margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 100%;
-  color: var(--textSec)
+  font-size: 15px
 }
 .vacancy__contacts-email {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 100%;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
   color: var(--thColor)
 }
 @media screen and (min-width:768px) {
@@ -5990,7 +5979,7 @@ svg {
   }
 }
 .positive {
-  margin-bottom: var(--mainMargin)
+  margin-bottom: var(--secMargin)
 }
 .positive__item {
   margin-bottom: 20px;
@@ -6043,13 +6032,8 @@ svg {
     grid-gap: 50px 20px
   }
 }
-@media screen and (min-width:1800px) {
-  .positive {
-    margin-bottom: 60px
-  }
-}
 .estimate {
-  margin-bottom: var(--mainMargin)
+  margin-bottom: var(--secMargin)
 }
 .estimate .features__list {
   width: calc(100% + var(--mainPadding) * 2);
@@ -6098,9 +6082,6 @@ svg {
   }
 }
 @media screen and (min-width:1800px) {
-  .estimate {
-    margin-bottom: 60px
-  }
   .estimate__text {
     margin-bottom: 56px
   }
@@ -6309,26 +6290,13 @@ svg {
 }
 .person__tel {
   margin-bottom: 8px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  white-space: nowrap;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex
+  font-size: 20px
 }
 .person__time {
-  font-weight: 400;
   font-size: 15px;
-  line-height: 100%;
   color: #93928d
 }
 .person__email {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 100%;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
   color: var(--thColor)
 }
 @media screen and (min-width:1800px) {

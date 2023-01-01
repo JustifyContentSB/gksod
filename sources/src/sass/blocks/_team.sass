@@ -1,7 +1,9 @@
 .team
-   margin-bottom: var(--mainMargin)
+   margin-bottom: var(--secMargin)
+   &__title
+      margin-bottom: 8px
    &__list
-      margin-bottom: var(--mainMargin)
+      margin-bottom: var(--secMargin)
       display: grid
       grid-template-columns: 1fr 1fr
       grid-gap: 30px 12px
@@ -27,6 +29,10 @@
       font-size: 12px
       line-height: 120%
       color: var(--textSec)
+   .tabs
+      width: calc(100% + var(--mainPadding)*2)
+      position: relative
+      left: var(--mainPaddingMinus)
 
 @media screen and (max-width: 767px)
    .team
@@ -78,6 +84,15 @@
          line-height: 150%
       &__pro
          line-height: 140%
+      .tabs
+         width: 100%
+         padding: 0
+         position: static
+
+@media screen and (min-width: $width_lg)
+   .team
+      &__title
+         margin-bottom: 15px
 
 @media screen and (min-width: $width_big)
    .team
@@ -86,9 +101,7 @@
 
 @media screen and (min-width: $width_huge)
    .team
-      margin-bottom: 60px
       &__list
-         margin-bottom: 60px
          grid-gap: 60px 20px
       &__photo
          height: 493px
