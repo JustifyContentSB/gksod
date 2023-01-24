@@ -1,0 +1,116 @@
+.approval
+   margin-bottom: var(--secMargin)
+   &__inner
+      @extend %box
+   &__icon
+      width: 40px
+      min-width: 40px
+      height: 40px
+      margin-bottom: 20px
+      img
+         width: 100%
+   &__top
+      margin-bottom: 14px
+      padding-bottom: 14px
+      border-bottom: 1px solid #EAEAEA
+   &__title
+      margin-bottom: 12px
+      font-weight: 700
+      font-size: 18px
+      line-height: 100%
+      span
+         color: #6EB26E
+   &__desc
+      font-weight: 400
+      font-size: 12px
+      line-height: 125%
+   &__about
+      margin-bottom: 14px
+      font-weight: 700
+      font-size: 14px
+      line-height: 114%
+      color: #1F1F1F
+   &__list
+      font-weight: 400
+      font-size: 12px
+      line-height: 133%
+      color: var(--thColor)
+      li
+         margin-bottom: 8px
+         padding-left: 33px
+         position: relative
+         &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            width: 19px
+            height: 14px
+            background: url('../images/icons/check-approval.svg') no-repeat center / contain
+         &:last-child
+            margin-bottom: 0
+
+@media screen and (min-width: $width_tab)
+   .approval
+      &__inner
+         padding: 30px
+         display: flex
+         align-items: flex-start
+      &__icon
+         width: 60px
+         min-width: 60px
+         height: 60px
+         margin-right: 40px
+      &__top
+         padding-bottom: 20px
+         margin-bottom: 20px
+      &__title
+         font-size: 20px
+      &__desc
+         font-size: 14px
+         line-height: 129%
+      &__about
+         margin-bottom: 20px
+
+@media screen and (min-width: $width_desk)
+   .approval
+      &__top
+         padding-bottom: 30px
+         margin-bottom: 30px
+      &__icon
+         margin-right: 70px
+      &__desc
+         font-size: 16px
+      &__about
+         font-size: 16px
+      &__list
+         font-size: 14px
+         line-height: 143%
+         li
+            margin-bottom: 12px
+            &::before
+               top: 2px
+
+@media screen and (min-width: $width_big)
+   .approval
+      &__inner
+         padding: 40px
+
+@media screen and (min-width: $width_huge)
+   .approval
+      &__inner
+         padding: 60px
+      &__title
+         font-size: 24px
+         line-height: 117%
+      &__desc
+         font-size: 18px
+         line-height: 128%
+      &__about
+         font-size: 18px
+      &__list
+         font-size: 16px
+         line-height: 150%
+         li
+            &::before
+               top: 4px

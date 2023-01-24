@@ -45,12 +45,16 @@
             <div class="header__medium">
               <div class="header__medium-inner container"><a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="160" height="44"></a>
                 <div class="header__right">
+                  <button class="header__btn btn btn--icon btn--style header__search-toggle">
+                    <svg>
+                      <use href="images/sprites/main.stack.svg#svg-search-loop"></use>
+                    </svg>
+                  </button>
                   <form class="header__search header__medium-search" action="#">
-                    <button class="header__btn btn btn--icon btn--style">
-                      <svg>
-                        <use href="images/sprites/main.stack.svg#svg-search-loop"></use>
-                      </svg>
-                    </button>
+                    <div class="header__search-inner">
+                      <input class="header__search-field" type="text" placeholder="Поиск по сайту">
+                      <button class="header__search-toggle header__search-close"><img src="images/icons/close.svg" alt="иконка" width="20" height="20"></button>
+                    </div>
                   </form>
                   <ul class="header__manage">
                     <li class="header__manage-item"><a class="header__btn btn btn--icon btn--style" href="tel:+74953241134">
@@ -322,13 +326,19 @@
                         </li>
                       </ul>
                     </nav>
-                    <form class="header__main-search" action="#">
-                      <button class="btn btn--icon btn--style">
+                    <div class="header__main-search">
+                      <button class="header__btn btn btn--icon btn--style header__search-toggle">
                         <svg>
                           <use href="images/sprites/main.stack.svg#svg-search-loop"></use>
                         </svg>
                       </button>
-                    </form>
+                      <form class="header__search" action="#">
+                        <div class="header__search-inner">
+                          <input class="header__search-field" type="text" placeholder="Поиск по сайту">
+                          <button class="header__search-toggle header__search-close"><img src="images/icons/close.svg" alt="иконка" width="20" height="20"></button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
                 <div class="header__menu"><a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="160" height="44"></a>
@@ -415,6 +425,27 @@
                     </div>
                   </div>
                 </section>
+                <section class="approval">
+                  <div class="approval__inner">
+                    <div class="approval__icon"><img src="images/icons/approval.svg" alt="иконка" width="40" height="40"></div>
+                    <div class="approval__info">
+                      <div class="approval__top">
+                        <h2 class="approval__title">Предварительное одобрение за 15 минут — <span>Онлайн</span></h2>
+                        <p class="approval__desc">Вы получите решение без приезда в офис. Мы вышлем вам расчет кредита, где будут указаны ставка по кредиту, срок кредита и ежемесячный платеж.</p>
+                      </div>
+                      <div class="approval__bottom">
+                        <p class="approval__about">Оформив перезалог, вы сможете:</p>
+                        <ul class="approval__list">
+                          <li>Снизить платеж</li>
+                          <li>Снизить ставку и получить дополнительно деньги</li>
+                          <li>Уйти от инвестора, не нравится текущий кредитор (банк)</li>
+                          <li>Погасить просрочки</li>
+                          <li>Закрыть другие кредиты и объединить все кредиты в один</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
                 <div class="text estimate__text">
                   <p>Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться. <br>
                     Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
@@ -432,13 +463,30 @@
                         <div class="form__inner">
                           <h2 class="form__title">Выберите сумму и срок рефинансирования</h2>
                           <div class="form__manage">
-                            <label class="form__label"><span class="form__type">Сумма рефинансирования</span>
-                              <input class="form__field" type="text" placeholder="Placeholder">
-                            </label>
-                            <label class="form__label"><span class="form__type">Срок рефинансирования</span>
-                              <input class="form__field" type="text" placeholder="Placeholder">
-                            </label>
+                            <div class="form__label">
+                              <label class="form__type" for="sum"> Сумма рефинансирования</label>
+                              <div class="range">
+                                <input class="form__field" id="sum" type="text" placeholder="Placeholder" readonly><span id="slider-range-sum"></span>
+                              </div>
+                              <div class="form__label-minmax">
+                                <p>10 000</p>
+                                <p>500 000</p>
+                              </div>
+                            </div>
+                            <div class="form__label">
+                              <label class="form__type" for="term"> Срок рефинансирования</label>
+                              <div class="range">
+                                <input class="form__field" id="term" type="text" placeholder="Placeholder" readonly><span id="slider-range-term"></span>
+                              </div>
+                              <div class="form__label-minmax">
+                                <p>1</p>
+                                <p>12</p>
+                              </div>
+                            </div>
                           </div>
+                          <p>
+                            <input type="text" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                          </p>
                           <div class="form__total">
                             <div class="form__total-field">
                               <p class="form__total-type">Ставка % годовых</p>

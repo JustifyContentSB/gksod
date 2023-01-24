@@ -11,6 +11,22 @@ $grid-width: 1170px
 $grid-gutter: 30px
 $grid-columns: 12
 
+//root   
+:root
+   //sizes
+   --mainPadding: 14px
+   --mainPaddingMinus: -14px
+   --mainMargin: 30px
+   --secMargin: 30px
+   --containerWidth: 1796px
+   //colors
+   --accent: #D82916
+   --textSec: #93928D
+   --borderColor: #BEBEBE
+   --boxBg: #F8F8F8
+   --thColor: #323232
+   --transition: all .2s ease
+
 //mixins
 %hoverLink
    --hoverColor: #fff
@@ -36,22 +52,6 @@ $grid-columns: 12
    padding: 20px
    background: var(--boxBg)
    border-radius: 4px
-
-//root   
-:root
-   //sizes
-   --mainPadding: 14px
-   --mainPaddingMinus: -14px
-   --mainMargin: 30px
-   --secMargin: 30px
-   --containerWidth: 1796px
-   //colors
-   --accent: #D82916
-   --textSec: #93928D
-   --borderColor: #BEBEBE
-   --boxBg: #F8F8F8
-   --thColor: #323232
-   --transition: all .2s ease
 
 @media screen and (min-width: $width_tab)
    :root

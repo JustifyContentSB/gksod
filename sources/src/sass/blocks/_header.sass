@@ -29,6 +29,48 @@
          background: #fff
          display: flex
          align-items: center
+         position: relative
+   &__search
+      display: none
+      padding: 13px var(--mainPadding)
+      background: #fff
+      z-index: 5
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      &--active
+         display: block
+         position: absolute
+      &-inner
+         height: 100%
+         position: relative
+      &-close
+         width: 44px
+         height: 100%
+         position: absolute
+         top: 50%
+         right: 0
+         transform: translateY(-50%)
+         display: flex
+         justify-content: center
+         align-items: center
+         img
+            width: 20px
+            height: 20px
+      &-field
+         width: 100%
+         height: 100%
+         padding: 10px
+         padding-right: 54px
+         background: var(--boxBg)
+         border-radius: 3px
+         border: none
+         font-weight: 300
+         font-size: 12px
+         color: #000
+         &::placeholder
+            color: #000
    &__logo
       margin-right: 10px
       width: 160px
@@ -317,6 +359,7 @@
             max-width: var(--containerWidth)
             margin: 0 auto
             padding: 0 var(--mainPadding)
+            position: relative
          &--fixed
             position: fixed
             z-index: 10000
@@ -448,6 +491,18 @@
          .btn
             margin: 0
             margin-left: 20px
+      &__search
+         padding: 5px var(--mainPadding) 10px
+         &-toggle
+            min-height: auto
+            min-width: auto
+            width: auto
+            &:active
+               background: var(--boxBg)
+         &-close
+            right: 10px
+            height: auto
+            width: auto
 
 @media screen and (min-width: $width_lg)
    .header

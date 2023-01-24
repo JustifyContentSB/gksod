@@ -45,12 +45,16 @@
             <div class="header__medium">
               <div class="header__medium-inner container"><a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="160" height="44"></a>
                 <div class="header__right">
+                  <button class="header__btn btn btn--icon btn--style header__search-toggle">
+                    <svg>
+                      <use href="images/sprites/main.stack.svg#svg-search-loop"></use>
+                    </svg>
+                  </button>
                   <form class="header__search header__medium-search" action="#">
-                    <button class="header__btn btn btn--icon btn--style">
-                      <svg>
-                        <use href="images/sprites/main.stack.svg#svg-search-loop"></use>
-                      </svg>
-                    </button>
+                    <div class="header__search-inner">
+                      <input class="header__search-field" type="text" placeholder="Поиск по сайту">
+                      <button class="header__search-toggle header__search-close"><img src="images/icons/close.svg" alt="иконка" width="20" height="20"></button>
+                    </div>
                   </form>
                   <ul class="header__manage">
                     <li class="header__manage-item"><a class="header__btn btn btn--icon btn--style" href="tel:+74953241134">
@@ -322,13 +326,19 @@
                         </li>
                       </ul>
                     </nav>
-                    <form class="header__main-search" action="#">
-                      <button class="btn btn--icon btn--style">
+                    <div class="header__main-search">
+                      <button class="header__btn btn btn--icon btn--style header__search-toggle">
                         <svg>
                           <use href="images/sprites/main.stack.svg#svg-search-loop"></use>
                         </svg>
                       </button>
-                    </form>
+                      <form class="header__search" action="#">
+                        <div class="header__search-inner">
+                          <input class="header__search-field" type="text" placeholder="Поиск по сайту">
+                          <button class="header__search-toggle header__search-close"><img src="images/icons/close.svg" alt="иконка" width="20" height="20"></button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
                 <div class="header__menu"><a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="160" height="44"></a>
@@ -376,7 +386,13 @@
             <h1 class="main-title">Федоров Константин Леонидович</h1>
             <div class="pro__box">
               <div class="pro__content">
-                <div class="pro__photo"><img src="images/team/pro.jpg" alt="фотография специалиста" width="208" height="253"></div>
+                <div class="pro__aside">
+                  <div class="pro__photo"><img src="images/team/pro.jpg" alt="фотография специалиста" width="208" height="253"></div>
+                  <div class="pro__about">
+                    <p class="pro__about-info">Написано статей: <span class="pro__about-num">45</span></p>
+                    <p class="pro__about-info">Записано советов: <span class="pro__about-num">554</span></p>
+                  </div>
+                </div>
                 <div class="pro__info">
                   <div class="pro__sec">
                     <h2 class="pro__type">Должность</h2>

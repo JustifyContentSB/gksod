@@ -10,6 +10,8 @@
     "type": "module",
     "dependencies": {
         "jquery": "^3.6.0",
+        "jquery-ui": "^1.13.2",
+        "jquery-ui-touch-punch": "^0.2.3",
         "magnific-popup": "^1.1.0",
         "swiper": "^8.4.5"
     },

@@ -24,10 +24,14 @@ header.header
                a.header__logo(href="#")
                   img(src="images/icons/logo.svg", alt="логотип" width="160" height="44")
                .header__right
+                  button.header__btn.btn.btn--icon.btn--style.header__search-toggle
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-search-loop")
                   form.header__search.header__medium-search(action="#")
-                     button.header__btn.btn.btn--icon.btn--style
-                        svg
-                           use(href="images/sprites/main.stack.svg#svg-search-loop")
+                     .header__search-inner
+                        input.header__search-field(type="text" placeholder="Поиск по сайту")
+                        button.header__search-toggle.header__search-close
+                           img(src="images/icons/close.svg", alt="иконка" width="20" height="20")
                   ul.header__manage
                      li.header__manage-item
                         a.header__btn.btn.btn--icon.btn--style(href="tel:+74953241134")
@@ -399,10 +403,15 @@ header.header
                                           .header__main-submenu__img
                                              img(src="images/header/header.jpg", alt="баннер" width="300" height="200")
 
-                     form.header__main-search(action="#")
-                        button.btn.btn--icon.btn--style
+                     .header__main-search
+                        button.header__btn.btn.btn--icon.btn--style.header__search-toggle
                            svg
                               use(href="images/sprites/main.stack.svg#svg-search-loop")
+                        form.header__search(action="#")
+                           .header__search-inner
+                              input.header__search-field(type="text" placeholder="Поиск по сайту")
+                              button.header__search-toggle.header__search-close
+                                 img(src="images/icons/close.svg", alt="иконка" width="20" height="20")
                .header__menu
                   a.header__logo(href="#")
                      img(src="images/icons/logo.svg", alt="логотип" width="160" height="44")
