@@ -11,150 +11,328 @@ block page
             a.breadcrumbs__link.breadcrumbs__link--active(href="#") Калькулятор рефинансирования
 
    section.calc
-      .calc__inner.container
+      .calc__inner.container#calcList
          h2.main-title Калькулятор рефинансирования
-         ul.tabs(data-id='reviewsSlider')
+         ul.tabs(data-id='calcList')
             li.tabs__item
-               a.tabs__btn(href="#reviews-1") Калькулятор рефинансирования
+               a.tabs__btn(href="#calc-1") Калькулятор рефинансирования
             li.tabs__item
-               a.tabs__btn(href="#reviews-2") Калькулятор досрочного погашения
+               a.tabs__btn(href="#calc-2") Калькулятор досрочного погашения
             li.tabs__item
-               a.tabs__btn(href="#reviews-3") Сравнение ставок
-         .calc__lead
-            h3.calc__lead-title Закройте все ваши действующие кредиты!
-            p.calc__lead-text.
-               У Вас несколько кредитов и их погашение становится непосильной задачей? Оформите один кредит и закройте остальные всего в 3 простых шага!
-         .calc__section.section
-            .calc__info.section__info
-               .calc__content
-                  .calc__chapter
-                     h3.calc__step Шаг 1. Ваши действующие кредиты:
-                     .calc__list
-                        .calc__box
-                           .calc__top
-                              p.calc__num Кредит 2
-                              button.calc__del
-                                 img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
-                           .calc__manage
-                              label.calc__label
-                                 span.calc__type Сумма действующего кредита:
-                                 span.calc__input
-                                    input.calc__field(type="text")
-                                    span.calc__ruble руб.
-                              label.calc__label
-                                 span.calc__type Ваши ежемесячные платежи:
-                                 span.calc__input
-                                    input.calc__field(type="text")
-                                    span.calc__ruble руб.
-                        .calc__box
-                           .calc__top
-                              p.calc__num Кредит 3
-                              button.calc__del
-                                 img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
-                           .calc__manage
-                              label.calc__label
-                                 span.calc__type Сумма действующего кредита:
-                                 span.calc__input
-                                    input.calc__field(type="text")
-                                    span.calc__ruble руб.
-                              label.calc__label
-                                 span.calc__type Ваши ежемесячные платежи:
-                                 span.calc__input
-                                    input.calc__field(type="text")
-                                    span.calc__ruble руб.
-                        .calc__box
-                           .calc__top
-                              p.calc__num Кредит 1
-                              button.calc__del
-                                 img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
-                           .calc__manage
-                              label.calc__label
-                                 span.calc__type Сумма действующего кредита:
-                                 span.calc__input
-                                    input.calc__field(type="text")
-                                    span.calc__ruble руб.
-                              label.calc__label
-                                 span.calc__type Ваши ежемесячные платежи:
-                                 span.calc__input
-                                    input.calc__field(type="text")
-                                    span.calc__ruble руб.
-                     button.calc__add + Добавить еще один кредит
-                     .calc__bottom
-                        p.calc__pay По всем кредитам в данный момент вы платите в месяц:
-                        p.calc__price 45 000 руб.
+               a.tabs__btn(href="#calc-3") Сравнение ставок
+         .tabs-content__wrapper
+            .tabs-content.tabs-content--active#calc-1
+               .calc__section.section
+                  .calc__info.section__info
+                     .calc__content
+                        .calc__chapter
+                           h3.calc__step Шаг 1. Ваши действующие кредиты:
+                           .calc__list
+                              .calc__box
+                                 .calc__top
+                                    p.calc__num Кредит 2
+                                    button.calc__del
+                                       img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
+                                 .calc__manage
+                                    label.calc__label
+                                       span.calc__type Сумма действующего кредита:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                                    label.calc__label
+                                       span.calc__type Ваши ежемесячные платежи:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                              .calc__box
+                                 .calc__top
+                                    p.calc__num Кредит 3
+                                    button.calc__del
+                                       img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
+                                 .calc__manage
+                                    label.calc__label
+                                       span.calc__type Сумма действующего кредита:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                                    label.calc__label
+                                       span.calc__type Ваши ежемесячные платежи:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                              .calc__box
+                                 .calc__top
+                                    p.calc__num Кредит 1
+                                    button.calc__del
+                                       img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
+                                 .calc__manage
+                                    label.calc__label
+                                       span.calc__type Сумма действующего кредита:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                                    label.calc__label
+                                       span.calc__type Ваши ежемесячные платежи:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                           button.calc__add + Добавить еще один кредит
+                           .calc__bottom
+                              p.calc__pay По всем кредитам в данный момент вы платите в месяц:
+                              p.calc__price 45 000 руб.
 
-                  .calc__chapter
-                     h3.calc__step Шаг 2. Расчет на основе ваших данных:
-                     .calc__block
-                        .calc__manage
-                           label.calc__label
-                              span.calc__type Необходимые средства для перекредитования:
-                              span.calc__input
-                                 input.calc__field(type="text")
-                                 span.calc__ruble руб.
-                           label.calc__label
-                              span.calc__type Дополнительные средства:
-                              span.calc__input
-                                 input.calc__field(type="text")
-                                 span.calc__ruble руб.
-                           label.calc__label
-                              span.calc__type Общая сумма кредита:
-                              span.calc__input
-                                 input.calc__field(type="text")
-                                 span.calc__ruble руб.
-                           label.calc__label
-                              span.calc__type Срок кредита, лет.
-                              span.calc__input
-                                 input.calc__field(type="text")
-                                 span.calc__ruble руб.
-                        .calc__offer
-                           p.calc__offer-desc ЕСЛИ ВЫ БУДЕТЕ РЕФИНАНСИРОВАТЬСЯ У НАС — ВАШИ ВЫПЛАТЫ В МЕСЯЦ
-                           p.calc__payment 34 000 руб.
-                           p.calc__benefit Выгода 12 000 руб. каждый месяц!
+                        .calc__chapter
+                           h3.calc__step Шаг 2. Расчет на основе ваших данных:
+                           .calc__block
+                              .calc__manage
+                                 label.calc__label
+                                    span.calc__type Необходимые средства для перекредитования:
+                                    span.calc__input
+                                       input.calc__field(type="text")
+                                       span.calc__ruble руб.
+                                 label.calc__label
+                                    span.calc__type Дополнительные средства:
+                                    span.calc__input
+                                       input.calc__field(type="text")
+                                       span.calc__ruble руб.
+                                 label.calc__label
+                                    span.calc__type Общая сумма кредита:
+                                    span.calc__input
+                                       input.calc__field(type="text")
+                                       span.calc__ruble руб.
+                                 label.calc__label
+                                    span.calc__type Срок кредита, лет.
+                                    span.calc__input
+                                       input.calc__field(type="text")
+                                       span.calc__ruble руб.
+                              .calc__offer
+                                 p.calc__offer-desc ЕСЛИ ВЫ БУДЕТЕ РЕФИНАНСИРОВАТЬСЯ У НАС — ВАШИ ВЫПЛАТЫ В МЕСЯЦ
+                                 p.calc__payment 34 000 руб.
+                                 p.calc__benefit Выгода 12 000 руб. каждый месяц!
 
-            aside.section__aside.calc__aside
-               form.form.form--aside(action="#")
-                  .form__inner
-                     .form__manage
-                        label.form__label
-                           span.form__type Additional text
-                           input.form__field(type="text" placeholder="Placeholder")
-                           span.form__notif Additional text
-                        label.form__label
-                           span.form__type Additional text
-                           input.form__field(type="text" placeholder="Placeholder")
-                           span.form__notif Additional text
-                        label.form__label
-                           span.form__type Additional text
-                           input.form__field(type="text" placeholder="Placeholder")
-                           span.form__notif Additional text
-                        label.form__label
-                           span.form__type Additional text
-                           input.form__field(type="text" placeholder="Placeholder")
-                           span.form__notif Additional text
-                     ul.form__list
-                        li.form__list-item
-                           p.form__list-type Общая сумма кредита
-                           p.form__list-price 12 000 000 руб.
-                        li.form__list-item
-                           p.form__list-type Процентная ставка
-                           p.form__list-price 6.9% годовых
-                        li.form__list-item
-                           p.form__list-type Срок кредита
-                           p.form__list-price 15 лет
-                     button.form__submit.btn.btn--wide Название кнопки
-                     .form__agree
-                        label.form__agree-label
-                           input(type="checkbox")
-                           span.form__agree-checkbox
-                              span.form__agree-checkbox__check
-                           span.form__agree-text.
-                              Я принимаю условия #[a(href="#") Пользовательского соглашения] и даю свое согласие на обработку моих персональных данных в соответствии с #[a(href="#") Политикой конфиденциальности]
-                     .form__bottom
-                        a.form__tel.tel(href="#") +7 (495) 324-11-34
-                        p.form__time.time Ежедневно без выходных с 10:00 до 19:00 (мск.)
-                        a.form__email.email(href="mailto:support@gksod.ru") support@gksod.ru
+                  aside.section__aside.calc__aside
+                     form.form.form--aside(action="#")
+                        .form__inner
+                           .form__manage
+                              .form__label
+                                 span.form__type Additional text
+                                 select.form__field.location-list
+                                    option Москва
+                                    option Санкт-Петербург
+                                    option Краснодар
+                                    option Челябинск
+                                    option Ростов-на-Дону
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                           ul.form__list
+                              li.form__list-item
+                                 p.form__list-type Общая сумма кредита
+                                 p.form__list-price 12 000 000 руб.
+                              li.form__list-item
+                                 p.form__list-type Процентная ставка
+                                 p.form__list-price 6.9% годовых
+                              li.form__list-item
+                                 p.form__list-type Срок кредита
+                                 p.form__list-price 15 лет
+                           button.form__submit.btn.btn--wide Название кнопки
+                           .form__agree
+                              label.form__agree-label
+                                 input(type="checkbox")
+                                 span.form__agree-checkbox
+                                    span.form__agree-checkbox__check
+                                 span.form__agree-text.
+                                    Я принимаю условия #[a(href="#") Пользовательского соглашения] и даю свое согласие на обработку моих персональных данных в соответствии с #[a(href="#") Политикой конфиденциальности]
+                           .form__bottom
+                              a.form__tel.tel(href="#") +7 (495) 324-11-34
+                              p.form__time.time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                              a.form__email.email(href="mailto:support@gksod.ru") support@gksod.ru
 
+            .tabs-content#calc-2
+               .calc__section.section
+                  .calc__info.section__info
+                     .calc__content
+                        .calc__chapter
+                           h3.calc__step Введите данные по своему текущему кредиту:
+                           .calc__block.calc__block--total
+                              .calc__manage
+                                 label.calc__label
+                                    span.calc__type Сумма кредита, рубли:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="1 000 000")
+                                       span.calc__ruble руб.
+                                 label.calc__label
+                                    span.calc__type Срок кредита, лет:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="15")
+                                 label.calc__label
+                                    span.calc__type Ставка кредитования, % годовых:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="10.00")
+                                       span.calc__ruble %
+                                 label.calc__label
+                                    span.calc__type Дата получения кредита:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="ДД.ММ.ГГГГ")
+                                 label.calc__label
+                                    span.calc__type Ежемесячный платеж без досрочного погашения:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="50 000")
+                                       span.calc__ruble руб.
+                                 label.calc__label
+                                    span.calc__type Ежемесячная сумма досрочного погашения:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="10 000")
+                                       span.calc__ruble руб.
+                           .calc__total
+                              .calc__total-list
+                                 .calc__total-item
+                                    p.calc__total-type Общая переплата в рублях:
+                                    p.calc__total-num 45 000 руб.
+                                 .calc__total-item
+                                    p.calc__total-type Общая переплата в процентах:
+                                    p.calc__total-num 12 %
+                              .calc__total-list
+                                 .calc__total-item
+                                    p.calc__total-type Общая переплата при досрочном погашении:
+                                    p.calc__total-num 12 000 руб.
+
+                           .calc__total
+                              .calc__total-list
+                                 .calc__total-item
+                                    p.calc__total-type Срок погашения кредита при досрочном погашении, месяцев:
+                                    p.calc__total-num 12
+                                 .calc__total-item
+                                    p.calc__total-type Ежемесячный платеж с досрочным погашением:
+                                    p.calc__total-num 56 000 руб.
+
+                           .calc__offer.calc__offer--total
+                              p.calc__benefit Ваша экономия при досрочном погашении:
+                              p.calc__payment 34 000 руб.
+
+                  aside.section__aside.calc__aside
+                     form.form.form--aside(action="#")
+                        .form__inner
+                           .form__manage
+                              .form__label
+                                 span.form__type Additional text
+                                 select.form__field.location-list
+                                    option Москва
+                                    option Санкт-Петербург
+                                    option Краснодар
+                                    option Челябинск
+                                    option Ростов-на-Дону
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                           ul.form__list
+                              li.form__list-item
+                                 p.form__list-type Общая сумма кредита
+                                 p.form__list-price 12 000 000 руб.
+                              li.form__list-item
+                                 p.form__list-type Процентная ставка
+                                 p.form__list-price 6.9% годовых
+                              li.form__list-item
+                                 p.form__list-type Срок кредита
+                                 p.form__list-price 15 лет
+                           button.form__submit.btn.btn--wide Название кнопки
+                           p.form__about.
+                              Нажимая кнопку отправить вы даете согласие на обработку персональных данных в рамках этого #[a(href="#") соглашения].
+
+            .tabs-content#calc-3
+               .calc__section.section
+                  .calc__info.section__info
+                     .calc__content
+                        .calc__chapter
+                           h3.calc__step Расчет ежемесячного платежа и сравнение по ставке и сроку:
+                           .calc__block.calc__block--total
+                              .calc__manage
+                                 label.calc__label
+                                    span.calc__type Сумма кредита, рубли:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="1 000 000")
+                                       span.calc__ruble руб.
+                                 label.calc__label
+                                    span.calc__type Срок кредита, лет:
+                                    span.calc__input
+                                       input.calc__field(type="text" placeholder="15")
+                           
+                           .calc__choose
+                              .calc__choose-item
+                                 p.calc__choose-type Введите годовые процентные ставки для сравнения платежей:
+                                 .calc__choose-manage
+                                    input.calc__choose-field(type="text" placeholder="20")
+                                    input.calc__choose-field(type="text" placeholder="15")
+                              .calc__choose-item
+                                 p.calc__choose-type Ежемесячный платеж, руб.:
+                                 .calc__choose-manage
+                                    input.calc__choose-field.calc__choose-field--sec(type="text")
+                                    input.calc__choose-field.calc__choose-field--sec(type="text")
+                              .calc__choose-item
+                                 p.calc__choose-type Фактическая переплата за весь период, руб.:
+                                 .calc__choose-manage
+                                    input.calc__choose-field.calc__choose-field--sec(type="text")
+                                    input.calc__choose-field.calc__choose-field--sec(type="text")
+
+                           .calc__offer.calc__offer--total.calc__offer--choose
+                              p.calc__benefit Разница в переплате за счет ставки, руб.:
+                              p.calc__payment 34 000 руб.
+
+                  aside.section__aside.calc__aside
+                     form.form.form--aside(action="#")
+                        .form__inner
+                           .form__manage
+                              .form__label
+                                 span.form__type Additional text
+                                 select.form__field.location-list
+                                    option Москва
+                                    option Санкт-Петербург
+                                    option Краснодар
+                                    option Челябинск
+                                    option Ростов-на-Дону
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                              label.form__label
+                                 span.form__type Additional text
+                                 input.form__field(type="text" placeholder="Placeholder")
+                                 span.form__notif Additional text
+                           ul.form__list
+                              li.form__list-item
+                                 p.form__list-type Общая сумма кредита
+                                 p.form__list-price 12 000 000 руб.
+                              li.form__list-item
+                                 p.form__list-type Процентная ставка
+                                 p.form__list-price 6.9% годовых
+                              li.form__list-item
+                                 p.form__list-type Срок кредита
+                                 p.form__list-price 15 лет
+                           button.form__submit.btn.btn--wide Название кнопки
+                           p.form__about.
+                              Нажимая кнопку отправить вы даете согласие на обработку персональных данных в рамках этого #[a(href="#") соглашения].
 
    section.explane
       .explane__inner.container

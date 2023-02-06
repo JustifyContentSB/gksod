@@ -382,131 +382,332 @@
           </ul>
         </div>
         <section class="calc">
-          <div class="calc__inner container">
+          <div class="calc__inner container" id="calcList">
             <h2 class="main-title">Калькулятор рефинансирования</h2>
-            <ul class="tabs" data-id="reviewsSlider">
-              <li class="tabs__item"><a class="tabs__btn" href="#reviews-1">Калькулятор рефинансирования</a></li>
-              <li class="tabs__item"><a class="tabs__btn" href="#reviews-2">Калькулятор досрочного погашения</a></li>
-              <li class="tabs__item"><a class="tabs__btn" href="#reviews-3">Сравнение ставок</a></li>
+            <ul class="tabs" data-id="calcList">
+              <li class="tabs__item"><a class="tabs__btn" href="#calc-1">Калькулятор рефинансирования</a></li>
+              <li class="tabs__item"><a class="tabs__btn" href="#calc-2">Калькулятор досрочного погашения</a></li>
+              <li class="tabs__item"><a class="tabs__btn" href="#calc-3">Сравнение ставок</a></li>
             </ul>
-            <div class="calc__lead">
-              <h3 class="calc__lead-title">Закройте все ваши действующие кредиты!</h3>
-              <p class="calc__lead-text">У Вас несколько кредитов и их погашение становится непосильной задачей? Оформите один кредит и закройте остальные всего в 3 простых шага!</p>
-            </div>
-            <div class="calc__section section">
-              <div class="calc__info section__info">
-                <div class="calc__content">
-                  <div class="calc__chapter">
-                    <h3 class="calc__step">Шаг 1. Ваши действующие кредиты:</h3>
-                    <div class="calc__list">
-                      <div class="calc__box">
-                        <div class="calc__top">
-                          <p class="calc__num">Кредит 2</p>
-                          <button class="calc__del"><img src="images/icons/close-circle.svg" alt="удалить" width="24" height="24"></button>
+            <div class="tabs-content__wrapper">
+              <div class="tabs-content tabs-content--active" id="calc-1">
+                <div class="calc__section section">
+                  <div class="calc__info section__info">
+                    <div class="calc__content">
+                      <div class="calc__chapter">
+                        <h3 class="calc__step">Шаг 1. Ваши действующие кредиты:</h3>
+                        <div class="calc__list">
+                          <div class="calc__box">
+                            <div class="calc__top">
+                              <p class="calc__num">Кредит 2</p>
+                              <button class="calc__del"><img src="images/icons/close-circle.svg" alt="удалить" width="24" height="24"></button>
+                            </div>
+                            <div class="calc__manage">
+                              <label class="calc__label"><span class="calc__type">Сумма действующего кредита:</span><span class="calc__input">
+                                  <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                              <label class="calc__label"><span class="calc__type">Ваши ежемесячные платежи:</span><span class="calc__input">
+                                  <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                            </div>
+                          </div>
+                          <div class="calc__box">
+                            <div class="calc__top">
+                              <p class="calc__num">Кредит 3</p>
+                              <button class="calc__del"><img src="images/icons/close-circle.svg" alt="удалить" width="24" height="24"></button>
+                            </div>
+                            <div class="calc__manage">
+                              <label class="calc__label"><span class="calc__type">Сумма действующего кредита:</span><span class="calc__input">
+                                  <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                              <label class="calc__label"><span class="calc__type">Ваши ежемесячные платежи:</span><span class="calc__input">
+                                  <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                            </div>
+                          </div>
+                          <div class="calc__box">
+                            <div class="calc__top">
+                              <p class="calc__num">Кредит 1</p>
+                              <button class="calc__del"><img src="images/icons/close-circle.svg" alt="удалить" width="24" height="24"></button>
+                            </div>
+                            <div class="calc__manage">
+                              <label class="calc__label"><span class="calc__type">Сумма действующего кредита:</span><span class="calc__input">
+                                  <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                              <label class="calc__label"><span class="calc__type">Ваши ежемесячные платежи:</span><span class="calc__input">
+                                  <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                            </div>
+                          </div>
                         </div>
-                        <div class="calc__manage">
-                          <label class="calc__label"><span class="calc__type">Сумма действующего кредита:</span><span class="calc__input">
-                              <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
-                          <label class="calc__label"><span class="calc__type">Ваши ежемесячные платежи:</span><span class="calc__input">
-                              <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                        <button class="calc__add">+ Добавить еще один кредит</button>
+                        <div class="calc__bottom">
+                          <p class="calc__pay">По всем кредитам в данный момент вы платите в месяц:</p>
+                          <p class="calc__price">45 000 руб.</p>
                         </div>
                       </div>
-                      <div class="calc__box">
-                        <div class="calc__top">
-                          <p class="calc__num">Кредит 3</p>
-                          <button class="calc__del"><img src="images/icons/close-circle.svg" alt="удалить" width="24" height="24"></button>
-                        </div>
-                        <div class="calc__manage">
-                          <label class="calc__label"><span class="calc__type">Сумма действующего кредита:</span><span class="calc__input">
-                              <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
-                          <label class="calc__label"><span class="calc__type">Ваши ежемесячные платежи:</span><span class="calc__input">
-                              <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
-                        </div>
-                      </div>
-                      <div class="calc__box">
-                        <div class="calc__top">
-                          <p class="calc__num">Кредит 1</p>
-                          <button class="calc__del"><img src="images/icons/close-circle.svg" alt="удалить" width="24" height="24"></button>
-                        </div>
-                        <div class="calc__manage">
-                          <label class="calc__label"><span class="calc__type">Сумма действующего кредита:</span><span class="calc__input">
-                              <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
-                          <label class="calc__label"><span class="calc__type">Ваши ежемесячные платежи:</span><span class="calc__input">
-                              <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                      <div class="calc__chapter">
+                        <h3 class="calc__step">Шаг 2. Расчет на основе ваших данных:</h3>
+                        <div class="calc__block">
+                          <div class="calc__manage">
+                            <label class="calc__label"><span class="calc__type">Необходимые средства для перекредитования:</span><span class="calc__input">
+                                <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                            <label class="calc__label"><span class="calc__type">Дополнительные средства:</span><span class="calc__input">
+                                <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                            <label class="calc__label"><span class="calc__type">Общая сумма кредита:</span><span class="calc__input">
+                                <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                            <label class="calc__label"><span class="calc__type">Срок кредита, лет.</span><span class="calc__input">
+                                <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                          </div>
+                          <div class="calc__offer">
+                            <p class="calc__offer-desc">ЕСЛИ ВЫ БУДЕТЕ РЕФИНАНСИРОВАТЬСЯ У НАС — ВАШИ ВЫПЛАТЫ В МЕСЯЦ</p>
+                            <p class="calc__payment">34 000 руб.</p>
+                            <p class="calc__benefit">Выгода 12 000 руб. каждый месяц!</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <button class="calc__add">+ Добавить еще один кредит</button>
-                    <div class="calc__bottom">
-                      <p class="calc__pay">По всем кредитам в данный момент вы платите в месяц:</p>
-                      <p class="calc__price">45 000 руб.</p>
                     </div>
                   </div>
-                  <div class="calc__chapter">
-                    <h3 class="calc__step">Шаг 2. Расчет на основе ваших данных:</h3>
-                    <div class="calc__block">
-                      <div class="calc__manage">
-                        <label class="calc__label"><span class="calc__type">Необходимые средства для перекредитования:</span><span class="calc__input">
-                            <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
-                        <label class="calc__label"><span class="calc__type">Дополнительные средства:</span><span class="calc__input">
-                            <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
-                        <label class="calc__label"><span class="calc__type">Общая сумма кредита:</span><span class="calc__input">
-                            <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
-                        <label class="calc__label"><span class="calc__type">Срок кредита, лет.</span><span class="calc__input">
-                            <input class="calc__field" type="text"><span class="calc__ruble">руб.</span></span></label>
+                  <aside class="section__aside calc__aside">
+                    <form class="form form--aside" action="#">
+                      <div class="form__inner">
+                        <div class="form__manage">
+                          <div class="form__label"><span class="form__type">Additional text</span>
+                            <select class="form__field location-list">
+                              <option>Москва</option>
+                              <option>Санкт-Петербург</option>
+                              <option>Краснодар</option>
+                              <option>Челябинск</option>
+                              <option>Ростов-на-Дону</option>
+                            </select>
+                          </div>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                        </div>
+                        <ul class="form__list">
+                          <li class="form__list-item">
+                            <p class="form__list-type">Общая сумма кредита</p>
+                            <p class="form__list-price">12 000 000 руб.</p>
+                          </li>
+                          <li class="form__list-item">
+                            <p class="form__list-type">Процентная ставка</p>
+                            <p class="form__list-price">6.9% годовых</p>
+                          </li>
+                          <li class="form__list-item">
+                            <p class="form__list-type">Срок кредита</p>
+                            <p class="form__list-price">15 лет</p>
+                          </li>
+                        </ul>
+                        <button class="form__submit btn btn--wide">Название кнопки</button>
+                        <div class="form__agree">
+                          <label class="form__agree-label">
+                            <input type="checkbox"><span class="form__agree-checkbox"><span class="form__agree-checkbox__check"></span></span><span class="form__agree-text">Я принимаю условия <a href="#">Пользовательского соглашения</a> и даю свое согласие на обработку моих персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a></span>
+                          </label>
+                        </div>
+                        <div class="form__bottom"><a class="form__tel tel" href="#">+7 (495) 324-11-34</a>
+                          <p class="form__time time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p><a class="form__email email" href="mailto:support@gksod.ru">support@gksod.ru</a>
+                        </div>
                       </div>
-                      <div class="calc__offer">
-                        <p class="calc__offer-desc">ЕСЛИ ВЫ БУДЕТЕ РЕФИНАНСИРОВАТЬСЯ У НАС — ВАШИ ВЫПЛАТЫ В МЕСЯЦ</p>
-                        <p class="calc__payment">34 000 руб.</p>
-                        <p class="calc__benefit">Выгода 12 000 руб. каждый месяц!</p>
-                      </div>
-                    </div>
-                  </div>
+                    </form>
+                  </aside>
                 </div>
               </div>
-              <aside class="section__aside calc__aside">
-                <form class="form form--aside" action="#">
-                  <div class="form__inner">
-                    <div class="form__manage">
-                      <label class="form__label"><span class="form__type">Additional text</span>
-                        <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
-                      </label>
-                      <label class="form__label"><span class="form__type">Additional text</span>
-                        <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
-                      </label>
-                      <label class="form__label"><span class="form__type">Additional text</span>
-                        <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
-                      </label>
-                      <label class="form__label"><span class="form__type">Additional text</span>
-                        <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
-                      </label>
-                    </div>
-                    <ul class="form__list">
-                      <li class="form__list-item">
-                        <p class="form__list-type">Общая сумма кредита</p>
-                        <p class="form__list-price">12 000 000 руб.</p>
-                      </li>
-                      <li class="form__list-item">
-                        <p class="form__list-type">Процентная ставка</p>
-                        <p class="form__list-price">6.9% годовых</p>
-                      </li>
-                      <li class="form__list-item">
-                        <p class="form__list-type">Срок кредита</p>
-                        <p class="form__list-price">15 лет</p>
-                      </li>
-                    </ul>
-                    <button class="form__submit btn btn--wide">Название кнопки</button>
-                    <div class="form__agree">
-                      <label class="form__agree-label">
-                        <input type="checkbox"><span class="form__agree-checkbox"><span class="form__agree-checkbox__check"></span></span><span class="form__agree-text">Я принимаю условия <a href="#">Пользовательского соглашения</a> и даю свое согласие на обработку моих персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a></span>
-                      </label>
-                    </div>
-                    <div class="form__bottom"><a class="form__tel tel" href="#">+7 (495) 324-11-34</a>
-                      <p class="form__time time">Ежедневно без выходных с 10:00 до 19:00 (мск.)</p><a class="form__email email" href="mailto:support@gksod.ru">support@gksod.ru</a>
+              <div class="tabs-content" id="calc-2">
+                <div class="calc__section section">
+                  <div class="calc__info section__info">
+                    <div class="calc__content">
+                      <div class="calc__chapter">
+                        <h3 class="calc__step">Введите данные по своему текущему кредиту:</h3>
+                        <div class="calc__block calc__block--total">
+                          <div class="calc__manage">
+                            <label class="calc__label"><span class="calc__type">Сумма кредита, рубли:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="1 000 000"><span class="calc__ruble">руб.</span></span></label>
+                            <label class="calc__label"><span class="calc__type">Срок кредита, лет:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="15"></span></label>
+                            <label class="calc__label"><span class="calc__type">Ставка кредитования, % годовых:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="10.00"><span class="calc__ruble">%</span></span></label>
+                            <label class="calc__label"><span class="calc__type">Дата получения кредита:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="ДД.ММ.ГГГГ"></span></label>
+                            <label class="calc__label"><span class="calc__type">Ежемесячный платеж без досрочного погашения:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="50 000"><span class="calc__ruble">руб.</span></span></label>
+                            <label class="calc__label"><span class="calc__type">Ежемесячная сумма досрочного погашения:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="10 000"><span class="calc__ruble">руб.</span></span></label>
+                          </div>
+                        </div>
+                        <div class="calc__total">
+                          <div class="calc__total-list">
+                            <div class="calc__total-item">
+                              <p class="calc__total-type">Общая переплата в рублях:</p>
+                              <p class="calc__total-num">45 000 руб.</p>
+                            </div>
+                            <div class="calc__total-item">
+                              <p class="calc__total-type">Общая переплата в процентах:</p>
+                              <p class="calc__total-num">12 %</p>
+                            </div>
+                          </div>
+                          <div class="calc__total-list">
+                            <div class="calc__total-item">
+                              <p class="calc__total-type">Общая переплата при досрочном погашении:</p>
+                              <p class="calc__total-num">12 000 руб.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calc__total">
+                          <div class="calc__total-list">
+                            <div class="calc__total-item">
+                              <p class="calc__total-type">Срок погашения кредита при досрочном погашении, месяцев:</p>
+                              <p class="calc__total-num">12</p>
+                            </div>
+                            <div class="calc__total-item">
+                              <p class="calc__total-type">Ежемесячный платеж с досрочным погашением:</p>
+                              <p class="calc__total-num">56 000 руб.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calc__offer calc__offer--total">
+                          <p class="calc__benefit">Ваша экономия при досрочном погашении:</p>
+                          <p class="calc__payment">34 000 руб.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </form>
-              </aside>
+                  <aside class="section__aside calc__aside">
+                    <form class="form form--aside" action="#">
+                      <div class="form__inner">
+                        <div class="form__manage">
+                          <div class="form__label"><span class="form__type">Additional text</span>
+                            <select class="form__field location-list">
+                              <option>Москва</option>
+                              <option>Санкт-Петербург</option>
+                              <option>Краснодар</option>
+                              <option>Челябинск</option>
+                              <option>Ростов-на-Дону</option>
+                            </select>
+                          </div>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                        </div>
+                        <ul class="form__list">
+                          <li class="form__list-item">
+                            <p class="form__list-type">Общая сумма кредита</p>
+                            <p class="form__list-price">12 000 000 руб.</p>
+                          </li>
+                          <li class="form__list-item">
+                            <p class="form__list-type">Процентная ставка</p>
+                            <p class="form__list-price">6.9% годовых</p>
+                          </li>
+                          <li class="form__list-item">
+                            <p class="form__list-type">Срок кредита</p>
+                            <p class="form__list-price">15 лет</p>
+                          </li>
+                        </ul>
+                        <button class="form__submit btn btn--wide">Название кнопки</button>
+                        <p class="form__about">Нажимая кнопку отправить вы даете согласие на обработку персональных данных в рамках этого <a href="#">соглашения</a>.
+                          
+                        </p>
+                      </div>
+                    </form>
+                  </aside>
+                </div>
+              </div>
+              <div class="tabs-content" id="calc-3">
+                <div class="calc__section section">
+                  <div class="calc__info section__info">
+                    <div class="calc__content">
+                      <div class="calc__chapter">
+                        <h3 class="calc__step">Расчет ежемесячного платежа и сравнение по ставке и сроку:</h3>
+                        <div class="calc__block calc__block--total">
+                          <div class="calc__manage">
+                            <label class="calc__label"><span class="calc__type">Сумма кредита, рубли:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="1 000 000"><span class="calc__ruble">руб.</span></span></label>
+                            <label class="calc__label"><span class="calc__type">Срок кредита, лет:</span><span class="calc__input">
+                                <input class="calc__field" type="text" placeholder="15"></span></label>
+                          </div>
+                        </div>
+                        <div class="calc__choose">
+                          <div class="calc__choose-item">
+                            <p class="calc__choose-type">Введите годовые процентные ставки для сравнения платежей:</p>
+                            <div class="calc__choose-manage">
+                              <input class="calc__choose-field" type="text" placeholder="20">
+                              <input class="calc__choose-field" type="text" placeholder="15">
+                            </div>
+                          </div>
+                          <div class="calc__choose-item">
+                            <p class="calc__choose-type">Ежемесячный платеж, руб.:</p>
+                            <div class="calc__choose-manage">
+                              <input class="calc__choose-field calc__choose-field--sec" type="text">
+                              <input class="calc__choose-field calc__choose-field--sec" type="text">
+                            </div>
+                          </div>
+                          <div class="calc__choose-item">
+                            <p class="calc__choose-type">Фактическая переплата за весь период, руб.:</p>
+                            <div class="calc__choose-manage">
+                              <input class="calc__choose-field calc__choose-field--sec" type="text">
+                              <input class="calc__choose-field calc__choose-field--sec" type="text">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calc__offer calc__offer--total calc__offer--choose">
+                          <p class="calc__benefit">Разница в переплате за счет ставки, руб.:</p>
+                          <p class="calc__payment">34 000 руб.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <aside class="section__aside calc__aside">
+                    <form class="form form--aside" action="#">
+                      <div class="form__inner">
+                        <div class="form__manage">
+                          <div class="form__label"><span class="form__type">Additional text</span>
+                            <select class="form__field location-list">
+                              <option>Москва</option>
+                              <option>Санкт-Петербург</option>
+                              <option>Краснодар</option>
+                              <option>Челябинск</option>
+                              <option>Ростов-на-Дону</option>
+                            </select>
+                          </div>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                          <label class="form__label"><span class="form__type">Additional text</span>
+                            <input class="form__field" type="text" placeholder="Placeholder"><span class="form__notif">Additional text</span>
+                          </label>
+                        </div>
+                        <ul class="form__list">
+                          <li class="form__list-item">
+                            <p class="form__list-type">Общая сумма кредита</p>
+                            <p class="form__list-price">12 000 000 руб.</p>
+                          </li>
+                          <li class="form__list-item">
+                            <p class="form__list-type">Процентная ставка</p>
+                            <p class="form__list-price">6.9% годовых</p>
+                          </li>
+                          <li class="form__list-item">
+                            <p class="form__list-type">Срок кредита</p>
+                            <p class="form__list-price">15 лет</p>
+                          </li>
+                        </ul>
+                        <button class="form__submit btn btn--wide">Название кнопки</button>
+                        <p class="form__about">Нажимая кнопку отправить вы даете согласие на обработку персональных данных в рамках этого <a href="#">соглашения</a>.
+                          
+                        </p>
+                      </div>
+                    </form>
+                  </aside>
+                </div>
+              </div>
             </div>
           </div>
         </section>
