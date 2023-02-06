@@ -163,6 +163,27 @@
       margin-bottom: 16px
       font-size: 12px
       line-height: 133%
+   &__list
+      margin-bottom: 20px
+      &-item
+         margin-bottom: 10px
+         &:last-child
+            margin-bottom: 0
+      &-type
+         margin-bottom: 2px
+         font-weight: 300
+         font-size: 14px
+         line-height: 129%
+         color: var(--thColor)
+      &-price
+         font-weight: 700
+         font-size: 14px
+         line-height: 114%
+         color: var(--accent)
+   &__about
+      a
+         color: var(--accent)
+         text-decoration: underline
 
 @media screen and (min-width: $width_tab)
    .form
@@ -198,6 +219,10 @@
                padding: 40px 50px
             &__manage
                grid-gap: 30px
+      &__list
+         margin-top: 0
+         &-type
+            margin-bottom: 4px
 
 @media screen and (min-width: $width_desk)
    .form
@@ -218,6 +243,16 @@
       &__notice
          margin-bottom: 30px
          font-size: 14px
+      &__list
+         margin-bottom: 16px
+         &-item
+            margin-bottom: 10px
+            &:last-child
+               margin-bottom: 0
+         &-type
+            font-size: 16px
+         &-price
+            font-size: 16px
 
 @media screen and (min-width: $width_huge)
    .form
@@ -242,3 +277,13 @@
             font-size: 18px
          &-nums
             font-size: 32px
+      &__list
+         margin-bottom: 24px
+         &-item
+            margin-bottom: 16px
+         &-type
+            margin-bottom: 6px
+            font-size: 18px
+            line-height: 144%
+         &-price
+            font-size: 18px

@@ -22,6 +22,7 @@ $(document).ready(function () {
   dropdownShow();
   headerSearch();
   rangeSliders();
+  selectedItems();
 });
 
 // Your functions here
@@ -467,5 +468,10 @@ function rangeSliders() {
       }
     });
     $("#term").val($("#slider-range-term").slider("value"));
+  });
+}
+function selectedItems() {
+  $('.location-list').select2({
+    placeholder: 'Ваш регион проживания:'
   });
 }
