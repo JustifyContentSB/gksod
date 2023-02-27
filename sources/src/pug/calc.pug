@@ -30,6 +30,22 @@ block page
                            .calc__list
                               .calc__box
                                  .calc__top
+                                    p.calc__num Кредит 1
+                                    button.calc__del
+                                       img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
+                                 .calc__manage
+                                    label.calc__label
+                                       span.calc__type Сумма действующего кредита:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                                    label.calc__label
+                                       span.calc__type Ваши ежемесячные платежи:
+                                       span.calc__input
+                                          input.calc__field(type="text")
+                                          span.calc__ruble руб.
+                              .calc__box
+                                 .calc__top
                                     p.calc__num Кредит 2
                                     button.calc__del
                                        img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
@@ -47,22 +63,6 @@ block page
                               .calc__box
                                  .calc__top
                                     p.calc__num Кредит 3
-                                    button.calc__del
-                                       img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
-                                 .calc__manage
-                                    label.calc__label
-                                       span.calc__type Сумма действующего кредита:
-                                       span.calc__input
-                                          input.calc__field(type="text")
-                                          span.calc__ruble руб.
-                                    label.calc__label
-                                       span.calc__type Ваши ежемесячные платежи:
-                                       span.calc__input
-                                          input.calc__field(type="text")
-                                          span.calc__ruble руб.
-                              .calc__box
-                                 .calc__top
-                                    p.calc__num Кредит 1
                                     button.calc__del
                                        img(src="images/icons/close-circle.svg" alt="удалить" width="24" height="24")
                                  .calc__manage
@@ -134,16 +134,6 @@ block page
                                  span.form__type Additional text
                                  input.form__field(type="text" placeholder="Placeholder")
                                  span.form__notif Additional text
-                           ul.form__list
-                              li.form__list-item
-                                 p.form__list-type Общая сумма кредита
-                                 p.form__list-price 12 000 000 руб.
-                              li.form__list-item
-                                 p.form__list-type Процентная ставка
-                                 p.form__list-price 6.9% годовых
-                              li.form__list-item
-                                 p.form__list-type Срок кредита
-                                 p.form__list-price 15 лет
                            button.form__submit.btn.btn--wide Название кнопки
                            .form__agree
                               label.form__agree-label
@@ -152,10 +142,6 @@ block page
                                     span.form__agree-checkbox__check
                                  span.form__agree-text.
                                     Я принимаю условия #[a(href="#") Пользовательского соглашения] и даю свое согласие на обработку моих персональных данных в соответствии с #[a(href="#") Политикой конфиденциальности]
-                           .form__bottom
-                              a.form__tel.tel(href="#") +7 (495) 324-11-34
-                              p.form__time.time Ежедневно без выходных с 10:00 до 19:00 (мск.)
-                              a.form__email.email(href="mailto:support@gksod.ru") support@gksod.ru
 
             .tabs-content#calc-2
                .calc__section.section
@@ -243,16 +229,6 @@ block page
                                  span.form__type Additional text
                                  input.form__field(type="text" placeholder="Placeholder")
                                  span.form__notif Additional text
-                           ul.form__list
-                              li.form__list-item
-                                 p.form__list-type Общая сумма кредита
-                                 p.form__list-price 12 000 000 руб.
-                              li.form__list-item
-                                 p.form__list-type Процентная ставка
-                                 p.form__list-price 6.9% годовых
-                              li.form__list-item
-                                 p.form__list-type Срок кредита
-                                 p.form__list-price 15 лет
                            button.form__submit.btn.btn--wide Название кнопки
                            p.form__about.
                               Нажимая кнопку отправить вы даете согласие на обработку персональных данных в рамках этого #[a(href="#") соглашения].
@@ -320,16 +296,6 @@ block page
                                  span.form__type Additional text
                                  input.form__field(type="text" placeholder="Placeholder")
                                  span.form__notif Additional text
-                           ul.form__list
-                              li.form__list-item
-                                 p.form__list-type Общая сумма кредита
-                                 p.form__list-price 12 000 000 руб.
-                              li.form__list-item
-                                 p.form__list-type Процентная ставка
-                                 p.form__list-price 6.9% годовых
-                              li.form__list-item
-                                 p.form__list-type Срок кредита
-                                 p.form__list-price 15 лет
                            button.form__submit.btn.btn--wide Название кнопки
                            p.form__about.
                               Нажимая кнопку отправить вы даете согласие на обработку персональных данных в рамках этого #[a(href="#") соглашения].

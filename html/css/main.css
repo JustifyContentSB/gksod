@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap);
 @font-face {
   font-family: swiper-icons;
   src: url('data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA');
@@ -3298,7 +3299,8 @@ template {
 .calc__choose,
 .calc__total,
 .credit__box,
-.process__item {
+.process__item,
+.search__content {
   padding: 20px;
   background: var(--boxBg);
   border-radius: 4px
@@ -6055,6 +6057,18 @@ svg {
 .info__item:hover .info__name {
   color: var(--accent)
 }
+.info__btn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: #1f1f1f;
+  background: #eaeaea;
+  border-radius: 3px
+}
 .info__object--hidden {
   display: none
 }
@@ -7107,7 +7121,8 @@ svg {
   align-items: center;
   border: 1px solid var(--textSec);
   border-radius: 3px;
-  transition: var(--transition)
+  transition: var(--transition);
+  background: #fff
 }
 .pagination__btn:focus,
 .pagination__btn:hover {
@@ -9454,6 +9469,160 @@ svg {
   }
   .calc__choose-manage {
     min-width: 398px
+  }
+}
+.search {
+  margin-bottom: var(--secMargin)
+}
+.search__content {
+  margin-bottom: 30px;
+  overflow: hidden;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+.search__form {
+  margin-bottom: 20px
+}
+.search__manage {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+.search__field {
+  margin-right: 12px;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative
+}
+.search__inp {
+  width: 100%;
+  height: 100%;
+  padding: 6px 14px;
+  padding-right: 40px;
+  background: #fff;
+  border: 1px solid #93928d;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--thColor)
+}
+.search__inp::-webkit-input-placeholder {
+  font-weight: 400
+}
+.search__inp::-moz-placeholder {
+  font-weight: 400
+}
+.search__inp:-ms-input-placeholder {
+  font-weight: 400
+}
+.search__inp::placeholder {
+  font-weight: 400
+}
+.search__icon {
+  width: 18px;
+  height: auto;
+  position: absolute;
+  right: 14px;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+.search__list {
+  margin-bottom: 30px
+}
+.search__item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 129%;
+  color: #1f1f1f
+}
+.search__item:last-child {
+  margin-bottom: 0
+}
+.search__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 111%;
+  color: #1f1f1f
+}
+.search__text {
+  margin-bottom: 10px
+}
+.search__btn {
+  padding: 6px 15px;
+  display: inline-block;
+  background: #eaeaea;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: #1f1f1f
+}
+.search .pagination {
+  margin: 0
+}
+.search .pagination__list {
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+.search .tabs {
+  width: calc(100% + 40px + var(--mainPadding) * 2);
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: -20px
+}
+.search .section__aside {
+  padding-bottom: 0
+}
+@media screen and (min-width:1280px) {
+  .search__content {
+    padding: 30px;
+    margin-bottom: 0
+  }
+  .search__form {
+    margin-bottom: 30px
+  }
+  .search__inp {
+    padding: 10px 28px;
+    min-height: 52px;
+    padding-right: 76px;
+    font-size: 19px
+  }
+  .search__icon {
+    width: 24px;
+    right: 28px
+  }
+  .search__title {
+    font-size: 18px
+  }
+  .search__list {
+    margin-bottom: 50px
+  }
+  .search__item {
+    padding: 30px
+  }
+  .search .tabs {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+    position: static
+  }
+}
+@media screen and (min-width:1440px) {
+  .search__content {
+    padding: 50px
+  }
+  .search__form {
+    margin-bottom: 50px
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

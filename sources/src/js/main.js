@@ -308,6 +308,8 @@ function menuScroll() {
       let st = $(this).scrollTop();
       if (st > $(".header__wrapper").outerHeight()) {
         $(".header__wrapper").addClass("header__wrapper--fixed");
+      } else if(st == 0) {
+        $(".header__wrapper").removeClass("header__wrapper--fixed");
       }
       if (st > lastScrollTop) {
         $(".header__wrapper").removeClass("header__wrapper--visible");
