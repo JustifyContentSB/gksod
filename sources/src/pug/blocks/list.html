@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+   <input type="text" class="field">
+   <button class="btn">btn</button>
+   <div class="out"></div>
+   sadsa
+
+   <script>
+      let btn = document.querySelector('.btn');
+      btn.addEventListener('click', function(e) {
+         alert('ggg')
+         let newList = [];
+         let field = document.querySelector('.field').value;
+         let out = document.querySelector('.out');
+         newList.push(field);
+         out.innerHTML = newList;
+      })
+   </script>
+
+</body>
+</html>
