@@ -1,0 +1,165 @@
+extends base/_layout
+block head
+   title Работа у нас
+
+block page
+
+   .breadcrumbs
+      ul.breadcrumbs__list
+         li.breadcrumbs__item
+            a.breadcrumbs__link(href="#") Главная
+         li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Работа у нас
+
+   section
+      header.container
+         h1.main-title Работа у нас
+
+      section.ambition
+         .ambition__inner.container
+            .ambition__photo
+               img(src="images/ambition/pro.png", alt="Подшивалов Еремей Ростиславович" width="417" height="566")
+            .ambition__info.about
+               h2.title.title--subtitle Мы ищем амбициозных молодых людей, желающих работать в продажах и зарабатывать более 150 000 ₽/мес
+               .about__text
+                  p Вы можете прийти в отделение, а можете подать заявку онлайн.
+                  p Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ.
+               ul.list.ambition__list
+                  li Мы – компания «Хатон.ру», оказываем услуги в сфере кредитования
+                  li Официально сотрудничаем с банками и с частными инвесторами
+                  li Находим клиентов на кредит и передаем их в банки или инвесторам, получая за это комиссию
+                  li Просчитывать рейтинг клиентов, подбирать продукт
+                  li Общаться с банками и вести клиента до одобрения кредита
+               .ambition__person
+                  p.ambition__person-name Подшивалов Еремей Ростиславович
+                  p.ambition__person-pro Руководитель направления
+
+      section.invite
+         .invite__inner.container.about
+            .invite__info.about__box
+               .invite__info-box.about__info
+                  h2.title.title--subtitle Изучите открытые вакансии нашей компании и приходите к нам работать!
+                  ul.list
+                     li Современная компания
+                     li Комфортные условия
+                     li Доход без ограничений
+                  a.btn.btn--wide.invite__btn(href="#") Откликнуться
+                  .about__contacts
+                     a.about__tel.tel(href="tel:+74953241134") +7 (495) 324-11-34
+                     p.time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+               .invite__img.about__img
+                  img(src="images/invite/invite.jpg", alt="работа у нас" width="936" height="494")
+
+      section.benefit
+         .benefit__inner.container.about
+            .benefit__box.about__box
+               .benefit__info.about__info
+                  h2.title.title--subtitle Работа в компании “Содействие”. #[br] Стабильный процент с продаж.
+                  ul.list
+                     li Средний доход 150 - 300 000 ₽/мес
+                     li Выплаты в день сделки
+                     li Отпуск 2 в год по 14 дней в любое время
+                     li Звонки только «горячие» с сайта
+                     li Новые знания, навыки, опыт
+                     li Средний доход 150 - 300 000 ₽/мес
+                     li Выплаты в день сделки
+                     li Отпуск 2 в год по 14 дней в любое время
+                     li Звонки только «горячие» с сайта
+                     li Новые знания, навыки, опыт
+                  a.btn(href="#") Откликнуться
+               .benefit__img.about__img
+                  img(src="images/benefit/benefit-desk.jpg", alt="содействие" width="936" height="682")
+
+      section.hr
+         .hr__top.container
+            h2.hr__title Контакты HR
+            p.hr__lead По вопросам трудоустройства можете обратиться по телефону или написать на почту. С радостью ответим
+         ul.hr__list
+            li.hr__person
+               .hr__photo
+                  img(src="images/hr/hr-1.png", alt="hr" width="394" height="493")
+               .hr__info
+                  p.hr__name Ионова Анастасия
+                  a.hr__tel(href="tel:+79685936657") +7 968 593-66-57
+                  a.hr__email(href="mailto:mail@gksod.ru") mail@gksod.ru
+            li.hr__person
+               .hr__photo
+                  img(src="images/hr/hr-2.png", alt="hr" width="394" height="493")
+               .hr__info
+                  p.hr__name Ионова Анастасия
+                  a.hr__tel(href="tel:+79685936657") +7 968 593-66-57
+                  a.hr__email(href="mailto:mail@gksod.ru") mail@gksod.ru
+            li.hr__person
+               .hr__photo
+                  img(src="images/hr/hr-3.png", alt="hr" width="394" height="493")
+               .hr__info
+                  p.hr__name Ионова Анастасия
+                  a.hr__tel(href="tel:+79685936657") +7 968 593-66-57
+                  a.hr__email(href="mailto:mail@gksod.ru") mail@gksod.ru
+
+      section.department
+         .department__inner.container
+            .department__box
+               .department__gallery.department__popup
+                  a.department__gallery-item(href="images/department/dep-1.jpg" data-effect="fadeIn")
+                     img(src="images/department/dep-1.jpg", alt="наш офис" width="441" height="326")
+                  a.department__gallery-item(href="images/department/dep-2.jpg")
+                     img(src="images/department/dep-2.jpg", alt="наш офис" width="441" height="326")
+                  a.department__gallery-item(href="images/department/dep-3.jpg")
+                     img(src="images/department/dep-3.jpg", alt="наш офис" width="441" height="326")
+                  a.department__gallery-item(href="images/department/dep-4.jpg")
+                     img(src="images/department/dep-4.jpg", alt="наш офис" width="441" height="326")
+               .department__content.about
+                  .department__info
+                     h2.title.title--subtitle Оставьте заявку если хотите работать с нами!
+                     a.department__btn.btn(href="#") Откликнуться
+                     .about__contacts
+                        a.about__tel.tel(href="tel:+74953241134") +7 (495) 324-11-34
+                        p.time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+                  .department__text
+                     p Кредитный брокер — финансовый помощник, который является посредником между кредитной организацией и потенциальным заемщиком, желающим взять кредит в банке. Помощь кредитного брокера заключается в проверке кредитной истории заявителя, выборе наиболее надежного банка, комфортного условия кредитования, сборе и подаче необходимых документов, выборе способа и графика погашения займа, тщательной проверке документов и поиске подводных камней, если таковые имеются.
+
+   section.explane
+      .explane__inner.container
+         h2.title.visually-hidden Информация о нашей компании
+         .explane__content
+            .explane__box.explane__box--active
+               article.explane__article
+                  h2.title.explane__title Кредитный брокер
+                  p Кредитный брокер — финансовый помощник, который является посредником между кредитной организацией и потенциальным заемщиком, желающим взять кредит в банке. Помощь кредитного брокера заключается в проверке кредитной истории заявителя, выборе наиболее надежного банка, комфортного условия кредитования, сборе и подаче необходимых документов, выборе способа и графика погашения займа, тщательной проверке документов и поиске подводных камней, если таковые имеются.
+               article.explane__article
+                  h2.title.explane__title Кто обращается к брокерам?
+                  p.
+                     Или другая ситуация. Потенциальный заявитель изучал информацию о кредитах в интернете и наткнулся на Хатон.ру. Отзывы прекрасные и знакомые советуют. Клиент будущего банка по кредитам решил, что это отличная возможность собрать информацию о комфортных условиях кредитования, процентных ставках и сроках платежей. Ведь человек не является специалистом и не знать, где, как и что искать. #[br]
+                     Молодой человек предоставил все необходимые документы и спокойно работал дальше, пока брокер делал все за него. А в какой-то момент ему просто предоставили целый пакет документов с процентными ставками, предложениями и видами кредитов. Так клиент кредитования выбрал наиболее удобный вариант для себя и не потратил огромное количество времени на бессмысленные поиски лучшего варианта. Все сделали за него. Причем среди всех предложений, он выбрал с самой низкой ставкой — 4.9% годовых. Сам бы он вряд ли нашел такое хорошее решение.
+            .explane__box
+               article.explane__article
+                  h2.title.explane__title Преимущества брокера Хатон.ру
+                  p Экономия огромного пласта времени, так как с вас потребуется только документация и ничего более.
+
+                  p Вы можете прийти в отделение, а можете подать заявку онлайн.
+                  p Стоимость услуг зависит от ситуации и оговаривается заранее. Причем, вы платите процент от кредита и только в том случае, если вам его одобрили. Обычно это 3%. Как вы помните, мы уточняли, что частные брокеры могут брать от 10 до 20%, поэтому 3% это не так много за уже одобренный займ.
+                  p Данный кредитный брокер работает честно и в соответствии с законом. Вам не будут предлагать мухлевать с документами или обманывать банки. Во-первых, потому что это ничего не даст и обман вскроется уже на второй проверке документов банком, а во-вторых, данному брокеру это просто не нужно. Если они видят, что одобрение кредита невозможно, вам так и скажут. И вряд ли, одобрение возможно хоть каким-либо путем, если Хатон сказал, что этого просто нельзя никаким образом добиться.
+                  p Все специалисты Хатон.ру, без исключения, работали ранее в банках и знаю всю структуру изнутри. Колоссальный опыт и знания обуславливают рейтинг компании и дают такой высокий результат.
+                  p В заключении можно сказать, что если и стоит обращаться к кредитному брокеру, только к таким проверенным, как Хатон.ру.
+
+         a.explane__more(href="#") Развернуть СЕО-тест
+
+   address.address
+      .address__inner
+         .address__content.container
+            .address__info
+               .address__top
+                  p.title.address__title Наш офис
+                  p.address__city г. Москва, Нижний Сусальный переулок, д. 5, стр. 1
+               p.address__text Для более подробного расчета, вы можете связаться с нами по телефону. Наши менеджеры вас проконсультируют.
+               .address__contacts
+                  a.address__tel.tel(href="tel:+74953241134") +7 (495) 324-11-34
+                  p.address__time.time Ежедневно без выходных с 10:00 до 19:00 (мск.)
+               ul.address__manage
+                  li
+                     a.btn.btn--sec(href="#") Заказать звонок
+                  li
+                     a.btn(href="#") Заказать услугу
+            .address__map
+               iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17961.85417182666!2d37.68580660191187!3d55.75447590574944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aa4681e5943%3A0x4ce0b691b25536c4!2z0YAt0L0g0JvQtdGE0L7RgNGC0L7QstC-LCDQnNC-0YHQutCy0LA!5e0!3m2!1sru!2sru!4v1672594843788!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")

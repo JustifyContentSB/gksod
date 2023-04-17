@@ -3295,10 +3295,13 @@ template {
   --transition: all .2s ease
 }
 .approval__inner,
+.benefit__box,
 .calc__box,
 .calc__choose,
 .calc__total,
 .credit__box,
+.department__box,
+.invite__info,
 .process__item,
 .search__content {
   padding: 20px;
@@ -9623,6 +9626,443 @@ svg {
   }
   .search__form {
     margin-bottom: 50px
+  }
+}
+.about__tel {
+  margin-bottom: 8px
+}
+.about__text {
+  margin-bottom: 30px
+}
+@media screen and (min-width:768px) {
+  .about__box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .about__info {
+    width: 326px;
+    min-width: 326px;
+    max-width: 326px
+  }
+  .about__img {
+    width: calc(100% - 346px)
+  }
+  .about .title {
+    font-size: 20px
+  }
+}
+@media screen and (min-width:1280px) {
+  .about__info {
+    width: 550px;
+    min-width: 550px;
+    max-width: 550px
+  }
+  .about__img {
+    width: calc(100% - 590px)
+  }
+}
+@media screen and (min-width:1440px) {
+  .about__img {
+    width: calc(100% - 600px)
+  }
+}
+@media screen and (min-width:1800px) {
+  .about .title {
+    font-size: 24px
+  }
+}
+.invite {
+  margin-bottom: var(--secMargin)
+}
+.invite__info {
+  padding: 10px
+}
+.invite__info-box {
+  margin-bottom: 10px;
+  padding: 20px;
+  background: #fff
+}
+.invite__btn {
+  margin-bottom: 20px
+}
+.invite__img {
+  height: 208px
+}
+.invite__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center bottom;
+  object-position: center bottom
+}
+@media screen and (min-width:768px) {
+  .invite__info {
+    padding: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+  }
+  .invite__info-box {
+    padding: 40px;
+    margin-bottom: 0;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+  }
+  .invite__img {
+    height: auto
+  }
+}
+@media screen and (min-width:1440px) {
+  .invite__info {
+    padding: 50px
+  }
+}
+@media screen and (min-width:1800px) {
+  .invite .list,
+  .invite .title,
+  .invite__btn {
+    margin-bottom: 40px
+  }
+}
+.ambition {
+  margin-bottom: var(--secMargin)
+}
+.ambition__list {
+  margin-bottom: 30px
+}
+.ambition__photo {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 216px
+}
+.ambition__person-name {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%
+}
+.ambition__person-pro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--textSec)
+}
+@media screen and (min-width:768px) {
+  .ambition__inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+  }
+  .ambition__photo {
+    width: 314px;
+    min-width: 314px;
+    max-width: none;
+    margin: 0;
+    margin-right: 40px
+  }
+}
+@media screen and (min-width:1440px) {
+  .ambition__photo {
+    margin-right: 100px
+  }
+}
+@media screen and (min-width:1800px) {
+  .ambition__photo {
+    width: 417px;
+    min-width: 417px
+  }
+}
+.benefit {
+  margin-bottom: var(--secMargin)
+}
+.benefit__box {
+  padding: 10px
+}
+.benefit__info {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff
+}
+.benefit__img {
+  min-height: 208px;
+  max-height: 280px;
+  overflow: hidden;
+  position: relative
+}
+.benefit__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center bottom;
+  object-position: center bottom;
+  position: absolute;
+  left: 0;
+  top: 0
+}
+@media screen and (min-width:768px) {
+  .benefit__box {
+    padding: 20px
+  }
+  .benefit__info {
+    padding: 40px;
+    margin: 0;
+    width: 358px;
+    min-width: 358px
+  }
+  .benefit__img {
+    width: calc(100% - 378px);
+    max-height: 100%
+  }
+}
+@media screen and (min-width:1280px) {
+  .benefit__info {
+    width: 550px;
+    min-width: 550px;
+    max-width: 550px
+  }
+  .benefit__img {
+    width: calc(100% - 590px)
+  }
+}
+@media screen and (min-width:1440px) {
+  .benefit__box {
+    padding: 50px
+  }
+  .benefit__img {
+    width: calc(100% - 600px)
+  }
+  .benefit .list {
+    margin-bottom: 20px
+  }
+}
+.hr__top {
+  margin-bottom: 20px
+}
+.hr__title {
+  margin-bottom: 20px;
+  padding-bottom: 23px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  position: relative
+}
+.hr__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--accent)
+}
+.hr__lead {
+  text-align: center;
+  font-weight: 300
+}
+.hr__list {
+  padding: 0 var(--mainPadding) 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none
+}
+.hr__list::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
+.hr__person {
+  width: 214px;
+  min-width: 214px;
+  margin-right: 10px
+}
+.hr__photo {
+  margin-bottom: 35px
+}
+.hr__info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.hr__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000
+}
+.hr__tel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--textSec);
+  white-space: nowrap
+}
+.hr__email {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: var(--accent);
+  white-space: nowrap
+}
+@media screen and (min-width:768px) {
+  .hr {
+    margin-bottom: var(--secMargin)
+  }
+  .hr__list {
+    padding-bottom: 0;
+    overflow-x: visible;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  .hr__person {
+    margin-bottom: 10px
+  }
+  .hr__person:nth-child(3n) {
+    margin-right: 0
+  }
+  .hr__name {
+    margin-bottom: 8px
+  }
+  .hr__tel {
+    margin-bottom: 6px
+  }
+}
+@media screen and (min-width:1280px) {
+  .hr__title {
+    margin-bottom: 30px;
+    font-size: 28px
+  }
+  .hr__person {
+    width: 320px
+  }
+}
+@media screen and (min-width:1440px) {
+  .hr__top {
+    margin-bottom: 30px
+  }
+  .hr__person {
+    width: 394px;
+    margin-right: 40px
+  }
+  .hr__photo {
+    margin-bottom: 20px
+  }
+  .hr__name {
+    font-size: 18px
+  }
+  .hr__tel {
+    font-size: 20px
+  }
+}
+.department {
+  margin-bottom: var(--secMargin)
+}
+.department__box {
+  padding: 10px
+}
+.department__gallery {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px
+}
+.department__gallery-item {
+  height: 180px;
+  position: relative
+}
+.department__gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.department__info {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff
+}
+.department__btn {
+  margin-bottom: 20px
+}
+@media screen and (min-width:768px) {
+  .department__box {
+    padding: 30px
+  }
+  .department__gallery {
+    margin-bottom: 30px;
+    grid-gap: 30px
+  }
+  .department__gallery-item {
+    height: 253px
+  }
+  .department__info {
+    padding: 30px
+  }
+}
+@media screen and (min-width:1280px) {
+  .department__box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+  }
+  .department__gallery {
+    min-width: 668px;
+    width: 668px;
+    margin: 0;
+    margin-right: 40px
+  }
+}
+@media screen and (min-width:1440px) {
+  .department__box {
+    padding: 50px
+  }
+  .department__gallery {
+    margin-right: 50px
+  }
+}
+@media screen and (min-width:1800px) {
+  .department__gallery {
+    width: 932px;
+    min-width: 932px;
+    grid-gap: 50px
+  }
+  .department__gallery-item {
+    height: 326px
+  }
+  .department__info {
+    min-height: 326px;
+    margin-bottom: 50px;
+    padding: 40px
+  }
+  .department .title {
+    margin-bottom: 40px
+  }
+  .department__btn {
+    margin-bottom: 40px
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -395,34 +395,6 @@ $(window).on("click", function (e) {
   }
 });
 
-$(document).ready(function () {
-  $(".office__popup").magnificPopup({
-    delegate: "a",
-    type: "image",
-    tLoading: "Loading image #%curr%...",
-    mainClass: "mfp-img-mobile",
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
-    },
-  });
-});
-
-$(document).ready(function () {
-  $(".cert__popup").magnificPopup({
-    delegate: "a",
-    type: "image",
-    tLoading: "Loading image #%curr%...",
-    mainClass: "mfp-img-mobile",
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
-    },
-  });
-});
-
 function tabsToggle() {
   $(document).ready(function () {
     $(".tabs .tabs__btn").removeClass("tabs__btn--active");
@@ -523,3 +495,48 @@ function selectedItems() {
      placeholder: 'Ваш регион проживания:',
   });
 }
+
+$(document).ready(function () {
+  $(".office__popup").magnificPopup({
+    delegate: "a",
+    type: "image",
+    tLoading: "Загрузка изображения #%curr%...",
+    mainClass: "mfp-img-mobile",
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1],
+      tCounter: '%curr% из %total%',
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".cert__popup").magnificPopup({
+    delegate: "a",
+    type: "image",
+    tLoading: "Загрузка изображения #%curr%...",
+    mainClass: "mfp-img-mobile",
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1],
+      tCounter: '%curr% из %total%',
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".department__popup").magnificPopup({
+    delegate: "a",
+    type: "image",
+    tLoading: "Загрузка изображения #%curr%...",
+    mainClass: "mfp-img-mobile",
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1],
+      tCounter: '%curr% из %total%',
+    },
+  });
+});

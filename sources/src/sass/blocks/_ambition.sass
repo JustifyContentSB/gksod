@@ -1,0 +1,42 @@
+.ambition
+   margin-bottom: var(--secMargin)
+   &__list
+      margin-bottom: 30px
+   &__photo
+      margin-bottom: 30px
+      width: 100%
+      max-width: 216px
+   &__person
+      &-name
+         margin-bottom: 8px
+         font-weight: 600
+         font-size: 18px
+         line-height: 150%
+      &-pro
+         font-weight: 400
+         font-size: 14px
+         line-height: 140%
+         color: var(--textSec)
+
+@media screen and (min-width: $width_tab)
+   .ambition
+      &__inner
+         display: flex
+         align-items: flex-start
+      &__photo
+         width: 314px
+         min-width: 314px
+         max-width: none
+         margin: 0
+         margin-right: 40px
+
+@media screen and (min-width: $width_big)
+   .ambition
+      &__photo
+         margin-right: 100px
+
+@media screen and (min-width: $width_huge)
+   .ambition
+      &__photo
+         width: 417px
+         min-width: 417px

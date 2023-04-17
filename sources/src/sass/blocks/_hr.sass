@@ -1,0 +1,98 @@
+.hr
+   &__top
+      margin-bottom: 20px
+   &__title
+      margin-bottom: 20px
+      padding-bottom: 23px
+      font-weight: 700
+      font-size: 24px
+      line-height: 100%
+      text-align: center
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         bottom: 0
+         left: 0
+         height: 3px
+         width: 100%
+         background: var(--accent)
+   &__lead
+      text-align: center
+      font-weight: 300
+   &__list
+      padding: 0 var(--mainPadding) 20px
+      display: flex
+      overflow-x: auto
+      -ms-overflow-style: none
+      overflow: -moz-scrollbars-none
+      &::-webkit-scrollbar 
+         width: 0 
+         height: 0
+   &__person
+      width: 214px
+      min-width: 214px
+      margin-right: 10px
+   &__photo
+      margin-bottom: 35px
+   &__info
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+   &__name
+      font-weight: 600
+      font-size: 16px
+      line-height: 150%
+      color: #000
+   &__tel
+      font-weight: 400
+      font-size: 18px
+      line-height: 140%
+      color: var(--textSec)
+      white-space: nowrap
+   &__email
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+      text-decoration-line: underline
+      color: var(--accent)
+      white-space: nowrap
+
+@media screen and (min-width: $width_tab)
+   .hr
+      margin-bottom: var(--secMargin)
+      &__list
+         padding-bottom: 0
+         overflow-x: visible
+         justify-content: center
+         flex-wrap: wrap
+      &__person
+         margin-bottom: 10px
+         &:nth-child(3n)
+            margin-right: 0
+      &__name
+         margin-bottom: 8px
+      &__tel
+         margin-bottom: 6px
+
+@media screen and (min-width: $width_desk)
+   .hr
+      &__title
+         margin-bottom: 30px
+         font-size: 28px
+      &__person
+         width: 320px
+
+@media screen and (min-width: $width_big)
+   .hr
+      &__top
+         margin-bottom: 30px
+      &__person
+         width: 394px
+         margin-right: 40px
+      &__photo
+         margin-bottom: 20px
+      &__name
+         font-size: 18px
+      &__tel
+         font-size: 20px

@@ -1,0 +1,38 @@
+.about
+   &__tel
+      margin-bottom: 8px
+   &__text
+      margin-bottom: 30px
+
+@media screen and (min-width: $width_tab)
+   .about
+      &__box
+         display: flex
+         justify-content: space-between
+      &__info
+         width: 326px
+         min-width: 326px
+         max-width: 326px
+      &__img
+         width: calc(100% - 346px)
+      .title
+         font-size: 20px
+
+@media screen and (min-width: $width_desk)
+   .about
+      &__info
+         width: 550px
+         min-width: 550px
+         max-width: 550px
+      &__img
+         width: calc(100% - 590px)
+
+@media screen and (min-width: $width_big)
+   .about
+      &__img
+         width: calc(100% - 600px)
+
+@media screen and (min-width: $width_huge)
+   .about
+      .title
+         font-size: 24px
