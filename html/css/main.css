@@ -3710,6 +3710,9 @@ svg {
   font-size: 14px;
   line-height: 100%
 }
+.select2-hidden-accessible {
+  position: fixed!important
+}
 .select2-selection {
   width: 100%;
   height: 42px!important;
